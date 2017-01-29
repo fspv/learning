@@ -29,14 +29,27 @@ def count_keys_equal(x, m):
 
 
 def count_keys_less(equal):
-    less = [0]
+    less = [0] * (len(equal) + 1)
     for i in xrange(1, len(equal) + 1):
-        less += [0]
         less[i] += less[i - 1] + equal[i - 1]
 
     return less
 
 
+def rearrange(A, less):
+    B = [0] * len(A)
+
+    for i in xrange(len(A)):
+        key = A[i]
+        pos = less[key]
+        B[pos] = key
+        less[key] = less[key] + 1
+
+    return B
+
+
 print really_simple_sort(x)
 equal = count_keys_equal(x_m, m)
-print count_keys_less(equal)
+less = count_keys_less(equal)
+print rearrange(x_m, less)
+
