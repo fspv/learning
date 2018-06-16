@@ -42,7 +42,7 @@ class Solution(object):
 
 solution = Solution()
 arr = []
-assert solution.removeDuplicates([]) == 0
+assert solution.removeDuplicates(arr) == 0
 assert arr == []
 
 arr = [0]
