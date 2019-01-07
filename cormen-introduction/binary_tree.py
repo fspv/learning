@@ -175,7 +175,7 @@ class BinaryTree(object):
             else:
                 return current
 
-        return prev
+        return current
 
     def min(self, subtree_root=None):
         current = self.root if subtree_root is None else subtree_root
@@ -490,6 +490,17 @@ class TestBinaryTreeSuccessorPredecessor(unittest.TestCase):
                 self.assertEqual(
                     self.binary_tree.predecessor(node).val, pre
                 )
+    def test_binary_tree_search(self):
+        array = [10, 5, 15, 3, 7, 13, 18, 1, 6]
+        self.construct_tree(array)
+
+        for val in array:
+            self.assertEqual(self.binary_tree.search(val).val, val)
+
+        self.assertEqual(self.binary_tree.search(-100), None)
+        self.assertEqual(self.binary_tree.search(100), None)
+        self.assertEqual(self.binary_tree.search(11), None)
+        self.assertEqual(self.binary_tree.search(9), None)
 
 
 if __name__ == "__main__":
