@@ -144,6 +144,35 @@ class BinaryTree(object):
 
         return result
 
+    def inorder_walk_nonrecursive(self, subtree_node=None):
+        if subtree_node is None:
+            if self.root is None:
+                return []
+            subtree_node = self.root
+
+        stack = [subtree_node]
+        result = []
+        node = subtree_node
+
+        while True:
+            while node is not None and node.left is not None:
+                stack.append(node.left)
+                node = node.left
+
+            if not len(stack):
+                break
+
+            node = stack.pop()
+            result.append(node.val)
+
+            if node is not None and node.right is not None:
+                node = node.right
+                stack.append(node)
+            else:
+                node = None
+
+        return result
+
     def check_ri(self, subtree_node=None):
         """Check representation invariant"""
         if subtree_node is None:
@@ -355,6 +384,15 @@ class TestBinaryTreeInorderWalk(
 
     def binary_tree_inorder_walk(self):
         return self.binary_tree.inorder_walk()
+
+
+class TestBinaryTreeInorderWalkNonrecursive(
+    TemplateBinaryTreeInorderWalk, unittest.TestCase):
+    def construct_tree(self, array):
+        self.binary_tree = BinaryTree(array)
+
+    def binary_tree_inorder_walk(self):
+        return self.binary_tree.inorder_walk_nonrecursive()
 
 
 class TemplateBinaryTreeMinMax(object):
