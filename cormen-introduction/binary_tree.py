@@ -476,6 +476,14 @@ class TestBinaryTreeSuccessorPredecessor(unittest.TestCase):
             self.binary_tree.successor(node), None
         )
 
+    def test_binary_tree_successor_two_equal(self):
+        self.construct_tree([2,2])
+        node = self.binary_tree.search(2)
+        self.assertEqual(node.val, 2)
+        self.assertEqual(
+            self.binary_tree.successor(node), None
+        )
+
     def test_binary_tree_successor_1(self):
         array = [10, 5, 15, 3, 7, 13, 18, 1, 6]
         array_sorted = sorted(array)
