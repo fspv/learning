@@ -1,3 +1,5 @@
+# TODO: speed it up (Runtime: 5524 ms, faster than 0.97% of Python3 online submissions for Perfect Squares)
+
 import unittest
 from collections import deque
 
