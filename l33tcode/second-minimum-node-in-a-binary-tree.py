@@ -18,19 +18,15 @@ class Solution:
 
         while len(stack):
             if stack[-1].left is not None and \
-               (
-                   last_popped is None or \
-                   (
-                       last_popped != stack[-1].left and \
-                       last_popped.right is not None
-                   )
-               ):
+               (last_popped is None or last_popped.right is not None):
                 stack.append(stack[-1].left)
             else:
                 last_popped = stack.pop()
+
                 if (second_minimum == -1 or last_popped.val < second_minimum) and \
                    last_popped.val > minimum:
                     second_minimum = last_popped.val
+
                 if last_popped.right is not None:
                     stack.append(last_popped.right)
 
