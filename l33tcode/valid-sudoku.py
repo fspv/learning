@@ -1,6 +1,49 @@
 import unittest
 
 class Solution:
+    def isValidSudoku2(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        empty = "."
+
+        rows = [set() for _ in range(len(board))]
+        columns = [set() for _ in range(len(board[0]))]
+        sub_boxes = [
+            set() for _ in range(len(board)) for _ in range(len(board[0]))
+        ]
+
+        for x in range(len(board)):
+            for y in range(len(board[0])):
+                if board[x][y] == empty:
+                    continue
+
+                if board[x][y] in rows[x]:
+                    print(1)
+                    print(rows)
+                    print(x)
+                    print(y)
+                    print(board[x][y])
+                    return False
+                else:
+                    rows[x].add(board[x][y])
+
+                if board[x][y] in columns[y]:
+                    print(2)
+                    return False
+                else:
+                    columns[y].add(board[x][y])
+
+                box_num = x // 3 * len(board[0]) // 3 + y // 3
+                if board[x][y] in sub_boxes[box_num]:
+                    print(3)
+                    return False
+                else:
+                    sub_boxes[box_num].add(board[x][y])
+
+        return True
+
     def isValidSudoku(self, board):
         """
         :type board: List[List[str]]
