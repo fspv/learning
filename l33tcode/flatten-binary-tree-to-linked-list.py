@@ -6,47 +6,34 @@
 #         self.right = None
 
 class Solution:
-    def insert_subtree_into_subtree(self, subtree, target_subtree):
-        if target_subtree is None:
-            return
-
-        if target_subtree.left is not None and target_subtree.right is None:
-            target_subtree.left, target_subtree.right = target_subtree.right, target_subtree.left
-
-            self.insert_subtree_into_subtree(target_subtree.left, target_subtree.right)
-
-        if target_subtree.left is not None and target_subtree.right is not None:
-            if target_subtree.left.val < target_subtree.right.val:
-                target_subtree.left, target_subtree.right = target_subtree.right, target_subtree.left
-
-            self.insert_subtree_into_subtree(target_subtree.left, target_subtree.right)
-            target_subtree.left = None
-
-        if subtree is None:
-            self.insert_subtree_into_subtree(subtree, target_subtree.right)
-        elif target_subtree.right is None:
-            target_subtree.right = subtree
-        else:
-            node = target_subtree.right
-            while node is not None:
-                if node.right is None:
-                    node.right = subtree
-                    break
-
-                if subtree.val <= node.right.val:
-                    self.insert_subtree_into_subtree(node.right, subtree)
-                    node.right = subtree
-                    break
-
-                node = node.right
-
-
     def flatten(self, root: 'TreeNode') -> 'None':
         """
         Do not return anything, modify root in-place instead.
         """
-        if root is None:
-            return
-        self.insert_subtree_into_subtree(None, root)
+        node = root
+        while node is not None:
+            # Try to insert right node into the rightmost position of the
+            # left subtree
+            if node.right is not None:
+                if node.left is not None:
+                    tmp_node = node.left
+                    while tmp_node.right is not None:
+                        tmp_node = tmp_node.right
+                    tmp_node.right = node.right
 
-# TODO: not working on some cases
+                    # Reassign left subtree to the place of removed subtree
+                    node.right = node.left
+                    node.left = None
+            else:
+                # Move left subtree to the place of the empty right subtree
+                if node.left is not None:
+                    node.right = node.left
+                    node.left = None
+
+            node = node.right
+
+# TODO: add tests here
+# Test cases:
+# [] -> []
+# [0] -> [0]
+# [1, 2, 5, 3, 4, None, 6] -> [1, None, 2, None, 3, None, 4, None, 5, None, 6]
