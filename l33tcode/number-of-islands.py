@@ -17,9 +17,6 @@ class Solution:
                         point = stack.pop()
                         visited.add(point)
 
-                        if not int(grid[point[1]][point[0]]):
-                            continue
-
                         neighbours = [
                             (point[0] - 1, point[1]),
                             (point[0] + 1, point[1]),
@@ -27,17 +24,16 @@ class Solution:
                             (point[0], point[1] - 1),
                         ]
 
-                        for neighbour in neighbours:
-                            if neighbour[0] >= len(grid[0]) or \
-                                neighbour[1] >= len(grid) or \
-                                neighbour[0] < 0 or \
-                                neighbour[1] < 0:
+                        for neigh in neighbours:
+                            if neigh[0] >= len(grid[0]) or neigh[0] < 0 or \
+                               neigh[1] >= len(grid) or neigh[1] < 0:
                                 continue
 
-                            if neighbour not in visited:
-                                stack.append(point)
-                                stack.append(neighbour)
-                                break
+                            if not int(grid[neigh[1]][neigh[0]]):
+                                continue
+
+                            if neigh not in visited:
+                                stack.append(neigh)
 
         return islands_count
 
