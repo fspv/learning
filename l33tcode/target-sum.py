@@ -2,6 +2,33 @@ import unittest
 
 class Solution:
     def findTargetSumWays(self, nums: 'List[int]', S: 'int') -> 'int':
+        # DP
+        if not len(nums):
+            return 0
+
+        prev_sums = {0: 1}
+
+        for pos in range(len(nums)):
+            new_sums = {}
+            for prev_sum, num_of_ways in prev_sums.items():
+                sum_minus = prev_sum - nums[pos]
+                sum_plus = prev_sum + nums[pos]
+
+                if sum_minus in new_sums:
+                    new_sums[sum_minus] += num_of_ways
+                else:
+                    new_sums[sum_minus] = num_of_ways
+
+                if sum_plus in new_sums:
+                    new_sums[sum_plus] += num_of_ways
+                else:
+                    new_sums[sum_plus] = num_of_ways
+
+            prev_sums = new_sums
+
+        return prev_sums[S] if S in prev_sums else 0
+
+    def findTargetSumWaysBFS(self, nums: 'List[int]', S: 'int') -> 'int':
         if not len(nums):
             return 0
 
@@ -12,17 +39,15 @@ class Solution:
             prev_sum, pos = stack.pop()
 
             sum_minus = prev_sum - nums[pos + 1]
+            sum_plus = prev_sum + nums[pos + 1]
+
             if pos == len(nums) - 2:
                 if sum_minus == S:
                     number_of_ways += 1
-            else:
-                stack.append((sum_minus, pos + 1))
-
-            sum_plus = prev_sum + nums[pos + 1]
-            if pos == len(nums) - 2:
                 if sum_plus == S:
                     number_of_ways += 1
             else:
+                stack.append((sum_minus, pos + 1))
                 stack.append((sum_plus, pos + 1))
 
         return number_of_ways
@@ -41,6 +66,9 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(self.sol.findTargetSumWays([1], -1), 1)
         self.assertEqual(self.sol.findTargetSumWays([1], 1), 1)
 
+    def test_two_elements(self):
+        self.assertEqual(self.sol.findTargetSumWays([1, 0], 1), 2)
+
     def test_complex1(self):
         self.assertEqual(self.sol.findTargetSumWays([1, 1, 1, 1, 1], 3), 5)
 
@@ -53,6 +81,9 @@ class TestSolution(unittest.TestCase):
     def test_complex4(self):
         for _ in range(20):
             self.assertEqual(self.sol.findTargetSumWays([1] * 20, 10), 15504)
+
+    def test_complex5(self):
+        self.assertEqual(self.sol.findTargetSumWays([0,0,0,0,0,0,0,0,1], 1), 256)
 
 
 if __name__ == "__main__":
