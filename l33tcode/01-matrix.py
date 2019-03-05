@@ -1,8 +1,34 @@
 import unittest
+import sys
 
 
 class Solution:
     def updateMatrix(self, matrix):
+        output = [[sys.maxsize - 100000 for _ in range(len(matrix[0]))] for _ in range(len(matrix))]
+
+        for y in range(len(matrix)):
+            for x in range(len(matrix[0])):
+                if matrix[y][x] == 0:
+                    output[y][x] = 0
+                    continue
+                if x > 0:
+                    output[y][x] = min(output[y][x], output[y][x - 1] + 1)
+                if y > 0:
+                    output[y][x] = min(output[y][x], output[y - 1][x] + 1)
+
+        for y in range(len(matrix) - 1, -1, -1):
+            for x in range(len(matrix[0]) - 1, -1, -1):
+                if matrix[y][x] == 0:
+                    output[y][x] = 0
+                    continue
+                if x < len(matrix[0]) - 1:
+                    output[y][x] = min(output[y][x], output[y][x + 1] + 1)
+                if y < len(matrix) - 1:
+                    output[y][x] = min(output[y][x], output[y + 1][x] + 1)
+
+        return output
+
+    def updateMatrixBFS(self, matrix):
         output = [[0 for _ in range(len(matrix[0]))] for _ in range(len(matrix))]
 
         for y in range(len(matrix)):
