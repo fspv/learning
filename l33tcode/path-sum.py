@@ -23,9 +23,9 @@ class Solution:
                 return True
 
             # Check if
-            # 1. This node has no left node
+            # 1. This node has no left child
             # 2. Last removed node was the child of this node
-            # 3. Last removed was the rightmos member of the left subtree of \
+            # 3. Last removed was the rightmost member of the left subtree of \
             #    this node
             if not node.left or (node.left == last_removed or last_removed.right == None):
                 last_removed, last_removed_val = stack.pop()
