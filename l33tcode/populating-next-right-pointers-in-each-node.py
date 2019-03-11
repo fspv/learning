@@ -18,3 +18,5 @@ class Solution:
         self.connect(node.right)
 
         return node
+
+# TODO: come with non-recursive approach
