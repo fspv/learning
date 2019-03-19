@@ -24,6 +24,9 @@ class Solution:
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
                 mem_sum_neg = - nums[i] - nums[j]
+                # TODO: this one doesn't work properly because set has only
+                # unique values so it can easily skip some repeating values.
+                # Or need a proof that this is alright
                 mem_key = frozenset((nums[i], nums[j], mem_sum_neg))
                 if not mem_key in mem_pairs_sums:
                     if mem_sum_neg in mem_all:
