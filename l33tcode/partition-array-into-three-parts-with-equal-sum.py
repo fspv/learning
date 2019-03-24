@@ -1,6 +1,32 @@
 import unittest
 
 class Solution:
+    def canThreePartsEqualSum(self, A):
+        left_sums = dict()
+        left_prev_sum = 0
+
+        for l in range(len(A) - 2):
+            left_prev_sum += A[l]
+
+            if not left_prev_sum in left_sums:
+                left_sums[left_prev_sum] = []
+
+            left_sums[left_prev_sum].append(l)
+
+        whole_sum = left_prev_sum + sum(A[-2:])
+
+        right_prev_sum = 0
+        for r in range(len(A) - 1, 1, -1):
+            right_prev_sum += A[r]
+
+            if right_prev_sum in left_sums:
+                if (whole_sum - right_prev_sum * 2) == right_prev_sum:
+                    for l in left_sums[right_prev_sum]:
+                        if r - l > 1:
+                            return True
+
+        return False
+
     def canThreePartsEqualSumBruteForce(self, A):
         left = 0
         middle = 0
