@@ -1,5 +1,7 @@
 import unittest
 
+# TODO: Create solution with O(1) extra space
+
 class Solution:
     def circularArrayLoop(self, nums):
         for start in range(len(nums)):
