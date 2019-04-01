@@ -5,10 +5,10 @@ class Solution:
     def totalFruit(self, tree):
         range_begin = 0
         fruits = 0
+        new_fruits = 0
+        mem = dict()
 
         while range_begin < len(tree):
-            new_fruits = 0
-            mem = dict()
             prev = None
 
             for pos in range(range_begin, len(tree)):
@@ -16,6 +16,9 @@ class Solution:
                     mem[tree[pos]] = pos
 
                 if len(mem) > 2:
+                    range_begin = pos
+                    new_fruits = pos - mem[prev]
+                    mem = {prev: mem[prev]}
                     break
 
                 prev = tree[pos]
@@ -23,8 +26,6 @@ class Solution:
                 fruits = max(fruits, new_fruits)
             else:
                 break
-
-            range_begin = mem[prev]
 
         return fruits
 
@@ -54,11 +55,14 @@ class TestSolution(unittest.TestCase):
     def test_custom5(self):
         self.assertEqual(self.sol.totalFruit([1,2,3,2,2]), 4)
 
-    def test_custom3(self):
+    def test_custom6(self):
         self.assertEqual(self.sol.totalFruit([3,3,3,1,2,1,1,2,3,3,4]), 5)
 
-    def test_custom3(self):
+    def test_custom7(self):
         self.assertEqual(self.sol.totalFruit([1,2,3]), 2)
+
+    def test_custom8(self):
+        self.assertEqual(self.sol.totalFruit([1,0,3,4,3]), 3)
 
 
 if __name__ == "__main__":
