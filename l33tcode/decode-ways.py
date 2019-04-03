@@ -5,11 +5,8 @@ class Solution:
         dp = [1, 0]
 
         for pos in reversed(range(len(s))):
-            ways = 0
-
-            if int(s[pos]) > 0:
-                ways += dp[0] if int(s[pos]) < 27 else 0
-                ways += dp[1] if int(s[pos:(pos + 2)]) < 27 else 0
+            ways = dp[0] if 0 < int(s[pos]) < 27 else 0
+            ways += dp[1] if 9 < int(s[pos:(pos + 2)]) < 27 else 0
 
             dp = [ways, dp[0]]
 
