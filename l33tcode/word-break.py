@@ -2,40 +2,16 @@ import unittest
 
 
 class Solution:
-    dp = {}
-
-    def check_segmentable(self, s, word_len_dict, word_len_list, end_pos):
-        if end_pos == -1:
-            return True
-
-        for word_len in word_len_list:
-            if end_pos - word_len + 1 < 0:
-                break
-            if s[end_pos - word_len + 1:end_pos + 1] in word_len_dict[word_len]:
-                if end_pos - word_len in self.dp:
-                    return self.dp[end_pos - word_len]
-
-                if self.check_segmentable(
-                    s, word_len_dict, word_len_list, end_pos - word_len
-                ):
-                    return True
-
-                self.dp[end_pos - word_len] = False
-
-        return False
-
     def wordBreak(self, s, wordDict):
-        word_len_dict = {}
-        for word in wordDict:
-            if len(word) not in word_len_dict:
-                word_len_dict[len(word)] = set()
-            word_len_dict[len(word)].add(word)
+        dp = [True] + [False] * len(s)
+        for i in range(len(s)):
+            for word in wordDict:
+                if i - len(word) + 1 >= 0 and \
+                   dp[i - len(word) + 1] and \
+                   s[i - len(word) + 1:i + 1] == word:
+                    dp[i + 1] = True
 
-        word_len_list = sorted(word_len_dict.keys())
-
-        return self.check_segmentable(
-            s, word_len_dict, word_len_list, len(s) - 1
-        )
+        return dp[len(s)]
 
 
 class TestSolution(unittest.TestCase):
