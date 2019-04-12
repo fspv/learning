@@ -6,6 +6,17 @@
 #         self.right = None
 
 class Solution:
+    # Recursive one
+    def maxDepth(self, node, depth=0):
+        if node is None:
+            return depth
+
+        return max(
+            self.maxDepth(node.left, depth + 1),
+            self.maxDepth(node.right, depth + 1)
+        )
+
+    # Non-recursive one
     def maxDepth(self, root):
         stack = [root] if root else []
         level = 0
