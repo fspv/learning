@@ -27,6 +27,20 @@ class Solution(object):
 
         return result
 
+    def merge2(self, intervals: List[List[int]]) -> List[List[int]]:
+        # Shorter version, less LOC and new input
+        sorted_intervals = sorted(intervals, key=lambda x: x[0])
+
+        result = []
+
+        for interval in sorted_intervals:
+            if result and interval[0] <= result[-1][1]:
+                result[-1][1] = max(result[-1][1], interval[1])
+            else:
+                result.append([interval[0], interval[1]])
+
+        return result
+
 
 class TestSolution(unittest.TestCase):
     def test_merge(self):
