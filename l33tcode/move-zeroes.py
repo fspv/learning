@@ -1,7 +1,7 @@
 import unittest
 
 class Solution(object):
-    def moveZeroes(self, nums):
+    def moveZeroesWithExtraSpace(self, nums):
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
@@ -13,6 +13,22 @@ class Solution(object):
         for n in range(len(zero_positions) - 1):
             for i in range(zero_positions[n] - n, zero_positions[n + 1] - n - 1):
                 nums[i], nums[i + 1 + n] = nums[i + 1 + n], nums[i]
+
+        return nums
+
+    def moveZeroes(self, nums):
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        start_zero_pos = -1
+
+        for pos in range(len(nums)):
+            if nums[pos] == 0:
+                if start_zero_pos == -1:
+                    start_zero_pos = pos
+            elif start_zero_pos != -1:
+                nums[start_zero_pos], nums[pos] = nums[pos], nums[start_zero_pos]
+                start_zero_pos += 1
 
         return nums
 
