@@ -1,11 +1,13 @@
 class Solution:
     def countArrangement(self, N: int) -> int:
         mem = {}
+        visited = [False] * (N + 1)
         n_plus_one = N + 1
+        count = [0]
 
-        def arrangement(prev, pos, N):
+        def arrangement(pos, N):
             if pos == n_plus_one:
-                return 1
+                count[0] += 1
 
             if pos not in mem:
                 mem[pos] = [1]
@@ -13,15 +15,12 @@ class Solution:
                     if pos % num == 0 or num % pos == 0:
                         mem[pos].append(num)
 
-            result = 0
             for num in mem[pos]:
-                if num not in prev:
-                    prev.add(num)
-                    result += arrangement(prev, pos + 1, N)
-                    prev.remove(num)
+                if not visited[num]:
+                    visited[num] = True
+                    arrangement(pos + 1, N)
+                    visited[num] = False
 
-            return result
+        arrangement(1, N)
 
-        result = arrangement(set(), 1, N)
-
-        return result
+        return count[0]
