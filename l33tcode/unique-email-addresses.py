@@ -2,26 +2,19 @@
 # TODO: add some tests
 
 class Solution:
-    def numUniqueEmails(self, emails: 'List[str]') -> 'int':
-        filtered_emails = set()
+    def numUniqueEmails(self, emails: List[str]) -> int:
+        result_set = set()
 
         for email in emails:
-            remove = False
-            at_reached = False
-            email_filtered_list = []
+            pos = 0
+            parsed_email = ""
+            while email[pos] not in ["+", "@"]:
+                if email[pos] != ".":
+                    parsed_email += email[pos]
+                pos += 1
+            while email[pos] != "@":
+                pos += 1
+            parsed_email += email[pos:]
+            result_set.add(parsed_email)
 
-            for symbol in email:
-                if not at_reached and symbol == ".":
-                    continue
-                elif symbol == "+":
-                    remove = True
-                elif symbol == "@":
-                    remove = False
-                    at_reached = True
-                else:
-                    if not remove:
-                        email_filtered_list.append(symbol)
-
-            filtered_emails.add("".join(email_filtered_list))
-
-        return len(filtered_emails)
+        return len(result_set)
