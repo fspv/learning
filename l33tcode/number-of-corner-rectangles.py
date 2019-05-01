@@ -1,24 +1,18 @@
 class Solution:
     def countCornerRectangles(self, grid):
-        count = 0
-        row_cache = [list() for _ in range(len(grid))]
-        col_cache = [set() for _ in range(len(grid[0]))]
+        result = 0
+
+        row_cache = [
+            set([col for col, val in enumerate(row) if val])
+            for row in grid
+        ]
 
         for row in range(len(grid)):
-            for col in range(len(grid[0])):
-                if grid[row][col] == 1:
-                    row_cache[row].append(col)
-                    col_cache[col].add(row)
+            for row_inner in row_cache[row + 1:]:
+                common = len(row_inner & row_cache[row])
+                result += common * (common - 1) // 2
 
-        for row in range(len(grid)):
-            for lc_pos, lc in enumerate(row_cache[row]):
-                for rc in row_cache[row][lc_pos + 1:]:
-                    col_cache[lc].discard(row)
-                    col_cache[rc].discard(row)
-
-                    count += len(col_cache[lc].intersection(col_cache[rc]))
-
-        return count
+        return result
 
 
 class TestSolution:
