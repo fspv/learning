@@ -3,20 +3,16 @@ from typing import List
 
 class Solution:
     def sortArrayByParityII(self, A: List[int]) -> List[int]:
-        idx = [0, 0]  # [even_idx, odd_idx]
+        idx = 1
 
-        even = True
+        for pos in range(0, len(A), 2):
+            if A[pos] % 2 == 0:
+                continue
 
-        for pos in range(len(A)):
-            rem = 0 if even else 1
+            while A[idx] % 2 != 0:
+                idx += 2
 
-            while A[idx[rem]] % 2 != rem:
-                idx[rem] += 1
-
-            A[pos], A[idx[rem]] = A[idx[rem]], A[pos]
-
-            idx[rem] += 1
-            even = not even
+            A[pos], A[idx] = A[idx], A[pos]
 
         return A
 
