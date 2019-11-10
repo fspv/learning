@@ -2,6 +2,45 @@ from collections import defaultdict
 
 class Solution:
     def orderOfLargestPlusSign(self, N, mines):
+        def update_cell(dp, row, col, empty, mines_s):
+            if (row, col) in mines_s:
+                empty = 0
+            else:
+                empty += 1
+
+            dp[row][col] = min(empty, dp[row][col])
+
+            return empty
+
+        dp = [[float("+inf")] * N for _ in range(N)]
+
+        mines_s = set((m[0], m[1]) for m in mines)
+
+        for row in range(N):
+            empty = 0
+            # left right
+            for col in range(N):
+                empty = update_cell(dp, row, col, empty, mines_s)
+
+            empty = 0
+            # right left
+            for col in reversed(range(N)):
+                empty = update_cell(dp, row, col, empty, mines_s)
+
+        for col in range(N):
+            empty = 0
+            # left right
+            for row in range(N):
+                empty = update_cell(dp, row, col, empty, mines_s)
+
+            empty = 0
+            # right left
+            for row in reversed(range(N)):
+                empty = update_cell(dp, row, col, empty, mines_s)
+
+        return max(max(r) for r in dp)
+
+    def orderOfLargestPlusSignNonDP(self, N, mines):
         rows, cols = defaultdict(lambda: list([-1])), defaultdict(lambda: list([-1]))
 
         for mine in mines:
@@ -72,3 +111,9 @@ class TestSolution:
             1,
             [[0,0]]
         ) == 0
+
+    def test_case5(self):
+        assert self.sol.orderOfLargestPlusSign(
+            5,
+            [[3,0], [3,3]]
+        ) == 3
