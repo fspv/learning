@@ -3,6 +3,7 @@ from typing import List
 
 class Solution:
     def maxSumDivThree(self, nums: List[int]) -> int:
+        # TODO: solve with DP
         div = 3
         rem_map = {r: [] for r in range(1, div)}
         total = sum(nums)
