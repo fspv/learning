@@ -10,9 +10,7 @@ class Solution:
         if not head:
             return None
 
-        middle = head
-        tail = head
-        count = 1
+        middle, tail = head, head
 
         while tail:
             if tail and tail.next and tail.next.next:
