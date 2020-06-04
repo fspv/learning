@@ -2,7 +2,18 @@ import unittest
 from collections import deque
 
 class Solution:
-    def deckRevealedIncreasing(self, deck):
+    def deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
+        queue = deque()
+
+        for num in reversed(sorted(deck)):
+            if queue:
+                queue.append(queue.popleft())
+
+            queue.append(num)
+
+        return reversed(queue)
+
+    def deckRevealedIncreasing2(self, deck):
         queue = deque(range(len(deck)))
         out = [None] * len(deck)
 
