@@ -8,6 +8,28 @@
 from collections import deque
 
 class Solution:
+    def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
+        if not root:
+            return []
+
+        result = []
+
+        queue = [root]
+
+        while queue:
+            old_queue, queue = queue, []
+
+            result.append([n.val for n in old_queue])
+
+            for node in old_queue:
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+
+        return list(reversed(result))
+
+
     def levelOrderBottom(self, root):
         if not root:
             return []
