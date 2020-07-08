@@ -1,7 +1,38 @@
 import unittest
 
+from typing import List
+from collections import defaultdict
+
 
 class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        result_set = set()
+        result = []
+        seen = set()
+
+        for pos_left in range(len(nums)):
+            if nums[pos_left] in seen:
+                continue
+
+            seen.add(nums[pos_left])
+
+            seen_within = set()
+
+            for pos_right in range(pos_left + 1, len(nums)):
+                two_sum = -nums[pos_left] - nums[pos_right]
+
+                if two_sum in seen_within:
+                    triplet = sorted((nums[pos_left], nums[pos_right], two_sum))
+                    triplet_tuple = tuple(triplet)
+                    if triplet_tuple not in result_set:
+                        result_set.add(triplet_tuple)
+                        result.append(triplet)
+
+                seen_within.add(nums[pos_right])
+
+        return result
+
+class Solution1:
     def threeSum(self, nums):
         mem_all = {num: set() for num in nums}
         for pos, num in enumerate(nums):
