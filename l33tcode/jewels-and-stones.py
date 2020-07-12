@@ -1,7 +1,7 @@
 import unittest
 
 class Solution:
-    def numJewelsInStones(self, J, S):
+    def numJewelsInStones1(self, J, S):
         """
         :type J: str
         :type S: str
@@ -17,6 +17,10 @@ class Solution:
                 counter += 1
 
         return counter
+
+    def numJewelsInStones(self, J: str, S: str) -> int:
+        jewels = set(J)
+        return len([s for s in S if s in jewels])
 
 
 class TestSolution(unittest.TestCase):
