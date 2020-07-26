@@ -1,0 +1,8 @@
+Case #1: 9
+Case #2: 9
+Case #3: 6
+Case #4: 12
+Case #5: 33
+Case #6: 80
+Case #7: 56
+Case #8: 1000000000
