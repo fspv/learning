@@ -3,6 +3,23 @@ from collections import Counter, deque
 
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
+        counts = sorted(Counter(tasks).items(), key=lambda x: -x[1])
+
+        total = 0
+        gaps = 0
+        last_count = 0
+
+        for task, count in counts:
+            if gaps <= 0:
+                last_count = count
+                total += count * (n + 1)
+                gaps += count * n
+            else:
+                gaps -= count
+
+        return total - (n - gaps // last_count)
+
+    def leastIntervalSimulation(self, tasks: List[str], n: int) -> int:
         counter = Counter(tasks)
 
         units = 0
