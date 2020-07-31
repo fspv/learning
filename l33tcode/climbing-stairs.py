@@ -22,12 +22,22 @@ class Solution:
     mem = None
 
     @mem_input
-    def climbStairs(self, n, cur_sum=0):
+    def climbStairs1(self, n, cur_sum=0):
         if cur_sum >= n:
             return 1 if cur_sum == n else 0
         else:
             return self.climbStairs(n, cur_sum + 1) + \
                    self.climbStairs(n, cur_sum + 2)
+
+    def climbStairs(self, n: int) -> int:
+        step, prev_step, prev_prev_step = 1, 1, 0
+
+        for _ in range(n):
+            step = prev_step + prev_prev_step
+
+            prev_step, prev_prev_step = step, prev_step
+
+        return step
 
 
 class TestSolution(unittest.TestCase):
