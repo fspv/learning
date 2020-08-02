@@ -8,11 +8,13 @@ GATE, WALL = 0, -1
 
 class Solution:
     def wallsAndGates(self, rooms: List[List[int]]) -> None:
-        rows, cols = len(rooms), len(rooms[0]) if rooms else 0
-
         def neighbours(
             row: int, col: int, visited: Set[Tuple[int, int]]
         ) -> Iterator[Tuple[int, int]]:
+            """
+            Get all neighbours for this room which are not out of boundaries,
+            not visited yet and not either wall or gate
+            """
             for neigh_row, neigh_col in (
                 (row - 1, col),
                 (row + 1, col),
@@ -29,21 +31,21 @@ class Solution:
                 ] not in {WALL, GATE}:
                     yield neigh_row, neigh_col
 
-        def dijkstra(row: int, col: int) -> None:
-            visited = set()
-            heap = [(0, row, col)]
+        visited = set()
+        heap: List[Tuple[int, int, int]] = []
 
-            while heap:
-                cur_dist, cur_row, cur_col = heapq.heappop(heap)
-
-                rooms[cur_row][cur_col] = min(rooms[cur_row][cur_col], cur_dist)
-
-                visited.add((cur_row, cur_col))
-
-                for neigh_row, neigh_col in neighbours(cur_row, cur_col, visited):
-                    heapq.heappush(heap, (cur_dist + 1, neigh_row, neigh_col))
-
+        rows, cols = len(rooms), len(rooms[0]) if rooms else 0
         for row in range(rows):
             for col in range(cols):
                 if rooms[row][col] == GATE:
-                    dijkstra(row, col)
+                    heapq.heappush(heap, (0, row, col))
+
+        while heap:
+            dist, row, col = heapq.heappop(heap)
+
+            visited.add((row, col))
+
+            for neigh_row, neigh_col in neighbours(row, col, visited):
+                if dist + 1 < rooms[neigh_row][neigh_col]:
+                    rooms[neigh_row][neigh_col] = dist + 1
+                    heapq.heappush(heap, (dist + 1, neigh_row, neigh_col))
