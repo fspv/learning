@@ -8,9 +8,9 @@ class Solution:
     def closestValue(self, root: TreeNode, target: float) -> int:
         def dfs(node: TreeNode, closest: int) -> int:
             closest = min(closest, node.val, key=lambda x: abs(x - target))
-            if node.left:
+            if node.left and node.val > target:
                 closest = dfs(node.left, closest)
-            if node.right:
+            if node.right and node.val < target:
                 closest = dfs(node.right, closest)
 
             return closest
