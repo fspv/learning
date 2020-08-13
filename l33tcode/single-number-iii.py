@@ -1,7 +1,6 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
         xor = 0  # a ^ b
-        total = sum(nums)
         for num in nums:
             xor ^= num
 
