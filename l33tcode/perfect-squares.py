@@ -4,6 +4,31 @@ import unittest
 from collections import deque
 
 class Solution:
+    def numSquares(self, n: int) -> int:
+        squares = []
+
+        for number in range(1, n + 1):
+            square = number * number
+            if square > n:
+                break
+            squares.append(number * number)
+
+        squares.reverse()
+
+        queue = deque()
+        queue.append((n, 0))  # left, level
+
+        while queue:
+            number, level = queue.popleft()
+
+            for square in squares:
+                if number - square > 0:
+                    queue.append((number - square, level + 1))
+                elif number - square == 0:
+                    return level + 1
+
+        return 0
+
     def numSquares(self, n):
         """
         :type n: int
