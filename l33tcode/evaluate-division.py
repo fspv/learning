@@ -1,5 +1,5 @@
 from typing import List, Tuple, Dict
-from collections import defaultdict
+from collections import defaultdict, Counter
 from itertools import chain
 
 
@@ -74,5 +74,97 @@ class Solution:
                 result.append(div_root_right / div_root_left)
             else:
                 result.append(-1.0)
+
+        return result
+
+
+class RatioFinder:
+    def __init__(self) -> None:
+        self._adj_list: Dict[str, str] = {}
+        self._edges_weight: Dict[Tuple[str, str], float] = {}
+        self._vertex_count: defaultdict = defaultdict(lambda: 1)
+
+    def _find(self, vertex: str) -> Tuple[float, str]:
+        root = vertex
+        val = 1.0
+        while self._adj_list[root] != root:
+            val *= self._edges_weight[(root, self._adj_list[root])]
+            root = self._adj_list[root]
+
+        tmp_val = val
+        while self._adj_list[vertex] != root:
+            self._edges_weight[(vertex, root)] = tmp_val
+            tmp_val /= self._edges_weight[(vertex, self._adj_list[vertex])]
+            self._adj_list[vertex], vertex = root, self._adj_list[vertex]
+
+        return val, root
+
+    def _union(
+        self,
+        root_left: str,
+        root_right: str,
+        val_left: float,
+        val_right: float,
+        result: float,
+    ) -> None:
+        if self._vertex_count[root_left] <= self._vertex_count[root_right]:
+            val_less, root_less, val_more, root_more = (
+                val_left,
+                root_left,
+                val_right,
+                root_right,
+            )
+            self._edges_weight[(root_less, root_more)] = 1.0 / val_less * result * val_more
+        else:
+            val_less, root_less, val_more, root_more = (
+                val_right,
+                root_right,
+                val_left,
+                root_left,
+            )
+            self._edges_weight[(root_less, root_more)] = 1.0 / (1.0 / val_less * result / val_more)
+
+        self._vertex_count[root_more] += self._vertex_count[root_less]
+        self._adj_list[root_less] = self._adj_list[root_more]
+
+    def add_equation(self, left: str, right: str, result: float) -> None:
+        if left not in self._adj_list:
+            self._adj_list[left] = left
+
+        if right not in self._adj_list:
+            self._adj_list[right] = right
+
+        val_left, root_left = self._find(left)
+        val_right, root_right = self._find(right)
+
+        if root_left != root_right:
+            self._union(root_left, root_right, val_left, val_right, result)
+
+    def calculate(self, left: str, right: str) -> float:
+        if left not in self._adj_list or right not in self._adj_list:
+            return -1.0
+
+        val_left, root_left = self._find(left)
+        val_right, root_right = self._find(right)
+
+        if root_left == root_right:
+            return val_left / val_right
+        else:
+            return -1.0
+
+
+class Solution2:
+    def calcEquation(
+        self, equations: List[List[str]], values: List[float], queries: List[List[str]]
+    ) -> List[float]:
+        ratio_finder = RatioFinder()
+
+        for pos in range(len(equations)):
+            ratio_finder.add_equation(equations[pos][0], equations[pos][1], values[pos])
+
+        result = []
+
+        for left, right in queries:
+            result.append(ratio_finder.calculate(left, right))
 
         return result
