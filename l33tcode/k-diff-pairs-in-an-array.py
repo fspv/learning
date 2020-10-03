@@ -1,7 +1,34 @@
 import unittest
+from typing import List
+
 
 class Solution:
-    def findPairs(self, nums, k):
+    def findPairs(self, nums: List[int], k: int) -> int:
+        nums.sort()
+
+        prev_left = None
+        right_pos = 0
+        count = 0
+
+        for left_pos in range(len(nums)):
+            if nums[left_pos] == prev_left:
+                continue
+
+            right_pos = max(right_pos, left_pos + 1)
+
+            while right_pos < len(nums):
+                if nums[right_pos] - nums[left_pos] > k:
+                    break
+                elif nums[right_pos] - nums[left_pos] == k:
+                    count += 1
+                    prev_left = nums[left_pos]
+                    break
+
+                right_pos += 1
+
+        return count
+
+    def findPairs1(self, nums, k):
         """
         :type nums: List[int]
         :type k: int
