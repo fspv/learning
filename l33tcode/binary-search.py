@@ -2,6 +2,21 @@ import unittest
 
 class Solution:
     def search(self, nums, target):
+        left, right = 0, len(nums)
+
+        while left < right:
+            middle = left + (right - left) // 2
+
+            if nums[middle] < target:
+                left = middle + 1
+            elif nums[middle] > target:
+                right = middle
+            else:
+                return middle
+
+        return -1
+
+    def search1(self, nums, target):
         if not len(nums):
             return -1
 
