@@ -36,7 +36,9 @@ class Codec:
         """Decodes your encoded data to tree.
         """
 
-        def tree_insert(root: Optional[TreeNode], new_node: TreeNode) -> Optional[TreeNode]:
+        def tree_insert(
+            root: Optional[TreeNode], new_node: TreeNode
+        ) -> Optional[TreeNode]:
             node = root
             parent = None
 
