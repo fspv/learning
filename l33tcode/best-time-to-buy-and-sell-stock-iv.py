@@ -4,6 +4,25 @@ from functools import lru_cache
 
 class Solution:
     def maxProfit(self, k: int, prices: List[int]) -> int:
+        profits = []
+
+        min_cur, max_cur = prices[0] if prices else 0, prices[0] if prices else 0
+
+        for price in range(1, len(prices)):
+            if prices[price - 1] < prices[price]:
+                max_cur = prices[price]
+            else:
+                profits.append(max_cur - min_cur)
+
+                max_cur, min_cur = prices[price], prices[price]
+
+        profits.append(max_cur - min_cur)
+
+        profits.sort()
+
+        return sum(profits[-k:])
+
+    def maxProfit(self, k: int, prices: List[int]) -> int:
         def profit_unlimited_transactions() -> int:
             profit = 0
 
