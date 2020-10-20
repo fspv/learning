@@ -4,7 +4,7 @@
 #         self.label = x
 #         self.neighbors = []
 
-class Solution:
+class SolutionOldInput:
     # @param node, a undirected graph node
     # @return a undirected graph node
     def cloneGraph(self, node):
@@ -30,3 +30,32 @@ class Solution:
                 cur_node_copy.neighbors.append(copy_map[neigh])
 
         return copy_map[node]
+
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+"""
+
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
+        if not node:
+            return None
+
+        cloned_root = Node(node.val)
+        stack = [node]
+        seen = {cloned_root.val: cloned_root}
+
+        while stack:
+            node = stack.pop()
+
+            for neigh_node in node.neighbors:
+                if neigh_node.val not in seen:
+                    stack.append(neigh_node)
+                    seen[neigh_node.val] = Node(neigh_node.val)
+
+                seen[node.val].neighbors.append(seen[neigh_node.val])
+
+        return cloned_root
