@@ -1,10 +1,35 @@
 import unittest
+from typing import List
+from functools import lru_cache
 
-# TODO: It is a working solution, but definitely not the best.
-# Should improve algorithm to work faster. Have to practice on
-# greedy algorithms building.
 
 class Solution:
+    def bagOfTokensScore(self, tokens: List[int], init_power: int) -> int:
+        tokens.sort()
+
+        left, right = 0, len(tokens) - 1
+        power = init_power
+        score = 0
+        max_score = 0
+
+        while left <= right:
+            if power >= tokens[left]:
+                power -= tokens[left]
+                score += 1
+                left += 1
+            elif score > 0:
+                power += tokens[right]
+                score -= 1
+                right -= 1
+            else:
+                return 0
+
+            max_score = max(max_score, score)
+
+        return max_score
+
+
+class SolutionBruteForce:
     def play_face_up(self):
         min_token = None
 
