@@ -57,3 +57,37 @@ class Solution:
             return max_diff
 
         return dfs(root, root.val, root.val)
+
+    def maxAncestorDiffRecursive2(self, root: TreeNode) -> int:
+        max_diff = 0
+
+        def dfs(node: TreeNode) -> Tuple[int, int]:
+            nonlocal max_diff
+
+            min_left, max_left = node.val, node.val
+            if node.left:
+                min_left, max_left = dfs(node.left)
+
+            min_right, max_right = node.val, node.val
+            if node.right:
+                min_right, max_right = dfs(node.right)
+
+            max_diff = max(
+                max_diff,
+                abs(node.val - min_left),
+                abs(node.val - max_left),
+                abs(node.val - min_right),
+                abs(node.val - max_right),
+            )
+
+            return (
+                min(min_left, min_right, node.val),
+                max(max_left, max_right, node.val),
+            )
+
+        if not root:
+            return 0
+
+        dfs(root)
+
+        return max_diff
