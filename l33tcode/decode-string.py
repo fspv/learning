@@ -1,4 +1,6 @@
 import unittest
+from typing import List, Iterator, Tuple
+
 
 class Solution:
     def decodeString(self, s: str) -> str:
@@ -47,6 +49,39 @@ class Solution:
         return result
 
 
+def get_repeat(string: str, pos: int) -> Tuple[int, int]:
+    start, end = pos, pos
+    while string[end].isdigit():
+        end += 1
+
+    return end, int(string[start:end])
+
+
+def dfs(string: str, pos: int) -> Tuple[int, List[str]]:
+    result: List[str] = []
+
+    while pos < len(string):
+        if string[pos].isdigit():
+            pos, repeat = get_repeat(string, pos)
+            pos, substrings = dfs(string, pos + 1)
+
+            result.extend(substrings * repeat)
+        elif string[pos] == "]":
+            pos += 1
+            break
+        else:
+            result.append(string[pos])
+            pos += 1
+
+    return pos, result
+
+
+class Solution2:
+    def decodeString(self, s: str) -> str:
+        _, substrings = dfs(s, 0)
+        return "".join(substrings)
+
+
 class TestSolution(unittest.TestCase):
     def setUp(self):
         self.sol = Solution()
@@ -67,7 +102,10 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(self.sol.decodeString("bx10[a]"), "bxaaaaaaaaaa")
 
     def test_case6(self):
-        self.assertEqual(self.sol.decodeString("3[a2[bc4[x1[b]]]]efg"), "abcxbxbxbxbbcxbxbxbxbabcxbxbxbxbbcxbxbxbxbabcxbxbxbxbbcxbxbxbxbefg")
+        self.assertEqual(
+            self.sol.decodeString("3[a2[bc4[x1[b]]]]efg"),
+            "abcxbxbxbxbbcxbxbxbxbabcxbxbxbxbbcxbxbxbxbabcxbxbxbxbbcxbxbxbxbefg",
+        )
 
     def test_case7(self):
         self.assertEqual(self.sol.decodeString("3[a]2[b4[F]c]"), "aaabFFFFcbFFFFc")
