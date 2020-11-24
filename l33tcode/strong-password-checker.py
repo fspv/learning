@@ -1,5 +1,5 @@
-from typing import List
 import string
+from typing import List
 
 
 class StrongPassswordChecker:
@@ -16,6 +16,9 @@ class StrongPassswordChecker:
         return bool(set(self._password) & set(string.digits))
 
     def _sequences_longer_than_two(self) -> List[int]:
+        """
+        Return lengths of sequences in the password that have length more than 2
+        """
         count = 0
         prev = ""
 
@@ -37,39 +40,50 @@ class StrongPassswordChecker:
         return sequences
 
     def to_valid(self) -> int:
-        to_fix = 0
-        to_fix += int(not self._has_lowercase())
-        to_fix += int(not self._has_uppercase())
-        to_fix += int(not self._has_digits())
-
-        longer_than_two = sum(
-            map(lambda x: x // 3, self._sequences_longer_than_two())
+        # Amendments we should to to make sure all required types of characters
+        # are present in the string
+        to_amend = (
+            int(not self._has_lowercase())
+            + int(not self._has_uppercase())
+            + int(not self._has_digits())
         )
-        to_modify = longer_than_two
 
-        if 6 <= len(self._password) < 20:
-            return max(to_modify, to_fix)
-        elif len(self._password) > 20:
+        # Replacements we should do in order to break all the sequences having
+        # length greater than 2
+        longer_than_two = self._sequences_longer_than_two()
+        to_replace = sum(map(lambda x: x // 3, longer_than_two))
+
+        modifications = 0
+
+        if len(self._password) <= 20:
+            to_add = max(6 - len(self._password), 0)
+
+            modifications = max(to_replace, to_amend, to_add)
+        else:
             to_delete = len(self._password) - 20
 
-            longer_than_two_arr = self._sequences_longer_than_two()
-
-            while to_delete > 0 and longer_than_two_arr:
-                last = longer_than_two_arr.pop()
+            # Greedy way to use deletions instead of replacements
+            # because there is a chance we can save some replacements
+            # this way and hence get less modificaions
+            while to_delete > 0 and longer_than_two:
+                last = longer_than_two.pop()
                 while last > 2:
                     can_delete = last % 3 + 1
                     if can_delete <= to_delete:
                         to_delete -= can_delete
                         last -= can_delete
-                        to_modify -= 1
+                        to_replace -= 1
                     else:
                         break
 
-            return max(to_fix, to_modify) + len(self._password) - 20
-        else:
-            to_add = 6 - len(self._password)
+            # Restore to_delete, since we're making deletions no matter what.
+            # But we probably reduced the number of replacements on the previous
+            # step
+            to_delete = len(self._password) - 20
 
-            return max(to_add, to_modify, to_fix)
+            modifications = max(to_replace, to_amend) + to_delete
+
+        return modifications
 
 
 class Solution:
