@@ -21,10 +21,8 @@ class Solution:
         return result
 
     def mctFromLeafValuesDPBottomUp(self, arr: List[int]) -> int:
-        dp_size = (len(arr) + 1)
-        dp = [
-            [(float("+inf"), float("-inf"))] * dp_size for _ in range(dp_size)
-        ]
+        dp_size = len(arr) + 1
+        dp = [[(float("+inf"), float("-inf"))] * dp_size for _ in range(dp_size)]
 
         for pos in range(dp_size):
             for left in range(dp_size):
@@ -37,8 +35,8 @@ class Solution:
                     dp[left][right] = (0, arr[left])
 
                 for middle in range(left + 1, right):
-                    left_sum, left_max  = dp[left][middle]
-                    right_sum, right_max  = dp[middle][right]
+                    left_sum, left_max = dp[left][middle]
+                    right_sum, right_max = dp[middle][right]
 
                     cur_sum = left_sum + right_sum + left_max * right_max
 
@@ -71,3 +69,24 @@ class Solution:
             return max_leaf, min_sum
 
         return dfs(0, len(arr))[1]
+
+    def mctFromLeafValuesTopDown2(self, arr: List[int]) -> int:
+        @lru_cache(None)
+        def dp(left: int, right: int) -> Tuple[int, int]:
+            if left + 1 == right:
+                return arr[left], 0
+
+            max_value, min_sum = 0, float("+inf")
+
+            for middle in range(left + 1, right):
+                left_max, left_sum = dp(left, middle)
+                right_max, right_sum = dp(middle, right)
+
+                cur_sum = left_max * right_max
+
+                max_value = max(left_max, right_max)
+                min_sum = min(min_sum, left_max * right_max + left_sum + right_sum)
+
+            return max_value, min_sum
+
+        return dp(0, len(arr))[1]
