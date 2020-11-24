@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 import os
+import logging
 import genanki  # type: ignore
 
-from typing import List
+from typing import List, Set
 
 
 LEETCODE_DIR = "../l33tcode"
@@ -12,6 +13,10 @@ GITHUB_SOLUTIONS_URL = "https://github.com/prius/learning/blob/master/l33tcode"
 LEETCODE_ANKI_MODEL_ID = 4567610856
 LEETCODE_ANKI_DECK_ID = 8589798175
 OUTPUT_FILE = "/tmp/leetcode.apkg"
+ALLOWED_EXTENSIONS = {".py", ".go"}
+
+
+logging.getLogger().setLevel(logging.INFO)
 
 
 class LeetcodeNote(genanki.Note):
@@ -25,8 +30,14 @@ def get_leetcode_files() -> List[str]:
     return os.listdir(LEETCODE_DIR)
 
 
-def get_leetcode_task_handles() -> List[str]:
-    return [os.path.splitext(os.path.basename(f))[0] for f in get_leetcode_files()]
+def get_leetcode_task_handles() -> Set[str]:
+    return {
+        name
+        for name, ext in map(
+            lambda f: os.path.splitext(os.path.basename(f)), get_leetcode_files()
+        )
+        if ext in ALLOWED_EXTENSIONS
+    }
 
 
 def get_leetcode_task_url(task_handle: str) -> str:
@@ -56,6 +67,7 @@ def generate() -> None:
     )
     leetcode_deck = genanki.Deck(LEETCODE_ANKI_DECK_ID, "leetcode")
     for leetcode_task_handle in get_leetcode_task_handles():
+        logging.info(f"Adding {leetcode_task_handle}")
         leetcode_task_url = get_leetcode_task_url(leetcode_task_handle)
         github_solution_url_python = get_github_solution_url_python(
             leetcode_task_handle
