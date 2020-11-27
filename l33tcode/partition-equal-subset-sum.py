@@ -1,3 +1,4 @@
+from typing import List
 from functools import lru_cache
 
 
@@ -46,3 +47,27 @@ class Solution:
                     return True
 
         return False
+
+    def canPartition2(self, nums: List[int]) -> bool:
+        @lru_cache(None)
+        def dp(pos: int, left: int) -> bool:
+            if left == 0:
+                return True
+
+            if pos == len(nums):
+                return False
+
+            if dp(pos + 1, left):
+                return True
+
+            if nums[pos] <= left and dp(pos + 1, left - nums[pos]):
+                return True
+
+            return False
+
+        total = sum(nums)
+
+        if total % 2 != 0:
+            return False
+
+        return dp(0, total / 2)
