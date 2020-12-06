@@ -8,7 +8,33 @@ class Node:
         self.next = next
 """
 class Solution:
-    def connect(self, node):
+    def connect(self, root: 'Node') -> 'Node':
+        def dfs(node: Node) -> None:
+            tmp = node
+            prev = None
+            while tmp:
+                if prev:
+                    prev.next = tmp.left or tmp.right
+
+                prev = tmp.right or tmp.left or prev
+
+                if tmp.left and tmp.right:
+                    tmp.left.next = tmp.right
+
+                tmp = tmp.next
+
+            if node.left:
+                dfs(node.left)
+
+            if node.right:
+                dfs(node.right)
+
+        if root:
+            dfs(root)
+
+        return root
+
+    def connect2(self, node):
         if node is None or not node.left and not node.right:
             return node
 
