@@ -1,8 +1,23 @@
 import unittest
 from bisect import bisect
+from typing import List, Counter
+
 
 class Solution:
-    def numPairsDivisibleBy60(self, time):
+    def numPairsDivisibleBy60(self, time: List[int]) -> int:
+        MOD = 60
+        modulos: Counter[int] = Counter(map(lambda x: x % MOD, time))
+
+        pairs = 0
+
+        for modulo in map(lambda x: x % MOD, time):
+            modulos[modulo] -= 1
+            pairs += modulos[(60 - modulo) % MOD]
+            modulos[modulo] += 1
+
+        return pairs // 2
+
+    def numPairsDivisibleBy60Slow(self, time):
         result = 0
 
         time_new = time.copy()
