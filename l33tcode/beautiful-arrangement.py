@@ -1,5 +1,26 @@
+from functools import lru_cache
+
+
 class Solution:
     def countArrangement(self, N: int) -> int:
+        @lru_cache(None)
+        def backtrack(pos: int, seen: int) -> int:
+            if pos == N:
+                return 1
+
+            count = 0
+
+            for num in range(N):
+                if (1 << num) & seen > 0:
+                    continue
+                if (num + 1) % (pos + 1) == 0 or (pos + 1) % (num + 1) == 0:
+                    count += backtrack(pos + 1, seen | (1 << num))
+
+            return count
+
+        return backtrack(0, 0)
+
+    def countArrangement1(self, N: int) -> int:
         mem = {}
         visited = [False] * (N + 1)
         n_plus_one = N + 1
