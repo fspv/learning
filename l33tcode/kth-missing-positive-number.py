@@ -13,6 +13,25 @@ def missing_between(arr: List[int], left: int, right: int) -> int:
 
 class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
+        left, right = 0, len(arr)
+
+        def missing(pos: int) -> int:
+            return arr[pos] - (pos + 1)
+
+        while left < right:
+            middle = left + (right - left) // 2
+
+            if missing(middle) >= k:
+                right = middle
+            else:
+                left = middle + 1
+
+        if left == 0:
+            return k
+
+        return arr[left - 1] + (k - missing(left - 1))
+
+    def findKthPositive1(self, arr: List[int], k: int) -> int:
         if not arr:
             return 0
 
