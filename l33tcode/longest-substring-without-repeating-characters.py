@@ -1,5 +1,38 @@
+from typing import Counter
+
+
 class Solution:
     def lengthOfLongestSubstring(self, s):
+        left, right = 0, 0
+        counter: Counter[str] = Counter()
+        repeating = 0
+        longest_substring = 0
+
+        while right < len(s):
+            while left + 1 < right and repeating > 0:
+                counter[s[left]] -= 1
+
+                if counter[s[left]] == 1:
+                    repeating -= 1
+
+                left += 1
+
+            while repeating == 0:
+                longest_substring = max(longest_substring, right - left)
+
+                if right == len(s):
+                    break
+
+                counter[s[right]] += 1
+
+                if counter[s[right]] == 2:
+                    repeating += 1
+
+                right += 1
+
+        return longest_substring
+
+    def lengthOfLongestSubstring1(self, s):
         """
         :type s: str
         :rtype: int
