@@ -1,11 +1,37 @@
+from typing import List, Optional
+
+
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 
 class Solution:
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        output: List[int] = []
+
+        def dfs(node: TreeNode, level: int) -> None:
+            if level + 1 > len(output):
+                output.append(node.val)
+
+            if node.right:
+                dfs(node.right, level + 1)
+
+            if node.left:
+                dfs(node.left, level + 1)
+
+        if not root:
+            return []
+
+        dfs(root, 0)
+
+        return output
+
+
+class Solution1:
     def rightSideView(self, root):
         result = []
 
