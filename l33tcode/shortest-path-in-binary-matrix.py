@@ -33,10 +33,10 @@ class Solution:
         ]
 
         if grid[0][0] == 0:
-            heapq.heappush(heap, (0, 0, 0, distance_squared(rows - 1, cols - 1, 0, 0)))
+            heapq.heappush(heap, (0, distance_squared(rows - 1, cols - 1, 0, 0), 0, 0))
 
         while heap:
-            row, col, distance, _ = heapq.heappop(heap)
+            distance, _, row, col = heapq.heappop(heap)
 
             if (row, col) == (rows - 1, cols - 1):
                 return distance + 1
@@ -50,10 +50,10 @@ class Solution:
                 heapq.heappush(
                     heap,
                     (
+                        distance + 1,
+                        -distance_squared(rows - 1, cols - 1, row, col),
                         neigh_row,
                         neigh_col,
-                        distance + 1,
-                        distance_squared(rows - 1, cols - 1, row, col),
                     ),
                 )
 
