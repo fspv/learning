@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
 
-	prev = ''
+        prev = ''
         prev_int_value = 0
 
         result = 0
@@ -20,7 +20,7 @@ class Solution(object):
             'M': 1000,
         }
 
-	for symbol in s:
+        for symbol in s:
             current_int_value = roman_to_int_map[symbol]
             result += current_int_value
 
