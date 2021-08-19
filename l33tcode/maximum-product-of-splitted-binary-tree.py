@@ -23,11 +23,8 @@ class Solution:
             sum_subtree = sum_left + sum_right + node.val
             prod = (total_sum - sum_subtree) * sum_subtree
 
-            return (
-                sum_subtree,
-                max(prod, max_prod_left, max_prod_right),
-            )
+            return (sum_subtree, max(prod, max_prod_left, max_prod_right))
 
         total_sum = dfs(root, 0)[0]
 
-        return dfs(root, total_sum)[1]
+        return dfs(root, total_sum)[1] % MOD
