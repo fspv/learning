@@ -861,3 +861,4 @@ Task | Solution
 [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | [Python](/l33tcode/delete-nodes-and-return-forest.py) 
 [Kill Process](https://leetcode.com/problems/kill-process/) | [Python](/l33tcode/kill-process.py) 
 [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [Python](/l33tcode/n-th-tribonacci-number.py)
+[Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | [Python](/l33tcode/shortest-path-in-a-grid-with-obstacles-elimination.py)
