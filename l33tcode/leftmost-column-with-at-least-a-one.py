@@ -8,7 +8,29 @@
 
 
 class Solution:
-    def leftMostColumnWithOne(self, binaryMatrix: "BinaryMatrix") -> int:
+    def leftMostColumnWithOne(self, binary_matrix: "BinaryMatrix") -> int:
+        rows, cols = binary_matrix.dimensions()
+
+        def has_one(col: int) -> bool:
+            for row in range(rows):
+                if binary_matrix.get(row, col) == 1:
+                    return True
+
+            return False
+
+        left, right = 0, cols
+
+        while left < right:
+            middle = (right - left) // 2 + left
+
+            if has_one(middle):
+                right = middle
+            else:
+                left = middle + 1
+
+        return left if 0 <= left < cols else -1
+
+    def leftMostColumnWithOne2(self, binaryMatrix: "BinaryMatrix") -> int:
         def search_one_in_row(
             binaryMatrix: "BinaryMatrix", row: int, left: int, right: int
         ) -> int:
