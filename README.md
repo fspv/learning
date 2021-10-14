@@ -863,3 +863,4 @@ Task | Solution
 [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [Python](/l33tcode/n-th-tribonacci-number.py)
 [Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | [Python](/l33tcode/shortest-path-in-a-grid-with-obstacles-elimination.py)
 [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | [Python](/l33tcode/making-a-large-island.py)
+[Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/) | [Python](/l33tcode/check-if-it-is-a-good-array.py)
