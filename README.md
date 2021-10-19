@@ -866,3 +866,4 @@ Task | Solution
 [Check If It Is a Good Array](https://leetcode.com/problems/check-if-it-is-a-good-array/) | [Python](/l33tcode/check-if-it-is-a-good-array.py)
 [Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) | [Python](/l33tcode/lowest-common-ancestor-of-deepest-leaves.py)
 [Jump Game VI](https://leetcode.com/problems/jump-game-vi/) | [Python](/l33tcode/jump-game-vi.py)
+[Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | [Python](/l33tcode/next-greater-element-i.py)
