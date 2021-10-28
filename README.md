@@ -878,3 +878,4 @@ Task | Solution
 [Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) | [Python](/l33tcode/lowest-common-ancestor-of-deepest-leaves.py)
 [Jump Game VI](https://leetcode.com/problems/jump-game-vi/) | [Python](/l33tcode/jump-game-vi.py)
 [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | [Python](/l33tcode/next-greater-element-i.py)
+[Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [Python](/l33tcode/kth-ancestor-of-a-tree-node.py)
