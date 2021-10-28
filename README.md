@@ -79,6 +79,17 @@ Merge Sort | [Python](/hackerrank/ctci-merge-sort.py)
 * [Decorator](/design_patterns/decorator.py)
 * [Observer](/design_patterns/observer.py)
 
+
+## Yandex mentor qualification competition
+[Отборочное задание для наставников курса "Алгоритмы для разработчиков"](https://contest.yandex.ru/contest/25397/enter/)
+
+Task | Solution
+-----|---------
+[A. Палиндромная конкатенация](https://contest.yandex.ru/contest/25397/problems/A/) | [Python](/yandex/qualification-for-mentors/palindrome-concatenation.py) [Golang](/yandex/qualification-for-mentors/palindrome-concatenation.go)
+[B. Расстановка скобок](https://contest.yandex.ru/contest/25397/problems/B/) | [Python](/yandex/qualification-for-mentors/matrix-multiplication.py) [Golang](/yandex/qualification-for-mentors/matrix-multiplication.go)
+[C. Путь по компонентам](https://contest.yandex.ru/contest/25397/problems/C/) | [Python](/yandex/qualification-for-mentors/component-path.py) [Golang](/yandex/qualification-for-mentors/component-path.go)
+
+
 ## Leetcode
 Task | Solution
 -----|---------
