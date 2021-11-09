@@ -881,3 +881,4 @@ Task | Solution
 [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [Python](/l33tcode/kth-ancestor-of-a-tree-node.py)
 [Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/) | [Python](/l33tcode/buildings-with-an-ocean-view.py)
 [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) | [Python](/l33tcode/divide-chocolate.py)
+[Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | [Python](/l33tcode/number-of-valid-words-for-each-puzzle.py)
