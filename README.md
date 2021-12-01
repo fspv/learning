@@ -3,6 +3,11 @@
 This is the repo where I store every solved problem I encountered during my CS learning process.
 It has hundreds of solved leetcode tasks as well as tasks from some online competitions. You'll find the list below. Also there are some implemented algorithms from CLRS.
 
+## AdventOfCode
+Task | Solution
+-----|---------
+[2021 Day 1](https://adventofcode.com/2021/day/1) | [Part 1 Python](/adventofcode/2021/1_1.py) [Part 2 Python](/adventofcode/2021/1_2.py)
+
 ## BinarySearch
 Task | Solution
 -----|---------
