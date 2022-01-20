@@ -1,8 +1,26 @@
 import heapq
 from collections import deque
+from typing import List, Tuple
 
 
 class Solution:
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        tmp: List[Tuple[int, int]] = []
+        for start, end in intervals:
+            tmp.append((start, 1))
+            tmp.append((end, -1))
+
+        tmp.sort()
+
+        rooms = 0
+        required = 0
+
+        for _, adj in tmp:
+            rooms += adj
+            required = max(rooms, required)
+
+        return required
+
     def minMeetingRooms(self, intervals):
         rooms = []
         result = 0
@@ -18,7 +36,6 @@ class Solution:
 
         return result
 
-
     def minMeetingRoomsOptimizedBruteforce(self, intervals):
         # Runs in ~ N * number of rooms time in average case
         queue = deque()
@@ -33,9 +50,6 @@ class Solution:
                 else:
                     break
             queue.append(interval)
-            result = max(
-                result,
-                len(list(filter(lambda x: x[1] > interval[0], queue)))
-            )
+            result = max(result, len(list(filter(lambda x: x[1] > interval[0], queue))))
 
         return result
