@@ -888,3 +888,5 @@ Task | Solution
 [Divide Chocolate](https://leetcode.com/problems/divide-chocolate/) | [Python](/l33tcode/divide-chocolate.py)
 [Number of Valid Words for Each Puzzle](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | [Python](/l33tcode/number-of-valid-words-for-each-puzzle.py)
 [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) | [Python](/l33tcode/kth-smallest-number-in-multiplication-table.py)
+[Employee Free Time](https://leetcode.com/problems/employee-free-time/) | [Python](/l33tcode/employee-free-time.py)
+[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [Python](/l33tcode/richest-customer-wealth.py)
