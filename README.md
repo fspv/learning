@@ -890,3 +890,4 @@ Task | Solution
 [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/) | [Python](/l33tcode/kth-smallest-number-in-multiplication-table.py)
 [Employee Free Time](https://leetcode.com/problems/employee-free-time/) | [Python](/l33tcode/employee-free-time.py)
 [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [Python](/l33tcode/richest-customer-wealth.py)
+[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Python](/l33tcode/longest-repeating-character-replacement.py)
