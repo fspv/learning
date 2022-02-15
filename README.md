@@ -891,3 +891,4 @@ Task | Solution
 [Employee Free Time](https://leetcode.com/problems/employee-free-time/) | [Python](/l33tcode/employee-free-time.py)
 [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [Python](/l33tcode/richest-customer-wealth.py)
 [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Python](/l33tcode/longest-repeating-character-replacement.py)
+[Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [Python](/l33tcode/count-sub-islands.py)
