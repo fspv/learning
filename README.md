@@ -892,3 +892,4 @@ Task | Solution
 [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [Python](/l33tcode/richest-customer-wealth.py)
 [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Python](/l33tcode/longest-repeating-character-replacement.py)
 [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [Python](/l33tcode/count-sub-islands.py)
+[Sort an Array](https://leetcode.com/problems/sort-an-array/) | [Python](/l33tcode/sort-an-array.py)
