@@ -94,6 +94,8 @@ Task | Solution
 [B. Расстановка скобок](https://contest.yandex.ru/contest/25397/problems/B/) | [Python](/yandex/qualification-for-mentors/matrix-multiplication.py) [Golang](/yandex/qualification-for-mentors/matrix-multiplication.go)
 [C. Путь по компонентам](https://contest.yandex.ru/contest/25397/problems/C/) | [Python](/yandex/qualification-for-mentors/component-path.py) [Golang](/yandex/qualification-for-mentors/component-path.go)
 
+## Presentations (drafts)
+* [Quicksort](/presentations/faang_learning_group/quicksort/)
 
 ## Leetcode
 Task | Solution

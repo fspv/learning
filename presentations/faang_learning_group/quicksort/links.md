@@ -1,0 +1,6 @@
+* [Wikipedia: Quicksort](https://en.wikipedia.org/wiki/Quicksort)
+* [Wikipedia: Las Vegas Quicksort](https://en.wikipedia.org/wiki/Las_Vegas_algorithm#Randomized_QuickSort)
+* [Wikipedia: Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
+* [Wikipedia: Median O(n) selection algorithm](https://en.wikipedia.org/wiki/Median_of_medians)
+* [Wikipedia: Quickselect](https://en.wikipedia.org/wiki/Quickselect)
+* [Youtube: MIT Lecture on randomized algorithms (quicksort included)](https://www.youtube.com/watch?v=cNB2lADK3_s)
