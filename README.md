@@ -25,6 +25,7 @@ Task | Solution
 [Qualification Round 2020: ESAb ATAd](https://codingcompetitions.withgoogle.com/codejam/round/000000000019fd27/0000000000209a9e) | [Python](/codejam/2020-04-04/ESAb_ATAd/)
 [Qualification Round 2020: Indicium](https://codingcompetitions.withgoogle.com/codejam/round/000000000019fd27/0000000000209aa0) | [Python](/codejam/2020-04-04/Indicium/)
 [Round 1B: 2020: Expogo](https://codingcompetitions.withgoogle.com/codejam/round/000000000019fef2/00000000002d5b62) | [Python](/codejam/2020-04-19/Expogo/)
+[Qualification Round 2020: Punched Cards](https://codingcompetitions.withgoogle.com/codejam/round/0000000000876ff1/0000000000a4621b) | [Python](/codejam/2022-04-02/Punched_Cards)
 
 ## Facebook Hacker Cup
 Task | Solution
