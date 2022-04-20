@@ -743,7 +743,7 @@ Task | Solution
 [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | [Python](/l33tcode/the-skyline-problem.py) 
 [Find Smallest Common Element in All Rows](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/) | [Python](/l33tcode/find-smallest-common-element-in-all-rows.py) 
 [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [Python](/l33tcode/total-hamming-distance.py) 
-[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) | [Python](/l33tcode/plus-one-linked-list.py) 
+[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) | [Python](/l33tcode/plus-one-linked-list.py) [C++](/l33tcode/plus-one-linked-list.cpp)
 [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Python](/l33tcode/valid-sudoku.py) 
 [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Python](/l33tcode/find-the-celebrity.py) 
 [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [Python](/l33tcode/delete-columns-to-make-sorted.py) 
