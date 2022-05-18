@@ -3,6 +3,67 @@ from typing import List
 
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
+        # Move all non-positive numbers to the end
+        offset = len(nums)
+
+        for pos in range(len(nums)):
+            if pos >= offset:
+                break
+
+            if nums[pos] <= 0:
+                offset -= 1
+                nums[pos], nums[offset] = nums[offset], nums[pos]
+
+        # Move all the numbers to positions representing their values
+        # if possible
+        for pos in range(offset):
+            while (
+                nums[pos] < offset
+                and nums[pos] > 0
+                and nums[pos] != pos + 1
+                and nums[pos] != nums[nums[pos] - 1]
+            ):
+                num = nums[pos]
+                nums[pos], nums[num - 1] = nums[num - 1], nums[pos]
+
+        # Find a missing element
+        missing = 1
+
+        for num in nums:
+            if num > 0:
+                if num == missing:
+                    missing += 1
+                else:
+                    break
+
+        return missing
+
+    def firstMissingPositiveIncorrectQuickselect(self, nums: List[int]) -> int:
+        # Works only if there are none repetitions
+        negatives = sum(1 for num in nums if num <= 0)
+
+        left, right = 0, len(nums)
+
+        max_left = 0
+
+        while left < right:
+            pivot = nums[right - 1]
+            offset = 0
+
+            for pos in range(left, right):
+                if nums[pos] <= pivot:
+                    max_left = max(max_left, nums[pos])
+                    nums[pos], nums[left + offset] = nums[left + offset], nums[pos]
+                    offset += 1
+
+            if max_left == left + offset - negatives:
+                left = left + offset
+            else:
+                right = left + offset - 1
+
+        return nums[left] + 1
+
+    def firstMissingPositiveOld(self, nums: List[int]) -> int:
         MAX_BUCKETS_SIZE = 1000
 
         begin, end = float("+inf"), float("-inf")
