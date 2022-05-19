@@ -897,3 +897,4 @@ Task | Solution
 [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | [Python](/l33tcode/count-sub-islands.py)
 [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [Python](/l33tcode/sort-an-array.py)
 [Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [Python](/l33tcode/number-of-ways-to-split-a-string.py)
+[Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | [Python](/l33tcode/maximum-white-tiles-covered-by-a-carpet.py)
