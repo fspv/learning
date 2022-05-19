@@ -3,6 +3,18 @@ from typing import List
 
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
+        low = middle = max(nums)
+
+        for num in nums:
+            if num > middle:
+                return True
+            elif num > low:
+                middle = num
+            else:
+                low = num
+        return False
+
+    def increasingTripletExtraSpace(self, nums: List[int]) -> bool:
         dp = [1] * len(nums)
 
         stack: List[int] = []
