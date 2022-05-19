@@ -95,6 +95,15 @@ Task | Solution
 [B. Расстановка скобок](https://contest.yandex.ru/contest/25397/problems/B/) | [Python](/yandex/qualification-for-mentors/matrix-multiplication.py) [Golang](/yandex/qualification-for-mentors/matrix-multiplication.go)
 [C. Путь по компонентам](https://contest.yandex.ru/contest/25397/problems/C/) | [Python](/yandex/qualification-for-mentors/component-path.py) [Golang](/yandex/qualification-for-mentors/component-path.go)
 
+## Codeforces
+
+Task | Solution
+-----|---------
+[103715: A](https://codeforces.com/gym/103715/problem/A) | [Python](/codeforces/103715/A.py)
+[103715: B](https://codeforces.com/gym/103715/problem/B) | [Python](/codeforces/103715/B.py)
+[103715: C](https://codeforces.com/gym/103715/problem/C) | [Python](/codeforces/103715/C.py)
+[103715: D](https://codeforces.com/gym/103715/problem/D) | [Python](/codeforces/103715/D.py)
+
 ## Presentations (drafts)
 * [Quicksort](/presentations/faang_learning_group/quicksort/)
 
