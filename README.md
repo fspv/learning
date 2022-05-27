@@ -907,3 +907,4 @@ Task | Solution
 [Sort an Array](https://leetcode.com/problems/sort-an-array/) | [Python](/l33tcode/sort-an-array.py)
 [Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [Python](/l33tcode/number-of-ways-to-split-a-string.py)
 [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | [Python](/l33tcode/maximum-white-tiles-covered-by-a-carpet.py)
+[Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | [Python](/l33tcode/evaluate-the-bracket-pairs-of-a-string.py)
