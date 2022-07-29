@@ -911,3 +911,4 @@ Task | Solution
 [Valid Number](https://leetcode.com/problems/valid-number/) | [Python](/l33tcode/valid-number.py)
 [Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [Python](/l33tcode/sequentially-ordinal-rank-tracker.py)
 [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [SQL](/l33tcode/recyclable-and-low-fat-products.sql)
+[Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | [SQL](/l33tcode/managers-with-at-least-5-direct-reports.sql)
