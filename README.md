@@ -909,3 +909,5 @@ Task | Solution
 [Maximum White Tiles Covered by a Carpet](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | [Python](/l33tcode/maximum-white-tiles-covered-by-a-carpet.py)
 [Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | [Python](/l33tcode/evaluate-the-bracket-pairs-of-a-string.py)
 [Valid Number](https://leetcode.com/problems/valid-number/) | [Python](/l33tcode/valid-number.py)
+[Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | [Python](/l33tcode/sequentially-ordinal-rank-tracker.py)
+[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [SQL](/l33tcode/recyclable-and-low-fat-products.sql)
