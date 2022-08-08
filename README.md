@@ -913,3 +913,4 @@ Task | Solution
 [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [SQL](/l33tcode/recyclable-and-low-fat-products.sql)
 [Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/) | [SQL](/l33tcode/managers-with-at-least-5-direct-reports.sql)
 [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [Python](/l33tcode/count-of-range-sum.py)
+[Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | [Python](/l33tcode/expression-add-operators.py)
