@@ -915,3 +915,4 @@ Task | Solution
 [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [Python](/l33tcode/count-of-range-sum.py)
 [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | [Python](/l33tcode/expression-add-operators.py)
 [Best Position for a Service Centre](https://leetcode.com/problems/best-position-for-a-service-centre/) | [Python](/l33tcode/best-position-for-a-service-centre.py)
+[Subsets II](https://leetcode.com/problems/subsets-ii/) | [Python](/l33tcode/subsets-ii.py)
