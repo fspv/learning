@@ -60,3 +60,61 @@ class Solution:
         text = Text(words)
 
         return text.justify(maxWidth)
+
+    def fullJustify2(self, words: List[str], max_width: int) -> List[str]:
+        word = 0
+
+        def fits_line(word: int, max_width: int) -> int:
+            total_len = 0
+            count = 0
+
+            while (
+                word < len(words)
+                and total_len + (len(words[word]) + 1) <= max_width + 1
+            ):
+                total_len += len(words[word]) + 1
+                word += 1
+                count += 1
+
+            return count
+
+        def justify_left(start, count, max_width) -> str:
+            words_len = sum([len(w) for w in words[start : start + count]])
+
+            return " ".join(words[start : start + count]) + " " * (
+                max_width - (count - 1) - words_len
+            )
+
+        def justify(start, count, max_width) -> str:
+            if count == 1:
+                return words[start] + " " * (max_width - len(words[start]))
+
+            words_len = sum([len(w) for w in words[start : start + count]])
+            spaces = (max_width - words_len) // (count - 1)
+            extra = (max_width - words_len) % (count - 1)
+
+            tmp: List[str] = []
+
+            for word in words[start : start + count - 1]:
+                tmp.append(word)
+                tmp.append(" " * spaces)
+                if extra > 0:
+                    tmp.append(" ")
+                    extra -= 1
+
+            tmp.append(words[start + count - 1])
+
+            return "".join(tmp)
+
+        result: List[str] = []
+
+        while word < len(words):
+            count = fits_line(word, max_width)
+            if word + count == len(words):
+                line = justify_left(word, count, max_width)
+            else:
+                line = justify(word, count, max_width)
+            result.append(line)
+            word += count
+
+        return result
