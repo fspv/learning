@@ -5,6 +5,25 @@ class Solution:
     def insert(
         self, intervals: List[List[int]], newInterval: List[int]
     ) -> List[List[int]]:
+        intervals.append(newInterval)
+        intervals.sort()
+
+        result: List[List[int]] = []
+
+        for start, end in intervals:
+            if result and result[-1][1] >= start:
+                if result[-1][1] < end:
+                    result[-1][1] = end
+            else:
+                result.append([start, end])
+
+        return result
+
+
+class Solution1:
+    def insert(
+        self, intervals: List[List[int]], newInterval: List[int]
+    ) -> List[List[int]]:
         new_interval = newInterval
 
         result = []
