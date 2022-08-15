@@ -1,5 +1,26 @@
+from typing import List
+
+
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
+        stack: List[int] = []
+        result: List[List[int]] = []
+
+        def dfs(pos: int) -> None:
+            if pos == len(nums):
+                result.append(stack.copy())
+                return
+
+            stack.append(nums[pos])
+            dfs(pos + 1)
+            stack.pop()
+            dfs(pos + 1)
+
+        dfs(0)
+
+        return result
+
+    def subsets2(self, nums: List[int]) -> List[List[int]]:
         def sub_rec(pos, prev):
             if pos == len(nums):
                 return [[]]
