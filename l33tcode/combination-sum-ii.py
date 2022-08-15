@@ -7,12 +7,10 @@ class Solution:
         result: List[List[int]] = []
         candidates.sort()
 
-        print(candidates)
-
         def dfs(pos: int, left: int) -> None:
-            print(pos, left)
             if left == 0:
                 result.append(stack.copy())
+                return
 
             if left < 0:
                 return
