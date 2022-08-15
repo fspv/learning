@@ -918,3 +918,4 @@ Task | Solution
 [Subsets II](https://leetcode.com/problems/subsets-ii/) | [Python](/l33tcode/subsets-ii.py)
 [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Python](/l33tcode/restore-ip-addresses.py)
 [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [Python](/l33tcode/count-ways-to-make-array-with-product.py)
+[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [Python](/l33tcode/add-to-array-form-of-integer.py)
