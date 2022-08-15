@@ -3,6 +3,38 @@ from typing import List, Tuple
 
 class Solution:
     def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+        stack: List[int] = []
+        result: List[List[int]] = []
+        candidates = list(range(1, 10))
+
+        def dfs(pos: int, picks_left: int, left: int) -> None:
+            if left == 0:
+                if picks_left == 0:
+                    result.append(stack.copy())
+                return
+
+            if left < 0:
+                return
+
+            if picks_left == 0:
+                return
+
+            if pos == len(candidates):
+                return
+
+            stack.append(candidates[pos])
+            dfs(pos + 1, picks_left - 1, left - candidates[pos])
+            stack.pop()
+
+            dfs(pos + 1, picks_left, left)
+
+        dfs(0, k, n)
+
+        return result
+
+
+class Solution1:
+    def combinationSum3(self, k: int, n: int) -> List[List[int]]:
         dp = [[False] * (n + 1) for _ in range(k + 1)]
 
         dp[0][0] = True
