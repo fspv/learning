@@ -920,3 +920,4 @@ Task | Solution
 [Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | [Python](/l33tcode/count-ways-to-make-array-with-product.py)
 [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [Python](/l33tcode/add-to-array-form-of-integer.py)
 [Redundant Connection](https://leetcode.com/problems/redundant-connection/) | [Python](/l33tcode/redundant-connection.py)
+[Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [Python](/l33tcode/subarray-with-elements-greater-than-varying-threshold.py)
