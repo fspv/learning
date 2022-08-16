@@ -1,5 +1,6 @@
+import string
 from enum import Enum
-from typing import Tuple, Optional, List, Union
+from typing import List, Optional, Tuple, Union
 
 
 class Operation(Enum):
@@ -24,6 +25,74 @@ class ExpressionTreeNode:
         self.operation = operation
         self.left: Optional[ExpressionTreeNode] = None
         self.right: Optional[ExpressionTreeNode] = None
+
+
+class Solution1:
+    def calculate(self, expression: str) -> int:
+        def get_number(pos: int) -> Tuple[int, int]:
+            number = 0
+            offset = 0
+
+            while expression[pos] in string.digits:
+                number *= 10
+                number += int(expression[pos])
+                offset += 1
+                pos += 1
+
+            return offset, number
+
+        def calculate(sub_expression: List[Union[int, str]]) -> int:
+            result = 0
+            sign = 1
+
+            for val in sub_expression:
+                if isinstance(val, int):
+                    result += sign * val
+                elif val == "+":
+                    sign = 1
+                elif val == "-":
+                    sign = -1
+
+            return result
+
+        expression = "(" + expression + ")"
+
+        stack: List[Union[int, str]] = []
+
+        pos = 0
+
+        while pos < len(expression):
+            if expression[pos] == " ":
+                pos += 1
+            elif expression[pos] == "(":
+                pos += 1
+                stack.append("(")
+            elif expression[pos] == ")":
+                pos += 1
+                tmp: List[Union[int, str]] = []
+                while stack[-1] != "(":
+                    tmp.append(stack.pop())
+
+                tmp.reverse()
+
+                number = calculate(tmp)
+
+                stack.pop()
+                stack.append(number)
+
+            elif expression[pos] == "+":
+                pos += 1
+                stack.append("+")
+            elif expression[pos] == "-":
+                pos += 1
+                stack.append("-")
+            else:
+                offset, number = get_number(pos)
+
+                stack.append(number)
+                pos += offset
+
+        return int(stack[-1])
 
 
 class Calculator:
