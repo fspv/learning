@@ -923,3 +923,4 @@ Task | Solution
 [Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | [Python](/l33tcode/subarray-with-elements-greater-than-varying-threshold.py)
 [Number of Ways to Buy Pens and Pencils](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/) | [Python](/l33tcode/number-of-ways-to-buy-pens-and-pencils.py)
 [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Python](/l33tcode/closest-binary-search-tree-value-ii.py)
+[Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [Python](/l33tcode/split-array-into-consecutive-subsequences.py)
