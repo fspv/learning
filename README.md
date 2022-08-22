@@ -925,3 +925,4 @@ Task | Solution
 [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Python](/l33tcode/closest-binary-search-tree-value-ii.py)
 [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [Python](/l33tcode/split-array-into-consecutive-subsequences.py)
 [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [Python](/l33tcode/problems/minimum-number-of-refueling-stops.py)
+[Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) | [Python](/l33tcode/binary-tree-longest-consecutive-sequence-ii.py)
