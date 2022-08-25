@@ -926,3 +926,4 @@ Task | Solution
 [Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/) | [Python](/l33tcode/split-array-into-consecutive-subsequences.py)
 [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/) | [Python](/l33tcode/problems/minimum-number-of-refueling-stops.py)
 [Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) | [Python](/l33tcode/binary-tree-longest-consecutive-sequence-ii.py)
+[Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) | [Python](/l33tcode/maximum-length-of-subarray-with-positive-product.py)
