@@ -931,3 +931,4 @@ Task | Solution
 [Minimum Replacements to Sort the Array](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | [Python](/l33tcode/minimum-replacements-to-sort-the-array.py)
 [Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/) | [Python](/l33tcode/count-number-of-bad-pairs.py)
 [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/) | [Python](/l33tcode/closest-node-to-path-in-tree.py)
+[Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | [Python](/l33tcode/move-pieces-to-obtain-a-string.py)
