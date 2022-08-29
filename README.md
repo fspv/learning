@@ -928,3 +928,4 @@ Task | Solution
 [Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) | [Python](/l33tcode/binary-tree-longest-consecutive-sequence-ii.py)
 [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) | [Python](/l33tcode/maximum-length-of-subarray-with-positive-product.py)
 [Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/) | [Python](/l33tcode/finding-the-number-of-visible-mountains.py)
+[Minimum Replacements to Sort the Array](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | [Python](/l33tcode/minimum-replacements-to-sort-the-array.py)
