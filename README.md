@@ -933,3 +933,4 @@ Task | Solution
 [Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/) | [Python](/l33tcode/closest-node-to-path-in-tree.py)
 [Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | [Python](/l33tcode/move-pieces-to-obtain-a-string.py)
 [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) | [Python](/l33tcode/count-integers-in-intervals.py)
+[Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [Python](/l33tcode/count-good-nodes-in-binary-tree.py)
