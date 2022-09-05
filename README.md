@@ -935,3 +935,4 @@ Task | Solution
 [Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/) | [Python](/l33tcode/count-integers-in-intervals.py)
 [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [Python](/l33tcode/count-good-nodes-in-binary-tree.py)
 [Minimum Flips in Binary Tree to Get Result](https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/) | [Python](/l33tcode/minimum-flips-in-binary-tree-to-get-result.py)
+[Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [Python](/l33tcode/design-video-sharing-platform.py)
