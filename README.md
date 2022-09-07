@@ -936,3 +936,4 @@ Task | Solution
 [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [Python](/l33tcode/count-good-nodes-in-binary-tree.py)
 [Minimum Flips in Binary Tree to Get Result](https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/) | [Python](/l33tcode/minimum-flips-in-binary-tree-to-get-result.py)
 [Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [Python](/l33tcode/design-video-sharing-platform.py)
+[Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/) | [Python](/l33tcode/construct-string-from-binary-tree.py)
