@@ -110,7 +110,7 @@ Task | Solution
 ## Leetcode
 Task | Solution
 -----|---------
-[Reorganize String](https://leetcode.com/problems/reorganize-string/) | [Python](/l33tcode/reorganize-string.py) 
+[Reorganize String](https://leetcode.com/problems/reorganize-string/) | [Python](/l33tcode/reorganize-string.py) [Golang](/l33tcode/reorganize-string.go)
 [Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/) | [Python](/l33tcode/sequence-reconstruction.py) 
 [Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/) | [Python](/l33tcode/reduce-array-size-to-the-half.py) 
 [Maximum Repeating Substring](https://leetcode.com/problems/maximum-repeating-substring/) | [Python](/l33tcode/maximum-repeating-substring.py) 
