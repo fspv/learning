@@ -938,3 +938,4 @@ Task | Solution
 [Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/) | [Python](/l33tcode/design-video-sharing-platform.py)
 [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/) | [Python](/l33tcode/construct-string-from-binary-tree.py)
 [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [Golang](/l33tcode/earliest-possible-day-of-full-bloom.go)
+[Repeated String Match](https://leetcode.com/problems/repeated-string-match/) | [Python](/l33tcode/repeated-string-match.py)
