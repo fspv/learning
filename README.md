@@ -940,3 +940,4 @@ Task | Solution
 [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [Golang](/l33tcode/earliest-possible-day-of-full-bloom.go)
 [Repeated String Match](https://leetcode.com/problems/repeated-string-match/) | [Python](/l33tcode/repeated-string-match.py)
 [The Maze III](https://leetcode.com/problems/the-maze-iii/) | [Python](/l33tcode/the-maze-iii.py)
+[Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/) | [Python](/l33tcode/design-excel-sum-formula.py)
