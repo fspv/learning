@@ -939,3 +939,4 @@ Task | Solution
 [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/) | [Python](/l33tcode/construct-string-from-binary-tree.py)
 [Earliest Possible Day of Full Bloom](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | [Golang](/l33tcode/earliest-possible-day-of-full-bloom.go)
 [Repeated String Match](https://leetcode.com/problems/repeated-string-match/) | [Python](/l33tcode/repeated-string-match.py)
+[The Maze III](https://leetcode.com/problems/the-maze-iii/) | [Python](/l33tcode/the-maze-iii.py)
