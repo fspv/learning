@@ -941,3 +941,4 @@ Task | Solution
 [Repeated String Match](https://leetcode.com/problems/repeated-string-match/) | [Python](/l33tcode/repeated-string-match.py)
 [The Maze III](https://leetcode.com/problems/the-maze-iii/) | [Python](/l33tcode/the-maze-iii.py)
 [Design Excel Sum Formula](https://leetcode.com/problems/design-excel-sum-formula/) | [Python](/l33tcode/design-excel-sum-formula.py)
+[Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | [Golang](/l33tcode/find-players-with-zero-or-one-losses.go)
