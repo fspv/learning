@@ -757,7 +757,7 @@ Task | Solution
 [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Python](/l33tcode/find-the-celebrity.py) 
 [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [Python](/l33tcode/delete-columns-to-make-sorted.py) 
 [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Python](/l33tcode/best-time-to-buy-and-sell-stock.py) 
-[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [Python](/l33tcode/single-row-keyboard.py) 
+[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [Python](/l33tcode/single-row-keyboard.py) [Golang][/l33tcode/single-row-keyboard.go]
 [Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/) | [Python](/l33tcode/minimum-falling-path-sum-ii.py) 
 [Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | [Python](/l33tcode/search-in-a-sorted-array-of-unknown-size.py) 
 [Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | [Python](/l33tcode/next-greater-element-iii.py) 
