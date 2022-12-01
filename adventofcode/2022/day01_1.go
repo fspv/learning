@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func day1_1() {
 	file, err := os.Open("day01_1.input")
 
 	if err != nil {
