@@ -202,7 +202,7 @@ Task | Solution
 [Coordinate With Maximum Network Quality](https://leetcode.com/problems/coordinate-with-maximum-network-quality/) | [Python](/l33tcode/coordinate-with-maximum-network-quality.py) 
 [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/) | [Python](/l33tcode/diagonal-traverse.py) 
 [Binary Search](https://leetcode.com/problems/binary-search/) | [Python](/l33tcode/binary-search.py) 
-[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | [Python](/l33tcode/determine-if-two-strings-are-close.py) 
+[Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | [Python](/l33tcode/determine-if-two-strings-are-close.py) [Golang](/l33tcode/determine-if-two-strings-are-close.go)
 [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Python](/l33tcode/3sum-closest.py) 
 [Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/) | [Python](/l33tcode/next-greater-node-in-linked-list.py) 
 [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [Python](/l33tcode/sqrtx.py) 
