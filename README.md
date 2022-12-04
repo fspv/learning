@@ -7,6 +7,9 @@ It has hundreds of solved leetcode tasks as well as tasks from some online compe
 Task | Solution
 -----|---------
 [2021 Day 1](https://adventofcode.com/2021/day/1) | [Part 1 Python](/adventofcode/2021/1_1.py) [Part 2 Python](/adventofcode/2021/1_2.py)
+[2022 Day 1](https://adventofcode.com/2022/day/1) | [Part 1 Golang](/adventofcode/2022/day01_1.go) [Part 2 Golang](/adventofcode/2022/day01_2.go)
+[2022 Day 2](https://adventofcode.com/2022/day/2) | [Part 1 Golang](/adventofcode/2022/day02_1.go) [Part 2 Golang](/adventofcode/2022/day02_2.go)
+[2022 Day 4](https://adventofcode.com/2022/day/2) | [Python](/adventofcode/2022/day04.py)
 
 ## BinarySearch
 Task | Solution
