@@ -709,7 +709,7 @@ Task | Solution
 [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | [Golang](/l33tcode/find-all-duplicates-in-an-array.go) 
 [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | [Python](/l33tcode/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree.py) 
 [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | [Python](/l33tcode/number-of-enclaves.py) 
-[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Python](/l33tcode/middle-of-the-linked-list.py) 
+[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Python](/l33tcode/middle-of-the-linked-list.py) [Golang](/l33tcode/middle-of-the-linked-list.go)
 [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | [Python](/l33tcode/number-of-longest-increasing-subsequence.py) 
 [Longest Happy Prefix](https://leetcode.com/problems/longest-happy-prefix/) | [Python](/l33tcode/longest-happy-prefix.py) 
 [Find the Most Competitive Subsequence](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [Python](/l33tcode/find-the-most-competitive-subsequence.py) 
