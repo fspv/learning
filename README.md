@@ -10,6 +10,7 @@ Task | Solution
 [2022 Day 1](https://adventofcode.com/2022/day/1) | [Part 1 Golang](/adventofcode/2022/day01_1.go) [Part 2 Golang](/adventofcode/2022/day01_2.go)
 [2022 Day 2](https://adventofcode.com/2022/day/2) | [Part 1 Golang](/adventofcode/2022/day02_1.go) [Part 2 Golang](/adventofcode/2022/day02_2.go)
 [2022 Day 4](https://adventofcode.com/2022/day/2) | [Python](/adventofcode/2022/day04.py)
+[2022 Day 5](https://adventofcode.com/2022/day/2) | [Python](/adventofcode/2022/day05.py)
 
 ## BinarySearch
 Task | Solution
