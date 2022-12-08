@@ -157,7 +157,7 @@ Task | Solution
 [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | [Python](/l33tcode/longest-palindromic-subsequence.py) 
 [Tiling a Rectangle with the Fewest Squares](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/) | [Python](/l33tcode/tiling-a-rectangle-with-the-fewest-squares.py) 
 [Minimum Cost Tree From Leaf Values](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/) | [Python](/l33tcode/minimum-cost-tree-from-leaf-values.py) 
-[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Python](/l33tcode/number-of-connected-components-in-an-undirected-graph.py) 
+[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Python](/l33tcode/number-of-connected-components-in-an-undirected-graph.py) [Golang](/l33tcode/number-of-connected-components-in-an-undirected-graph.go)
 [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [Python](/l33tcode/sliding-window-maximum.py) 
 [Dota2 Senate](https://leetcode.com/problems/dota2-senate/) | [Python](/l33tcode/dota2-senate.py) 
 [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [Python](/l33tcode/count-of-range-sum.py) 
