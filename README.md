@@ -329,7 +329,7 @@ Task | Solution
 [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | [Python](/l33tcode/best-time-to-buy-and-sell-stock-iv.py) 
 [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Python](/l33tcode/flatten-nested-list-iterator.py) 
 [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [Python](/l33tcode/squares-of-a-sorted-array.py) 
-[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) | [Python](/l33tcode/leaf-similar-trees.py) 
+[Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) | [Python](/l33tcode/leaf-similar-trees.py) [Golang](/l33tcode/leaf-similar-trees.go)
 [Plus One](https://leetcode.com/problems/plus-one/) | [Python](/l33tcode/plus-one.py) [Golang](/l33tcode/plus-one.go) 
 [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | [Python](/l33tcode/distinct-subsequences.py) 
 [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii/) | [Python](/l33tcode/parallel-courses-ii.py) 
