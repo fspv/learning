@@ -12,6 +12,7 @@ Task | Solution
 [2022 Day 4](https://adventofcode.com/2022/day/4) | [Python](/adventofcode/2022/day04.py)
 [2022 Day 5](https://adventofcode.com/2022/day/5) | [Python](/adventofcode/2022/day05.py)
 [2022 Day 6](https://adventofcode.com/2022/day/6) | [Go](/adventofcode/2022/day06.go)
+[2022 Day 8](https://adventofcode.com/2022/day/8) | [Go](/adventofcode/2022/day08.go)
 
 ## BinarySearch
 Task | Solution
