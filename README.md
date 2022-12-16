@@ -952,3 +952,4 @@ Task | Solution
 [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [Golang](/l33tcode/unique-number-of-occurrences.go)
 [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | [Golang](/l33tcode/determine-if-string-halves-are-alike.go)
 [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/) | [Golang](/l33tcode/minimum-average-difference.go)
+[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Golang](/l33tcode/implement-queue-using-stacks.go)
