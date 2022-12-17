@@ -11,9 +11,9 @@ Task | Solution
 [2022 Day 2](https://adventofcode.com/2022/day/2) | [Part 1 Golang](/adventofcode/2022/day02_1.go) [Part 2 Golang](/adventofcode/2022/day02_2.go)
 [2022 Day 4](https://adventofcode.com/2022/day/4) | [Python](/adventofcode/2022/day04.py)
 [2022 Day 5](https://adventofcode.com/2022/day/5) | [Python](/adventofcode/2022/day05.py)
-[2022 Day 6](https://adventofcode.com/2022/day/6) | [Go](/adventofcode/2022/day06.go)
-[2022 Day 7](https://adventofcode.com/2022/day/7) | [Go](/adventofcode/2022/day07.go)
-[2022 Day 8](https://adventofcode.com/2022/day/8) | [Go](/adventofcode/2022/day08.go)
+[2022 Day 6](https://adventofcode.com/2022/day/6) | [Golang](/adventofcode/2022/day06.go)
+[2022 Day 7](https://adventofcode.com/2022/day/7) | [Golang](/adventofcode/2022/day07.go)
+[2022 Day 8](https://adventofcode.com/2022/day/8) | [Golang](/adventofcode/2022/day08.go)
 
 ## BinarySearch
 Task | Solution
@@ -764,7 +764,7 @@ Task | Solution
 [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Python](/l33tcode/find-the-celebrity.py) 
 [Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/) | [Python](/l33tcode/delete-columns-to-make-sorted.py) 
 [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Python](/l33tcode/best-time-to-buy-and-sell-stock.py) 
-[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [Python](/l33tcode/single-row-keyboard.py) [Golang][/l33tcode/single-row-keyboard.go]
+[Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard/) | [Python](/l33tcode/single-row-keyboard.py) [Golang](/l33tcode/single-row-keyboard.go)
 [Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/) | [Python](/l33tcode/minimum-falling-path-sum-ii.py) 
 [Search in a Sorted Array of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | [Python](/l33tcode/search-in-a-sorted-array-of-unknown-size.py) 
 [Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/) | [Python](/l33tcode/next-greater-element-iii.py) 
