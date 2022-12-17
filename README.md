@@ -612,7 +612,7 @@ Task | Solution
 [Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) | [Python](/l33tcode/strobogrammatic-number.py) 
 [Slowest Key](https://leetcode.com/problems/slowest-key/) | [Python](/l33tcode/slowest-key.py) 
 [Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | [Python](/l33tcode/bitwise-ors-of-subarrays.py) 
-[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Python](/l33tcode/evaluate-reverse-polish-notation.py) 
+[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Python](/l33tcode/evaluate-reverse-polish-notation.py) [Golang](/l33tcode/evaluate-reverse-polish-notation.go)
 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Python](/l33tcode/maximum-subarray.py) 
 [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Python](/l33tcode/repeated-dna-sequences.py) 
 [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [Python](/l33tcode/two-city-scheduling.py) 
