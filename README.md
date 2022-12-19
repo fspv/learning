@@ -953,3 +953,4 @@ Task | Solution
 [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | [Golang](/l33tcode/determine-if-string-halves-are-alike.go)
 [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/) | [Golang](/l33tcode/minimum-average-difference.go)
 [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Golang](/l33tcode/implement-queue-using-stacks.go)
+[Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [Golang](/l33tcode/find-if-path-exists-in-graph.go)
