@@ -198,7 +198,7 @@ Task | Solution
 [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [Python](/l33tcode/subarray-product-less-than-k.py) 
 [N-Queens](https://leetcode.com/problems/n-queens/) | [Python](/l33tcode/n-queens.py) [Golang](/l33tcode/n-queens.go) 
 [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | [Python](/l33tcode/asteroid-collision.py) 
-[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [Python](/l33tcode/keys-and-rooms.py) 
+[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [Python](/l33tcode/keys-and-rooms.py) [Golang](/l33tcode/keys-and-rooms.go)
 [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | [Python](/l33tcode/advantage-shuffle.py) 
 [Average Waiting Time](https://leetcode.com/problems/average-waiting-time/) | [Python](/l33tcode/average-waiting-time.py) 
 [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [Python](/l33tcode/pacific-atlantic-water-flow.py) 
