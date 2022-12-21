@@ -345,7 +345,7 @@ Task | Solution
 [Design Underground System](https://leetcode.com/problems/design-underground-system/) | [Python](/l33tcode/design-underground-system.py) 
 [Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | [Python](/l33tcode/sum-of-root-to-leaf-binary-numbers.py) 
 [Validate IP Address](https://leetcode.com/problems/validate-ip-address/) | [Python](/l33tcode/validate-ip-address.py) 
-[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) | [Python](/l33tcode/possible-bipartition.py) 
+[Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) | [Python](/l33tcode/possible-bipartition.py) [Golang](/l33tcode/possible-bipartition.go)
 [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [Python](/l33tcode/insertion-sort-list.py) [Golang](/l33tcode/insertion-sort-list.go) 
 [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Python](/l33tcode/minimum-path-sum.py) 
 [Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) | [Python](/l33tcode/camelcase-matching.py) 
