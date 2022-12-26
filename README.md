@@ -659,7 +659,7 @@ Task | Solution
 [Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/) | [Python](/l33tcode/encode-n-ary-tree-to-binary-tree.py) 
 [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) | [Golang](/l33tcode/maximum-sum-circular-subarray.go) 
 [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | [Python](/l33tcode/is-graph-bipartite.py) 
-[Jump Game](https://leetcode.com/problems/jump-game/) | [Python](/l33tcode/jump-game.py) 
+[Jump Game](https://leetcode.com/problems/jump-game/) | [Python](/l33tcode/jump-game.py) [Golang](/l33tcode/jump-game.go)
 [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [Python](/l33tcode/excel-sheet-column-number.py) 
 [Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/) | [Python](/l33tcode/regions-cut-by-slashes.py) 
 [Can I Win](https://leetcode.com/problems/can-i-win/) | [Python](/l33tcode/can-i-win.py) 
