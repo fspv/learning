@@ -955,3 +955,4 @@ Task | Solution
 [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Golang](/l33tcode/implement-queue-using-stacks.go)
 [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [Golang](/l33tcode/find-if-path-exists-in-graph.go)
 [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/) | [Golang](/l33tcode/maximum-bags-with-full-capacity-of-rocks.go)
+[Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [Python](/l33tcode/remove-stones-to-minimize-the-total.py)
