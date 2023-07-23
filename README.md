@@ -956,3 +956,4 @@ Task | Solution
 [Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/) | [Golang](/l33tcode/find-if-path-exists-in-graph.go)
 [Maximum Bags With Full Capacity of Rocks](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/) | [Golang](/l33tcode/maximum-bags-with-full-capacity-of-rocks.go)
 [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [Python](/l33tcode/remove-stones-to-minimize-the-total.py)
+[All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [Python](/l33tcode/all-possible-full-binary-trees.py)
