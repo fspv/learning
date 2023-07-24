@@ -13,6 +13,22 @@ class Solution:
         elif n < 0:
             return 1 / power(x, -n)
 
+    def myPowIterative(self, x: float, n: int) -> float:
+        result = 1.0
+
+        num = x
+        pow = 1
+
+        # Using the property that each number can
+        # be represented as a sum of powers of 2
+        while pow <= abs(n):
+            result *= num if abs(n) & pow else 1
+
+            num *= num
+            pow <<= 1
+
+        return result if n >= 0 else 1 / result
+
 
 class TestSolution:
     def setup(self):
