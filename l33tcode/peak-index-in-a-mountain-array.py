@@ -1,16 +1,22 @@
+from typing import List
+
 class Solution:
     def peakIndexInMountainArray(self, A: List[int]) -> int:
-        left, right = 1, len(A) - 2
+        left, right = 1, len(A) - 1
 
-        def condition(pos: int) -> bool:
+        def uphill(pos: int) -> bool:
+            # `pos` will never be the last element, because
+            # the only way to achieve it is to have
+            # `left == right`, which is guaranteed to be
+            # impossible by the loop condition `left < right`
             return A[pos] < A[pos + 1]
 
         while left < right:
-            middle = left + (right - left) // 2
+            mid = left + (right - left) // 2
 
-            if condition(middle):
-                left = middle + 1
+            if uphill(mid):
+                left = mid + 1
             else:
-                right = middle
+                right = mid
 
         return left
