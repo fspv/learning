@@ -958,3 +958,4 @@ Task | Solution
 [Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | [Python](/l33tcode/remove-stones-to-minimize-the-total.py)
 [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | [Python](/l33tcode/all-possible-full-binary-trees.py)
 [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [Python](/l33tcode/minimum-speed-to-arrive-on-time.py)
+[Soup Servings](https://leetcode.com/problems/soup-servings/) | [Python](/l33tcode/soup-servings.py)
