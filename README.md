@@ -960,3 +960,4 @@ Task | Solution
 [Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [Python](/l33tcode/minimum-speed-to-arrive-on-time.py)
 [Soup Servings](https://leetcode.com/problems/soup-servings/) | [Python](/l33tcode/soup-servings.py)
 [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [Python](/l33tcode/maximum-running-time-of-n-computers.py)
+[Strange Printer](https://leetcode.com/problems/strange-printer/) | [Python](/l33tcode/strange-printer.py)
