@@ -7,22 +7,21 @@ class Solution:
 
         def combinations(num: int, left: int) -> None:
             if left == 0:
-                if num == 0:
-                    result.append(stack.copy())
+                result.append(stack.copy())
                 return
 
             if num == 0:
                 return
 
+            # Skip
+            combinations(num - 1, left)
+
+            # Take
             stack.append(num)
-
-            for next_num in reversed(range(num)):
-                combinations(next_num, left - 1)
-
+            combinations(num - 1, left - 1)
             stack.pop()
 
-        for num in range(n):
-            combinations(num + 1, k)
+        combinations(n, k)
 
         return result
 
