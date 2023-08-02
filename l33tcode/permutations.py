@@ -1,19 +1,24 @@
+from typing import List, Set
+
+
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        snums = set(nums)
+        nums_set: Set[int] = set(nums)
+        stack: List[int] = []
+        result: List[List[int]] = []
 
-        def dfs():
-            if not len(snums):
-                return [[]]
+        def permutations():
+            if not nums_set:
+                result.append(stack.copy())
+                return
 
-            local_result = []
+            for num in list(nums_set):
+                nums_set.discard(num)
+                stack.append(num)
+                permutations()
+                nums_set.add(num)
+                stack.pop()
 
-            for num in list(snums):
-                snums.remove(num)
-                for res in dfs():
-                    local_result.append(res + [num])
-                snums.add(num)
+        permutations()
 
-            return local_result
-
-        return dfs()
+        return result
