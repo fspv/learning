@@ -1,10 +1,10 @@
-from functools import lru_cache
+from functools import cache
 
 
 class Solution:
     def numTrees(self, n: int) -> int:
-        @lru_cache(None)
-        def dfs(nodes):
+        @cache
+        def dfs(nodes: int) -> int:
             if nodes == 0:
                 return 1
 
