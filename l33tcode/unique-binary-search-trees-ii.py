@@ -1,22 +1,25 @@
-from typing import List
+from __future__ import annotations
+from typing import List, TYPE_CHECKING, Optional
+from dataclasses import dataclass
 
 
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+if TYPE_CHECKING:
+    # Definition for a binary tree node.
+    @dataclass
+    class TreeNode:
+        val: int
+        left: Optional[TreeNode] = None
+        right: Optional[TreeNode] = None
 
 class Solution:
     def generateTrees(self, n: int) -> List[TreeNode]:
-        def dfs(start, stop):
-            subtrees = []
+        def dfs(start: int, stop: int) -> List[TreeNode]:
+            subtrees: List[TreeNode] = []
 
-            for pos in range(start, stop):
-                for left in dfs(start, pos) or [None]:
-                    for right in dfs(pos + 1, stop) or [None]:
-                        node = TreeNode(pos)
+            for split in range(start, stop):
+                for left in dfs(start, split) or [None]:
+                    for right in dfs(split + 1, stop) or [None]:
+                        node = TreeNode(split)
                         node.left, node.right = left, right
 
                         subtrees.append(node)
