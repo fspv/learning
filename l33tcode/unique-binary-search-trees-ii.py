@@ -1,7 +1,7 @@
 from __future__ import annotations
-from typing import List, TYPE_CHECKING, Optional
-from dataclasses import dataclass
 
+from dataclasses import dataclass
+from typing import TYPE_CHECKING, List, Optional
 
 if TYPE_CHECKING:
     # Definition for a binary tree node.
@@ -10,6 +10,7 @@ if TYPE_CHECKING:
         val: int
         left: Optional[TreeNode] = None
         right: Optional[TreeNode] = None
+
 
 class Solution:
     def generateTrees(self, n: int) -> List[TreeNode]:
