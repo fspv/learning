@@ -961,3 +961,4 @@ Task | Solution
 [Soup Servings](https://leetcode.com/problems/soup-servings/) | [Python](/l33tcode/soup-servings.py)
 [Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | [Python](/l33tcode/maximum-running-time-of-n-computers.py)
 [Strange Printer](https://leetcode.com/problems/strange-printer/) | [Python](/l33tcode/strange-printer.py)
+[Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/) | [Python](/l33tcode/number-of-music-playlists.py)
