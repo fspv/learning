@@ -1,29 +1,30 @@
+from typing import List
+
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        left, right = 0, len(nums) - 1
+        left, right = 0, len(nums)
 
-        while left <= right:
-            mid = (left + right) // 2
-            if nums[mid] == target:
-                return mid
-            elif nums[mid] >= nums[0]:
+        while left < right:
+            mid = left + (right - left) // 2
+            if nums[mid] >= nums[0]:
                 left = mid + 1
             else:
-                right = mid - 1
+                right = mid
 
-        pivot = max(left, right)
+        rotated_start = left % len(nums)
 
         left, right = 0, len(nums) - 1
 
-        while left <= right:
-            mid = (left + right) // 2
-            real_mid = (mid + pivot) % len(nums)
+        while left < right:
+            mid = left + (right - left) // 2
 
-            if nums[real_mid] == target:
-                return real_mid
-            elif nums[real_mid] < target:
+            if nums[(mid + rotated_start) % len(nums)] < target:
                 left = mid + 1
             else:
-                right = mid - 1
+                right = mid
+
+        if nums[(pos := (left + rotated_start) % len(nums))] == target:
+            return pos
 
         return -1
