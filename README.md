@@ -892,7 +892,7 @@ Task | Solution
 [Unique Paths III](https://leetcode.com/problems/unique-paths-iii/) | [Python](/l33tcode/unique-paths-iii.py) 
 [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [Python](/l33tcode/monotonic-array.py) 
 [Edit Distance](https://leetcode.com/problems/edit-distance/) | [Python](/l33tcode/edit-distance.py) 
-[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Python](/l33tcode/search-in-rotated-sorted-array.py) 
+[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Python](/l33tcode/search-in-rotated-sorted-array.py) [Golang](/l33tcode/search-in-rotated-sorted-array.go)
 [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | [Python](/l33tcode/delete-nodes-and-return-forest.py) 
 [Kill Process](https://leetcode.com/problems/kill-process/) | [Python](/l33tcode/kill-process.py) 
 [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [Python](/l33tcode/n-th-tribonacci-number.py)
