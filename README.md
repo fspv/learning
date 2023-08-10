@@ -148,7 +148,7 @@ Task | Solution
 [Candy](https://leetcode.com/problems/candy/) | [Python](/l33tcode/candy.py) 
 [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | [Python](/l33tcode/contiguous-array.py) 
 [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [Python](/l33tcode/remove-linked-list-elements.py) 
-[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Python](/l33tcode/search-in-rotated-sorted-array-ii.py) 
+[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Python](/l33tcode/search-in-rotated-sorted-array-ii.py) [Golang](/l33tcode/search-in-rotated-sorted-array-ii.go)
 [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Python](/l33tcode/best-time-to-buy-and-sell-stock-ii.py) 
 [The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph/) | [Python](/l33tcode/the-most-similar-path-in-a-graph.py) 
 [Stone Game](https://leetcode.com/problems/stone-game/) | [Python](/l33tcode/stone-game.py) 

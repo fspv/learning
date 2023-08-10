@@ -4,6 +4,7 @@ from typing import List
 def bisect_pivot(array: List[int]) -> int:
     left, right = 0, len(array)
 
+    # Make sure nums[left] == nums[mid] == nums[right] is impossible
     while right > 0 and array[right - 1] == array[0]:
         right -= 1
 
