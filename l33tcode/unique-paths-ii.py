@@ -1,16 +1,20 @@
-class Solution:
-    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
-        if not obstacleGrid:
-            return 0
+from typing import List
 
-        dp = [0 for _ in range(len(obstacleGrid[0]))]
+
+class Solution:
+    def uniquePathsWithObstacles(self, obstacles: List[List[int]]) -> int:
+        rows, cols = len(obstacles), len(obstacles[0]) if obstacles else 0
+
+        # We don't need to store data for all the previous rows, becauce we
+        # only look the `row - 1`
+        dp = [0] * cols
         dp[0] = 1
 
-        for row in range(len(obstacleGrid)):
-            for col in range(len(obstacleGrid[0])):
-                if obstacleGrid[row][col] != 1:
-                    dp[col] += dp[col - 1] if col > 0 else 0
-                else:
+        for row in range(rows):
+            for col in range(1, cols):
+                if obstacles[row][col]:
                     dp[col] = 0
+                else:
+                    dp[col] += dp[col - 1]
 
         return dp[-1]
