@@ -11,10 +11,10 @@ class Solution:
         dp[0] = 1
 
         for row in range(rows):
-            for col in range(1, cols):
+            for col in range(cols):
                 if obstacles[row][col]:
                     dp[col] = 0
                 else:
-                    dp[col] += dp[col - 1]
+                    dp[col] += dp[col - 1] if col > 0 else 0
 
         return dp[-1]
