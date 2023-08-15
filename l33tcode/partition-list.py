@@ -1,10 +1,15 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import TYPE_CHECKING, Optional
+
+if TYPE_CHECKING:
+    @dataclass
+    class ListNode:
+        val: int = 0
+        next: Optional[ListNode] = None
+
 class Solution:
-    def partition(self, head: ListNode, x: int) -> ListNode:
+    def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         left_head = ListNode()
         left_tail = left_head
 
