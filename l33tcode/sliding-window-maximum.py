@@ -1,6 +1,6 @@
 import heapq
-from typing import List, Set, Tuple, Deque
 from collections import deque
+from typing import Deque, List, Set, Tuple
 
 
 class Heap:
@@ -59,7 +59,7 @@ class Solution:
             if queue[0] == pos:
                 queue.popleft()
 
-        result = []
+        result: List[int] = []
 
         for pos in range(k):
             add(pos)
