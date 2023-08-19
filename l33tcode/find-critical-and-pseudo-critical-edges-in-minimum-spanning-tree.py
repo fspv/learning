@@ -1,5 +1,4 @@
-from itertools import permutations
-from typing import List, Set
+from typing import List
 
 
 class UnionFind:
