@@ -966,3 +966,4 @@ Task | Solution
 [Minimize the Maximum Difference of Pairs](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | [Python](/l33tcode/minimize-the-maximum-difference-of-pairs.py) [Rust](/l33tcode/minimize-the-maximum-difference-of-pairs.rs)
 [Check if There is a Valid Partition For The Array](https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/) | [Python](/l33tcode/check-if-there-is-a-valid-partition-for-the-array.py)
 [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/) | [Python](/l33tcode/maximal-network-rank.py)
+[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [Python](/l33tcode/excel-sheet-column-title.py)
