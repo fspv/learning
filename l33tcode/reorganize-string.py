@@ -1,40 +1,41 @@
 import heapq
-from typing import List, Tuple
-from collections import Counter
-
+from typing import Counter, List, Tuple
 
 class Solution:
-    def reorganizeString(self, S: str) -> str:
-        heap: List[Tuple[int, str]] = []
+    def reorganizeString(self, s: str) -> str:
+        heap: List[Tuple[int, str]] = [(-count, char) for char, count in Counter(s).items()]
+        heapq.heapify(heap)
 
-        for char, count in Counter(S).items():
-            heapq.heappush(heap, (-count, char))
+        result: List[str] = []
+        last_char = ""
 
-        result = []
+        while len(heap) > 1:
+            first, second = heapq.heappop(heap), heapq.heappop(heap)
 
-        while heap:
-            if len(heap) < 2:
-                break
+            first_count, first_char = -first[0], first[1]
+            second_count, second_char = -second[0], second[1]
 
-            left_count, left_char = heapq.heappop(heap)
-            right_count, right_char = heapq.heappop(heap)
-            left_count *= -1
-            right_count *= -1
+            if first_char != last_char:
+                result.append(first_char)
+                last_char = first_char
+                first_count -= 1
 
-            while right_count > 0:
-                result.append(left_char)
-                result.append(right_char)
-                left_count -= 1
-                right_count -= 1
+            if second_char != last_char:
+                result.append(second_char)
+                last_char = second_char
+                second_count -= 1
 
-            heapq.heappush(heap, (-left_count, left_char))
+            if first_count > 0:
+                heapq.heappush(heap, (-first_count, first_char))
+
+            if second_count > 0:
+                heapq.heappush(heap, (-second_count, second_char))
 
         if heap:
-            count = -heap[0][0]
-
-            if count > 1:
-                return ""
-            elif count != 0:
+            # Take care of the last remaining character
+            if -heap[0][0] == 1 and heap[0][1] != last_char:
                 result.append(heap[0][1])
+            else:
+                return ""
 
         return "".join(result)
