@@ -78,14 +78,14 @@ class Solution:
 
             return count
 
-        def justify_left(start, count, max_width) -> str:
+        def justify_left(start: int, count: int, max_width: int) -> str:
             words_len = sum([len(w) for w in words[start : start + count]])
 
             return " ".join(words[start : start + count]) + " " * (
                 max_width - (count - 1) - words_len
             )
 
-        def justify(start, count, max_width) -> str:
+        def justify(start: int, count: int, max_width: int) -> str:
             if count == 1:
                 return words[start] + " " * (max_width - len(words[start]))
 
