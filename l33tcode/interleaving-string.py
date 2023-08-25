@@ -1,9 +1,9 @@
-from functools import lru_cache
+from functools import cache
 
 
 class Solution:
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
-        @lru_cache(None)
+        @cache
         def dp(ptr1: int, ptr2: int, ptr3: int) -> bool:
             if ptr3 == len(s3):
                 return ptr1 == len(s1) and ptr2 == len(s2)
