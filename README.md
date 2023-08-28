@@ -967,3 +967,4 @@ Task | Solution
 [Check if There is a Valid Partition For The Array](https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/) | [Python](/l33tcode/check-if-there-is-a-valid-partition-for-the-array.py)
 [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/) | [Python](/l33tcode/maximal-network-rank.py)
 [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [Python](/l33tcode/excel-sheet-column-title.py)
+[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Python](/l33tcode/implement-stack-using-queues.py)
