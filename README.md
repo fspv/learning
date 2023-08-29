@@ -968,3 +968,4 @@ Task | Solution
 [Maximal Network Rank](https://leetcode.com/problems/maximal-network-rank/) | [Python](/l33tcode/maximal-network-rank.py)
 [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [Python](/l33tcode/excel-sheet-column-title.py)
 [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Python](/l33tcode/implement-stack-using-queues.py)
+[Minimum Penalty for a Shop](https://leetcode.com/problems/minimum-penalty-for-a-shop/) | [Python](/l33tcode/minimum-penalty-for-a-shop.py)
