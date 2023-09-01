@@ -1,18 +1,15 @@
-class Solution:
-    def countBits(self, num):
-        if num == 0:
-            return [0]
+from typing import List
 
+
+class Solution:
+    def countBits(self, num: int) -> List[int]:
         dp = [0] * (num + 1)
-        power = 1
 
         for pos in range(1, num + 1):
-            if pos == power * 2:
-                power = power * 2
-
-            dp[pos] = dp[pos - power] + 1
+            dp[pos] = dp[pos >> 1] + (pos & 1)
 
         return dp
+
 
 class TestSolution:
     def setup(self):
