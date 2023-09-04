@@ -1,8 +1,12 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import Optional
+
+
+@dataclass
+class ListNode:
+    val: int
+    next: Optional[ListNode]
 
 
 class Solution:
@@ -10,7 +14,7 @@ class Solution:
         fast, slow = head, head
 
         while fast:
-            slow = slow.next
+            slow = slow.next  # type: ignore
             if fast.next:
                 fast = fast.next.next
             else:
