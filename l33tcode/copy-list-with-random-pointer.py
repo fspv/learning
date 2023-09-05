@@ -1,19 +1,24 @@
-# Definition for a Node.
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import Dict, Optional
+
+
+@dataclass
 class Node:
-    def __init__(self, val, next, random):
-        self.val = val
-        self.next = next
-        self.random = random
+    val: int
+    next: Optional[Node] = None
+    random: Optional[Node] = None
 
 
 class Solution:
-    def copyRandomList(self, head):
+    def copyRandomList(self, head: Optional[Node]) -> Optional[Node]:
         if head is None:
             return
 
-        mem = {}
+        mem: Dict[Node, Node] = {}
 
-        def node_copy(node):
+        def node_copy(node: Optional[Node]) -> Optional[Node]:
             if node is None:
                 return
 
@@ -30,11 +35,12 @@ class Solution:
 
 
 class Solution2:
-    def copyRandomList(self, head: 'Node') -> 'Node':
-        def get_node(head: Node, pos: int) -> Node:
+    def copyRandomList(self, head: Node) -> Node:
+        def get_node(head: Node, pos: int) -> Optional[Node]:
             node = head
             for _ in range(pos):
-                node = node.next
+                if node:
+                    node = node.next
 
             return node
 
@@ -72,7 +78,7 @@ class Solution2:
                 pos = get_pos(node.random)
                 new_node.random = get_node(new_head, new_length - pos)
 
-            node = node.next
-            new_node = new_node.next
+            node = node.next  # type: ignore
+            new_node = new_node.next  # type: ignore
 
         return new_head
