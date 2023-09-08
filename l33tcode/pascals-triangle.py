@@ -1,19 +1,15 @@
 import unittest
+from typing import List
+
 
 class Solution:
-    def generate(self, numRows):
-        result = []
+    def generate(self, numRows: int) -> List[List[int]]:
+        result = [[1] * (row + 1) for row in range(numRows)]
 
-        for level in range(numRows):
-            result.append([])
-
-            for pos in range(level + 1):
-                if pos == 0 or pos == level:
-                    result[level].append(1)
-                else:
-                    result[level].append(
-                        result[level - 1][pos - 1] + result[level - 1][pos]
-                    )
+        for row in range(1, numRows):
+            for pos in range(1, row):
+                result[row][pos] = result[row - 1][pos - 1]
+                result[row][pos] += result[row - 1][pos]
 
         return result
 
