@@ -1,10 +1,10 @@
+from functools import cache
 from typing import List
-from functools import lru_cache
 
 
 class Solution:
     def combinationSum4(self, nums: List[int], target: int) -> int:
-        @lru_cache(None)
+        @cache
         def dfs(total: int) -> int:
             if total > target:
                 return 0
