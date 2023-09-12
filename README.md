@@ -972,3 +972,4 @@ Task | Solution
 [Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/) | [Python](/l33tcode/minimum-number-of-taps-to-open-to-water-a-garden.py)
 [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [Python](/l33tcode/extra-characters-in-a-string.py)
 [Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/) | [Python](/l33tcode/count-all-valid-pickup-and-delivery-options.py)
+[Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | [Python](/l33tcode/minimum-deletions-to-make-character-frequencies-unique.py)
