@@ -6,16 +6,16 @@ class Solution:
         max_candies = [1] * len(ratings)
 
         cur_candies = 1
-        for child in range(len(ratings)):
-            if child > 0 and ratings[child - 1] < ratings[child]:
+        for child in range(1, len(ratings)):
+            if ratings[child - 1] < ratings[child]:
                 cur_candies += 1
                 max_candies[child] = max(max_candies[child], cur_candies)
             else:
                 cur_candies = 1
 
         cur_candies = 1
-        for child in reversed(range(len(ratings))):
-            if child < len(ratings) - 1 and ratings[child + 1] < ratings[child]:
+        for child in reversed(range(len(ratings) - 1)):
+            if ratings[child + 1] < ratings[child]:
                 cur_candies += 1
                 max_candies[child] = max(max_candies[child], cur_candies)
             else:
