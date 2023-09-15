@@ -8,10 +8,10 @@ class Solution:
 
         visited = [False] * len(points)
 
-        distance = lambda point1, point2: (
-            abs(points[point1][0] - points[point2][0])
-            + abs(points[point1][1] - points[point2][1])
-        )
+        def distance(point1: int, point2: int) -> int:
+            return abs(points[point1][0] - points[point2][0]) + abs(
+                points[point1][1] - points[point2][1]
+            )
 
         min_cost = 0
         count = 0
