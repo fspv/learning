@@ -973,3 +973,4 @@ Task | Solution
 [Extra Characters in a String](https://leetcode.com/problems/extra-characters-in-a-string/) | [Python](/l33tcode/extra-characters-in-a-string.py)
 [Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/) | [Python](/l33tcode/count-all-valid-pickup-and-delivery-options.py)
 [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | [Python](/l33tcode/minimum-deletions-to-make-character-frequencies-unique.py)
+[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | [Python](/l33tcode/shortest-path-visiting-all-nodes.py)
