@@ -3,7 +3,7 @@ from typing import List, Tuple
 
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
-        def k_select(array: List[Tuple[int, int]]) -> List[Tuple[int, int]]:
+        def k_select(array: List[Tuple[int, int]], k: int) -> List[Tuple[int, int]]:
             left, right = 0, len(array) - 1
 
             selected = 0
@@ -27,6 +27,6 @@ class Solution:
             return array[:k]
 
         array = list(map(lambda x: (x[1], x[0]), enumerate(map(sum, mat))))
-        k_array = k_select(array)
+        k_array = k_select(array, k)
 
         return list(map(lambda x: x[1], sorted(k_array, key=lambda x: (x[0], x[1]))))
