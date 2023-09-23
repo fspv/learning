@@ -1,6 +1,6 @@
-from typing import List, Dict
-from functools import lru_cache
 from collections import defaultdict
+from functools import lru_cache
+from typing import Dict, List
 
 
 class Solution:
@@ -40,7 +40,7 @@ class Solution:
         for start in reversed(range(len(words))):
             for next_word in range(*word_len_range[len(words[start]) + 1]):
                 if one_letter_apart(start, next_word):
-                    dp[start] = max(dp[start], dp[next_word] + 1,)
+                    dp[start] = max(dp[start], dp[next_word] + 1)
 
         return max(dp)
 
