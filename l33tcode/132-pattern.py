@@ -1,8 +1,11 @@
+from typing import List
+
+
 class Solution:
     def find132pattern(self, nums: List[int]) -> bool:
-        stack = []
+        stack: List[int] = []
 
-        min_before = []
+        min_before: List[int] = []
 
         for pos in range(len(nums)):
             if min_before:
