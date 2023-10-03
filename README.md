@@ -976,3 +976,4 @@ Task | Solution
 [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | [Python](/l33tcode/shortest-path-visiting-all-nodes.py)
 [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | [Python](/l33tcode/reverse-words-in-a-string-iii.py)
 [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [Python](/l33tcode/remove-colored-pieces-if-both-neighbors-are-the-same-color.py)
+[Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | [Python](/l33tcode/number-of-good-pairs.py)
