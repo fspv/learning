@@ -1,10 +1,9 @@
-import heapq
-from typing import List, Dict
+from typing import List
 
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> List[int]:
-        candidate1, candidate2 = float("-inf"), float("-inf")
+        candidate1, candidate2 = max(nums) + 1, max(nums) + 1
         count1, count2 = 0, 0
 
         for num in nums:
@@ -22,7 +21,7 @@ class Solution:
                 count1 -= 1
                 count2 -= 1
 
-        result = []
+        result: List[int] = []
 
         if nums.count(candidate1) > len(nums) // 3:
             result.append(candidate1)
