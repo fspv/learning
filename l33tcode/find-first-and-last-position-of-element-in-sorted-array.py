@@ -1,43 +1,36 @@
-class Solution:
-    def searchRange(self, nums, target):
-        left, right = -1, len(nums)
+from typing import List
 
-        while left < right - 1:
-            mid = (left + right) // 2
+
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        if not nums:
+            return [-1, -1]
+
+        left, right = 0, len(nums) - 1
+
+        while left < right:
+            mid = left + (right - left) // 2
 
             if nums[mid] < target:
-                left = mid
-            elif nums[mid] > target:
-                right = mid
+                left = mid + 1
             else:
-                tmp_right = right
-                tmp_mid = mid
                 right = mid
 
-                while left < right - 1:
-                    mid = (left + right) // 2
-                    if nums[mid] < target:
-                        left = mid
-                    else:
-                        right = mid
+        first = left if nums[left] == target else -1
 
-                result_left = left
+        left, right = 0, len(nums)
 
-                left = tmp_mid
-                right = tmp_right
+        while left < right:
+            mid = left + (right - left) // 2
 
-                while left < right - 1:
-                    mid = (left + right) // 2
-                    if nums[mid] > target:
-                        right = mid
-                    else:
-                        left = mid
+            if nums[mid] <= target:
+                left = mid + 1
+            else:
+                right = mid
 
-                result_right = left
+        last = left - 1 if nums[left - 1] == target else -1
 
-                return [result_left + 1, result_right]
-
-        return [-1, -1]
+        return [first, last]
 
 
 class TestSolution:
@@ -54,7 +47,7 @@ class TestSolution:
         assert self.sol.searchRange([0, 0], 0) == [0, 1]
 
     def test_custom4(self):
-        assert self.sol.searchRange([5,7,7,8,8,10], 8) == [3, 4]
+        assert self.sol.searchRange([5, 7, 7, 8, 8, 10], 8) == [3, 4]
 
     def test_custom5(self):
-        assert self.sol.searchRange([5,7,7,8,8,10], 6) == [-1, -1]
+        assert self.sol.searchRange([5, 7, 7, 8, 8, 10], 6) == [-1, -1]
