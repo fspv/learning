@@ -978,3 +978,4 @@ Task | Solution
 [Remove Colored Pieces if Both Neighbors are the Same Color](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | [Python](/l33tcode/remove-colored-pieces-if-both-neighbors-are-the-same-color.py)
 [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | [Python](/l33tcode/number-of-good-pairs.py)
 [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | [Python](/l33tcode/max-dot-product-of-two-subsequences.py)
+[Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | [Python](/l33tcode/minimum-number-of-operations-to-make-array-continuous.py)
