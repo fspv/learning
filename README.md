@@ -980,3 +980,4 @@ Task | Solution
 [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | [Python](/l33tcode/max-dot-product-of-two-subsequences.py)
 [Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | [Python](/l33tcode/minimum-number-of-operations-to-make-array-continuous.py)
 [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [Python](/l33tcode/number-of-flowers-in-full-bloom.py)
+[Painting the Walls](https://leetcode.com/problems/painting-the-walls/) | [Python](/l33tcode/painting-the-walls.py)
