@@ -981,3 +981,4 @@ Task | Solution
 [Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | [Python](/l33tcode/minimum-number-of-operations-to-make-array-continuous.py)
 [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [Python](/l33tcode/number-of-flowers-in-full-bloom.py)
 [Painting the Walls](https://leetcode.com/problems/painting-the-walls/) | [Python](/l33tcode/painting-the-walls.py)
+[Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | [Python](/l33tcode/number-of-ways-to-stay-in-the-same-place-after-some-steps.py)
