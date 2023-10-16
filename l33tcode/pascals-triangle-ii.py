@@ -4,14 +4,11 @@ from typing import List
 
 class Solution:
     def getRow(self, rowIndex: int) -> List[int]:
-        row = [1]
+        row = [1] + [0] * rowIndex
 
-        for _ in range(rowIndex):
-            next_row = [1] + [0] * (len(row) - 1) + [1]
-            for pos in range(1, len(next_row) - 1):
-                next_row[pos] = row[pos - 1] + row[pos]
-
-            row = next_row
+        for level in range(1, rowIndex + 1):
+            for pos in reversed(range(1, level + 1)):
+                row[pos] = row[pos - 1] + row[pos]
 
         return row
 
