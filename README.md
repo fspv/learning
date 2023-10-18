@@ -982,3 +982,4 @@ Task | Solution
 [Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | [Python](/l33tcode/number-of-flowers-in-full-bloom.py)
 [Painting the Walls](https://leetcode.com/problems/painting-the-walls/) | [Python](/l33tcode/painting-the-walls.py)
 [Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | [Python](/l33tcode/number-of-ways-to-stay-in-the-same-place-after-some-steps.py)
+[Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/) | [Python](/l33tcode/validate-binary-tree-nodes.py)
