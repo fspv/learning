@@ -1,38 +1,20 @@
+from typing import List
 import unittest
 
 
 class Solution:
-    def real_value(self, string, pos):
-        if pos < 0 or string[pos] != "#":
-            return pos
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def evaluate(string: str) -> str:
+            stack: List[str] = []
+            for char in string:
+                if char == "#":
+                    if stack:
+                        stack.pop()
+                else:
+                    stack.append(char)
+            return "".join(stack)
 
-        backspace_count = 0
-        while string[pos] == "#":
-            backspace_count += 1
-            pos -= 1
-
-        for _ in range(backspace_count):
-            pos = self.real_value(string, pos - 1)
-
-        return pos
-
-    def backspaceCompare(self, S, T):
-        S_ptr = len(S) - 1
-        T_ptr = len(T) - 1
-
-        while S_ptr >= 0 or T_ptr >= 0:
-            S_ptr, T_ptr = self.real_value(S, S_ptr), self.real_value(T, T_ptr)
-
-            if S_ptr >= 0 and T_ptr >= 0:
-                if S[S_ptr] != T[T_ptr]:
-                    return False
-            elif S_ptr >= 0 or T_ptr >= 0:
-                return False
-
-            S_ptr -= 1
-            T_ptr -= 1
-
-        return True
+        return evaluate(s) == evaluate(t)
 
 
 class TestSolution(unittest.TestCase):
@@ -64,7 +46,9 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(self.sol.backspaceCompare("a#c", "b"), False)
 
     def test_custom3(self):
-        self.assertEqual(self.sol.backspaceCompare("abcdef#gh", "abcdef#f#f#f#ghvg##"), True)
+        self.assertEqual(
+            self.sol.backspaceCompare("abcdef#gh", "abcdef#f#f#f#ghvg##"), True
+        )
 
     def test_custom4(self):
         self.assertEqual(self.sol.backspaceCompare("bxj##tw", "bxj###tw"), False)

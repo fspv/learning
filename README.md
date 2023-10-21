@@ -984,3 +984,4 @@ Task | Solution
 [Number of Ways to Stay in the Same Place After Some Steps](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | [Python](/l33tcode/number-of-ways-to-stay-in-the-same-place-after-some-steps.py)
 [Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/) | [Python](/l33tcode/validate-binary-tree-nodes.py)
 [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/) | [Python](/l33tcode/parallel-courses-iii.py)
+[Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/) | [Python](/l33tcode/constrained-subsequence-sum.py)
