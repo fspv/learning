@@ -37,14 +37,18 @@ class Solution:
     def kthGrammar(self, N: int, K: int) -> int:
         def dfs(level: int, value: int) -> int:
             if level == 0:
+                # Leaf node found, return
                 return value
 
+            # Leaf nodes in this subtree
             count = 2 ** level
 
             if ((K - 1) % count) < count // 2:
+                # Go left, next node value is the same
                 return dfs(level - 1, value)
             else:
-                return dfs(level - 1, (value - 1) % 2)
+                # Go right, next node value inverted
+                return dfs(level - 1, 1 - value)
 
         return dfs(N - 1, 0)
 
