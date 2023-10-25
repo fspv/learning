@@ -23,7 +23,9 @@ class SolutionBruteForce2:
             if levels == 0:
                 return row
 
-            return nth_level(row + row[len(row) // 2:] + row[:len(row) // 2], levels - 1)
+            return nth_level(
+                row + row[len(row) // 2 :] + row[: len(row) // 2], levels - 1
+            )
 
         if N == 1:
             return 0
@@ -33,8 +35,25 @@ class SolutionBruteForce2:
 
 class Solution:
     def kthGrammar(self, N: int, K: int) -> int:
-        def nth_level(level, pos):
-            return (pos + nth_level(level - 1, pos // 2)) % 2 if level > 0 else 0
+        def dfs(level: int, value: int) -> int:
+            if level == 0:
+                return value
+
+            count = 2 ** level
+
+            if ((K - 1) % count) < count // 2:
+                return dfs(level - 1, value)
+            else:
+                return dfs(level - 1, (value - 1) % 2)
+
+        return dfs(N - 1, 0)
+
+    def kthGrammar2(self, N: int, K: int) -> int:
+        def nth_level(level: int, pos: int) -> int:
+            if level == 0:
+                return 0
+
+            return (pos + nth_level(level - 1, pos // 2)) % 2
 
         return nth_level(N - 1, K - 1)
 
