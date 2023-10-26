@@ -986,3 +986,4 @@ Task | Solution
 [Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/) | [Python](/l33tcode/parallel-courses-iii.py)
 [Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/) | [Python](/l33tcode/constrained-subsequence-sum.py)
 [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | [Python](/l33tcode/find-largest-value-in-each-tree-row.py)
+[Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | [Python](/l33tcode/binary-trees-with-factors.py)
