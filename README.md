@@ -987,3 +987,4 @@ Task | Solution
 [Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/) | [Python](/l33tcode/constrained-subsequence-sum.py)
 [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | [Python](/l33tcode/find-largest-value-in-each-tree-row.py)
 [Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | [Python](/l33tcode/binary-trees-with-factors.py)
+[Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/) | [Python](/l33tcode/count-vowels-permutation.py)
