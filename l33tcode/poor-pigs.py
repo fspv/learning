@@ -4,7 +4,7 @@ class Solution:
         can_find = 1
 
         while can_find < buckets:
-            can_find *= (minutes_to_test // minutes_to_die + 1)
+            can_find *= minutes_to_test // minutes_to_die + 1
             pigs += 1
 
         return pigs
