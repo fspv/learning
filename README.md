@@ -988,3 +988,4 @@ Task | Solution
 [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | [Python](/l33tcode/find-largest-value-in-each-tree-row.py)
 [Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | [Python](/l33tcode/binary-trees-with-factors.py)
 [Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/) | [Python](/l33tcode/count-vowels-permutation.py)
+[Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | [Python](/l33tcode/sort-integers-by-the-number-of-1-bits.py)
