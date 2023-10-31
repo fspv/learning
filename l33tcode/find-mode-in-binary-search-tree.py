@@ -1,45 +1,31 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import Counter, Optional, List
+
+
+# Definition for a binary tree node.
+@dataclass
+class TreeNode:
+    val: int
+    left: Optional[TreeNode]
+    right: Optional[TreeNode]
+
+
 class Solution:
-    def inorder_walk(self, subtree_node=None):
-        # Tested in CLRS
-        if subtree_node is None:
-            if self.root is None:
-                return []
-            subtree_node = self.root
+    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        counter: Counter[int] = Counter()
 
-        result = []
+        def dfs(node: Optional[TreeNode]) -> None:
+            if not node:
+                return
 
-        if subtree_node.left is not None:
-            result += self.inorder_walk(subtree_node.left)
+            counter[node.val] += 1
 
-        result += [subtree_node.val]
+            dfs(node.left)
+            dfs(node.right)
 
-        if subtree_node.right is not None:
-            result += self.inorder_walk(subtree_node.right)
+        dfs(root)
+        max_freq = max(counter.values()) if counter else -1
 
-        return result
-
-    def findMode(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        self.root = root
-        all_elements = self.inorder_walk(root)
-
-        hash_map = {}
-
-        for element in all_elements:
-            if element in hash_map:
-                hash_map[element] += 1
-            else:
-                hash_map[element] = 1
-
-        if not len(hash_map):
-            return []
-
-        maximum_key = max(hash_map, key=lambda x: hash_map[x])
-
-        return [k for k, v in hash_map.items() if v == hash_map[maximum_key]]
-
-# TODO: write tests
-# TODO: write solution withou extra space
+        return [val for val, freq in counter.items() if freq == max_freq]
