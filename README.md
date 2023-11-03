@@ -991,3 +991,4 @@ Task | Solution
 [Sort Integers by The Number of 1 Bits](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | [Python](/l33tcode/sort-integers-by-the-number-of-1-bits.py)
 [Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/) | [Python](/l33tcode/find-the-original-array-of-prefix-xor.py)
 [Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [Python](/l33tcode/count-nodes-equal-to-average-of-subtree.py)
+[Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) | [Python](/l33tcode/build-an-array-with-stack-operations.py)
