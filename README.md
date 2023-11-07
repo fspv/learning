@@ -995,3 +995,4 @@ Task | Solution
 [Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/) | [Python](/l33tcode/build-an-array-with-stack-operations.py)
 [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [Python](/l33tcode/find-the-winner-of-an-array-game.py)
 [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [Python](/l33tcode/seat-reservation-manager.py)
+[Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [Python](/l33tcode/eliminate-maximum-number-of-monsters.py)
