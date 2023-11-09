@@ -996,3 +996,4 @@ Task | Solution
 [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [Python](/l33tcode/find-the-winner-of-an-array-game.py)
 [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [Python](/l33tcode/seat-reservation-manager.py)
 [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [Python](/l33tcode/eliminate-maximum-number-of-monsters.py)
+[Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | [Python](/l33tcode/count-number-of-homogenous-substrings.py)
