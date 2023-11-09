@@ -997,3 +997,4 @@ Task | Solution
 [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [Python](/l33tcode/seat-reservation-manager.py)
 [Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | [Python](/l33tcode/eliminate-maximum-number-of-monsters.py)
 [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | [Python](/l33tcode/count-number-of-homogenous-substrings.py)
+[Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | [Python](/l33tcode/determine-if-a-cell-is-reachable-at-a-given-time.py)
