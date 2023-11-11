@@ -999,3 +999,4 @@ Task | Solution
 [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | [Python](/l33tcode/count-number-of-homogenous-substrings.py)
 [Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | [Python](/l33tcode/determine-if-a-cell-is-reachable-at-a-given-time.py)
 [Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/) | [Python](/l33tcode/restore-the-array-from-adjacent-pairs.py)
+[Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [Python](/l33tcode/restore-the-array-from-adjacent-pairs.py)
