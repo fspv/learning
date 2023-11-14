@@ -1001,3 +1001,4 @@ Task | Solution
 [Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/) | [Python](/l33tcode/restore-the-array-from-adjacent-pairs.py)
 [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [Python](/l33tcode/restore-the-array-from-adjacent-pairs.py)
 [Bus Routes](https://leetcode.com/problems/bus-routes/) | [Python](/l33tcode/bus-routes.py)
+[Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | [Python](/l33tcode/unique-length-3-palindromic-subsequences.py)
