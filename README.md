@@ -1002,3 +1002,4 @@ Task | Solution
 [Design Graph With Shortest Path Calculator](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | [Python](/l33tcode/restore-the-array-from-adjacent-pairs.py)
 [Bus Routes](https://leetcode.com/problems/bus-routes/) | [Python](/l33tcode/bus-routes.py)
 [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | [Python](/l33tcode/unique-length-3-palindromic-subsequences.py)
+[Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | [Python](/l33tcode/reduction-operations-to-make-the-array-elements-equal.py)
