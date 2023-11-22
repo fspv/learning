@@ -1004,3 +1004,4 @@ Task | Solution
 [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | [Python](/l33tcode/unique-length-3-palindromic-subsequences.py)
 [Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | [Python](/l33tcode/reduction-operations-to-make-the-array-elements-equal.py)
 [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | [Python](/l33tcode/count-nice-pairs-in-an-array.py)
+[Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/) | [Python](/l33tcode/diagonal-traverse-ii.py)
