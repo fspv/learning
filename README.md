@@ -1006,3 +1006,4 @@ Task | Solution
 [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | [Python](/l33tcode/count-nice-pairs-in-an-array.py)
 [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/) | [Python](/l33tcode/diagonal-traverse-ii.py)
 [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | [Python](/l33tcode/arithmetic-subarrays.py)
+[Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/) | [Python](/l33tcode/maximum-number-of-coins-you-can-get.py)
