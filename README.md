@@ -1008,3 +1008,4 @@ Task | Solution
 [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | [Python](/l33tcode/arithmetic-subarrays.py)
 [Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/) | [Python](/l33tcode/maximum-number-of-coins-you-can-get.py)
 [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [Python](/l33tcode/sum-of-absolute-differences-in-a-sorted-array.py)
+[Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | [Python](/l33tcode/largest-submatrix-with-rearrangements.py)
