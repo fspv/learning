@@ -1010,3 +1010,4 @@ Task | Solution
 [Sum of Absolute Differences in a Sorted Array](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | [Python](/l33tcode/sum-of-absolute-differences-in-a-sorted-array.py)
 [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | [Python](/l33tcode/largest-submatrix-with-rearrangements.py)
 [Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) | [Python](/l33tcode/number-of-ways-to-divide-a-long-corridor.py)
+[Minimum Number of Operations to Make Array Empty](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | [Python](/l33tcode/minimum-number-of-operations-to-make-array-empty.py)
