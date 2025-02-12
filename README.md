@@ -1011,3 +1011,5 @@ Task | Solution
 [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | [Python](/l33tcode/largest-submatrix-with-rearrangements.py)
 [Number of Ways to Divide a Long Corridor](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) | [Python](/l33tcode/number-of-ways-to-divide-a-long-corridor.py)
 [Minimum Number of Operations to Make Array Empty](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | [Python](/l33tcode/minimum-number-of-operations-to-make-array-empty.py)
+[Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [Python](/l33tcode/max-sum-of-a-pair-with-equal-sum-of-digits.py)
+[Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [Golang](/l33tcode/max-sum-of-a-pair-with-equal-sum-of-digits.go)
