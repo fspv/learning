@@ -1013,3 +1013,4 @@ Task | Solution
 [Minimum Number of Operations to Make Array Empty](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | [Python](/l33tcode/minimum-number-of-operations-to-make-array-empty.py)
 [Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [Python](/l33tcode/max-sum-of-a-pair-with-equal-sum-of-digits.py)
 [Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [Golang](/l33tcode/max-sum-of-a-pair-with-equal-sum-of-digits.go)
+[Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [Python](/l33tcode/snapshot-array.py)
