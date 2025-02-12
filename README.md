@@ -1015,3 +1015,4 @@ Task | Solution
 [Max Sum of a Pair With Equal Sum of Digits](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | [Golang](/l33tcode/max-sum-of-a-pair-with-equal-sum-of-digits.go)
 [Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [Python](/l33tcode/snapshot-array.py)
 [Snapshot Array](https://leetcode.com/problems/snapshot-array/) | [Golang](/l33tcode/snapshot-array.go)
+[Make the Prefix Sum Non-negative](https://leetcode.com/problems/make-the-prefix-sum-non-negative/) | [Python](/l33tcode/make-the-prefix-sum-non-negative.py)
