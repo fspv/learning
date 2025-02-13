@@ -1018,3 +1018,4 @@ Task | Solution
 [Make the Prefix Sum Non-negative](https://leetcode.com/problems/make-the-prefix-sum-non-negative/) | [Python](/l33tcode/make-the-prefix-sum-non-negative.py)
 [Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [Python](/l33tcode/minimum-operations-to-exceed-threshold-value-ii.py)
 [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Python](/l33tcode/integer-to-roman.py)
+[Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Python](/l33tcode/reverse-integer.py)
