@@ -1019,3 +1019,4 @@ Task | Solution
 [Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | [Python](/l33tcode/minimum-operations-to-exceed-threshold-value-ii.py)
 [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Python](/l33tcode/integer-to-roman.py)
 [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Python](/l33tcode/reverse-integer.py)
+[Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/) | [Golang](/l33tcode/web-crawler-multithreaded.go)
