@@ -1,8 +1,6 @@
-from typing import List, Dict
-
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
-        key_map: Dict[str, str] = {
+    def letterCombinations(self, digits: str) -> list[str]:
+        key_map: dict[str, str] = {
             "2": "abc",
             "3": "def",
             "4": "ghi",
@@ -13,8 +11,8 @@ class Solution:
             "9": "wxyz",
         }
 
-        stack: List[str] = []
-        result: List[str] = []
+        stack: list[str] = []
+        result: list[str] = []
 
         def combinations(pos: int) -> None:
             if pos == len(digits):
@@ -40,4 +38,14 @@ class TestSolution:
         assert self.sol.letterCombinations("") == []
 
     def test_custom1(self):
-        assert self.sol.letterCombinations("23") == ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+        assert self.sol.letterCombinations("23") == [
+            "ad",
+            "ae",
+            "af",
+            "bd",
+            "be",
+            "bf",
+            "cd",
+            "ce",
+            "cf",
+        ]

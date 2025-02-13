@@ -1,12 +1,7 @@
-class Solution(object):
-    def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-
-        valid_open_brackets = ["(", "{", "["]
-        valid_close_brackets = [")", "}", "]"]
+class Solution:
+    def isValid(self, s: str) -> bool:
+        valid_open_brackets = {"(", "{", "["}
+        valid_close_brackets = {")", "}", "]"}
         close_open_brackets_map = {
             ")": "(",
             "}": "{",
@@ -21,8 +16,10 @@ class Solution(object):
             if symbol in valid_open_brackets:
                 brackets_stack.append(symbol)
             elif symbol in valid_close_brackets:
-                if len(brackets_stack) == 0 or \
-                   close_open_brackets_map[symbol] != brackets_stack.pop():
+                if (
+                    len(brackets_stack) == 0
+                    or close_open_brackets_map[symbol] != brackets_stack.pop()
+                ):
                     result = False
                     break
 
@@ -30,7 +27,6 @@ class Solution(object):
             result = False
 
         return result
-
 
 
 solution = Solution()

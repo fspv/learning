@@ -2,7 +2,7 @@ from typing import Counter
 
 
 class Solution:
-    def lengthOfLongestSubstring(self, s):
+    def lengthOfLongestSubstring(self, s: str) -> int:
         left, right = 0, 0
         counter: Counter[str] = Counter()
         repeating = 0
@@ -32,12 +32,7 @@ class Solution:
 
         return longest_substring
 
-    def lengthOfLongestSubstring1(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-
+    def lengthOfLongestSubstring1(self, s: str) -> int:
         str_hash_map = {}
         longest_substr = 0
         left = 0

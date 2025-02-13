@@ -1,8 +1,8 @@
 class Solution:
-    def threeSumClosest(self, nums, target):
+    def threeSumClosest(self, nums: list[int], target: int) -> int:
         nums.sort()
 
-        result = None
+        result = nums[0] + nums[1] + nums[2]
 
         for pos in range(len(nums) - 2):
             left, right = pos + 1, len(nums) - 1
@@ -17,13 +17,9 @@ class Solution:
                 else:
                     return cur_sum
 
-                result = min(
-                    result if result is not None else float("+inf"),
-                    cur_sum,
-                    key=lambda x: abs(target - x),
-                )
+                result = min(result, cur_sum, key=lambda x: abs(target - x))
 
-        return result if result is not None else 0
+        return result
 
 
 class TestSolution:
@@ -45,7 +41,7 @@ class TestSolution:
         assert self.sol.threeSumClosest([0, 1, 2], 3) == 3
 
     def test_custom4(self):
-        assert self.sol.threeSumClosest([1,1,1,0], -100) == 2
+        assert self.sol.threeSumClosest([1, 1, 1, 0], -100) == 2
 
     def test_custom5(self):
-        assert self.sol.threeSumClosest([0,2,1,-3], 1) == 0
+        assert self.sol.threeSumClosest([0, 2, 1, -3], 1) == 0

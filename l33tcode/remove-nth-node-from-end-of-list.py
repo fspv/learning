@@ -4,28 +4,26 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         if not head:
             return
 
-        n = n - 1
-
         pre_head = ListNode(None)
-        left = pre_head
-        left.next = right = head
-        left_pos = -1
-        right_pos = 0
+        pre_head.next = head
+
+        left, right = pre_head, head
+
+        pos = 1
 
         while right.next:
-            if right_pos - left_pos > n:
-                left_pos += 1
+            if pos >= n:
                 left = left.next
 
-            right_pos += 1
             right = right.next
+            pos += 1
 
-        if right_pos - left_pos == n + 1:
-            left.next = left.next.next
+        left.next = left.next.next
 
         return pre_head.next

@@ -1,5 +1,5 @@
 class Solution:
-    def fourSum(self, nums, target):
+    def fourSum(self, nums: list[int], target: int) -> list[list[int]]:
         nums.sort()
 
         result = set()
@@ -16,9 +16,7 @@ class Solution:
                     elif cur_sum > target:
                         right -= 1
                     else:
-                        result.add(
-                            (nums[pos1], nums[pos2], nums[left], nums[right])
-                        )
+                        result.add((nums[pos1], nums[pos2], nums[left], nums[right]))
                         left += 1
                         right -= 1
 
@@ -33,8 +31,6 @@ class TestSolution:
         assert self.sol.fourSum([], 0) == []
 
     def test_custom1(self):
-        assert sorted(self.sol.fourSum([1, 0, -1, 0, -2, 2], 0)) == sorted([
-          [-1, 0, 0, 1],
-          [-2, -1, 1, 2],
-          [-2, 0, 0, 2]
-        ])
+        assert sorted(self.sol.fourSum([1, 0, -1, 0, -2, 2], 0)) == sorted(
+            [[-1, 0, 0, 1], [-2, -1, 1, 2], [-2, 0, 0, 2]]
+        )

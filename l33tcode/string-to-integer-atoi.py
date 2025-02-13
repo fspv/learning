@@ -6,13 +6,13 @@ class Solution:
         pos = 0
         total = 0
         sign = 1
-        limit = ~ (- 1 << 31)
+        limit = ~(-1 << 31)
 
         while pos < len(s) and s[pos] == " ":
             pos += 1
 
         if pos < len(s) and s[pos] == "-":
-            limit = ~ limit
+            limit = ~limit
             sign = -1
             pos += 1
         elif pos < len(s) and s[pos] == "+":

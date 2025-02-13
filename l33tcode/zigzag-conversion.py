@@ -1,5 +1,6 @@
 import unittest
 
+
 class Solution:
     def convert(self, s: str, num_rows: int) -> str:
         if num_rows == 1 or not s:
@@ -38,7 +39,7 @@ class Solution:
 
         width = int(len(s) / (2 * num_rows - 2) + 1) * (num_rows - 1)
 
-        matrix = [[None for _ in range(width)] for _ in range(num_rows)]
+        matrix: list[list[str]] = [["" for _ in range(width)] for _ in range(num_rows)]
 
         direction_map = {
             True: (1, 0),
@@ -55,8 +56,7 @@ class Solution:
                 y += direction_map[direction][0]
                 x += direction_map[direction][1]
 
-                if not (0 <= y < len(matrix)) or \
-                   not (0 <= x < len(matrix[0])):
+                if not (0 <= y < len(matrix)) or not (0 <= x < len(matrix[0])):
                     y -= direction_map[direction][0]
                     x -= direction_map[direction][1]
                     direction = not direction

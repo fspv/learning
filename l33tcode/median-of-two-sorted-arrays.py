@@ -1,10 +1,8 @@
-from typing import List
-
-MIN, MAX = -(10 ** 6) - 1, 10 ** 6 + 1
+MIN, MAX = -(10**6) - 1, 10**6 + 1
 
 
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         first = nums2 if len(nums1) >= len(nums2) else nums1
         second = nums1 if len(nums1) >= len(nums2) else nums2
 

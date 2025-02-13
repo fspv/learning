@@ -1,31 +1,18 @@
 class Solution(object):
-    def longestCommonPrefix(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: str
-        """
-
-	result = []
-
+    def longestCommonPrefix(self, strs: list[str]) -> str:
         char_index = 0
 
-        while len(result) == char_index:
-            for s in strs:
-                if len(s) > char_index:
-                    if len(result) <= char_index:
-                        result.append(s[char_index])
-                    else:
-                        if s[char_index] != result[char_index]:
-                            result.pop()
-                            break
-                else:
-                    if len(result) > char_index:
-                        result.pop()
-                    break
+        while len(strs[0]) > char_index:
+            for string in strs:
+                if (
+                    len(string) == char_index
+                    or string[char_index] != strs[0][char_index]
+                ):
+                    return string[:char_index]
 
             char_index += 1
 
-        return ''.join(result)
+        return strs[0][:char_index]
 
 
 solution = Solution()
@@ -33,6 +20,6 @@ solution = Solution()
 for i in range(1000000):
     assert solution.longestCommonPrefix([""]) == ""
     assert solution.longestCommonPrefix(["a"]) == "a"
-    assert solution.longestCommonPrefix(["aa","a"]) == "a"
-    assert solution.longestCommonPrefix(["flower","flow","flight"]) == "fl"
-    assert solution.longestCommonPrefix(["dog","racecar","car"]) == ""
+    assert solution.longestCommonPrefix(["aa", "a"]) == "a"
+    assert solution.longestCommonPrefix(["flower", "flow", "flight"]) == "fl"
+    assert solution.longestCommonPrefix(["dog", "racecar", "car"]) == ""

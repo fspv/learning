@@ -22,7 +22,10 @@ class Solution:
                     can_repeat[pattern_pos] and dp[pattern_pos + 1][string_pos]
                 )
 
-                if string_pos < string_len and pattern[pattern_pos] in (s[string_pos], "."):
+                if string_pos < string_len and pattern[pattern_pos] in (
+                    s[string_pos],
+                    ".",
+                ):
                     dp[pattern_pos][string_pos] = (
                         dp[pattern_pos][string_pos]
                         or dp[pattern_pos + 1][string_pos + 1]
@@ -54,7 +57,7 @@ class Solution:
                 else:
                     if dfs(pattern_pos + 1, string_pos + 1):
                         return True
-            else:
-                return False
+
+            return False
 
         return dfs(0, 0)
