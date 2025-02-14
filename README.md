@@ -1020,3 +1020,4 @@ Task | Solution
 [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Python](/l33tcode/integer-to-roman.py)
 [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Python](/l33tcode/reverse-integer.py)
 [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/) | [Golang](/l33tcode/web-crawler-multithreaded.go)
+[Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [Python](/l33tcode/product-of-the-last-k-numbers.py)
