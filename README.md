@@ -1021,3 +1021,4 @@ Task | Solution
 [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Python](/l33tcode/reverse-integer.py)
 [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/) | [Golang](/l33tcode/web-crawler-multithreaded.go)
 [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [Python](/l33tcode/product-of-the-last-k-numbers.py)
+[Find the Punishment Number of an Integer](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [Python](/l33tcode/find-the-punishment-number-of-an-integer.py)
