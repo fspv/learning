@@ -1023,3 +1023,4 @@ Task | Solution
 [Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/) | [Python](/l33tcode/product-of-the-last-k-numbers.py)
 [Find the Punishment Number of an Integer](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [Python](/l33tcode/find-the-punishment-number-of-an-integer.py)
 [Design Most Recently Used Queue](https://leetcode.com/problems/design-most-recently-used-queue/) | [Golang](/l33tcode/design-most-recently-used-queue.go)
+[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Golang](/l33tcode/swap-nodes-in-pairs.go)
