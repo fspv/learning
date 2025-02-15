@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def count_and_say_recursion(self, n):
         if n == 1:
             return "1"
@@ -6,6 +6,8 @@ class Solution(object):
             prev_number = self.count_and_say_recursion(n - 1)
             result = []
             prev_symbol = None
+            repeat_counter = 0
+
             for symbol in prev_number:
                 if symbol == prev_symbol:
                     repeat_counter += 1
@@ -16,13 +18,31 @@ class Solution(object):
                 prev_symbol = symbol
             return ''.join(result)
 
-    def countAndSay(self, n):
-        """
-        :type n: int
-        :rtype: str
-        """
+    def countAndSay(self, n: int) -> str:
+        result = ["1", ""]
 
-        return str(self.count_and_say_recursion(n))
+        for _ in range(n - 1):
+            tmp: list[str] = []
+
+            prev, reps = "", 0
+
+            for char in result:
+                if char == prev:
+                    reps += 1
+                else:
+                    if reps > 0:
+                        tmp.extend([str(reps), prev])
+                    prev = char
+                    reps = 1
+
+            tmp.append("")
+
+            result = tmp
+
+
+        return "".join(result)
+
+
 
 
 solution = Solution()
