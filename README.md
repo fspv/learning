@@ -1024,3 +1024,4 @@ Task | Solution
 [Find the Punishment Number of an Integer](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | [Python](/l33tcode/find-the-punishment-number-of-an-integer.py)
 [Design Most Recently Used Queue](https://leetcode.com/problems/design-most-recently-used-queue/) | [Golang](/l33tcode/design-most-recently-used-queue.go)
 [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Golang](/l33tcode/swap-nodes-in-pairs.go)
+[Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [Golang](/l33tcode/construct-the-lexicographically-largest-valid-sequence.go)
