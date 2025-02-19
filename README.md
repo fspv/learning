@@ -1027,3 +1027,4 @@ Task | Solution
 [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [Golang](/l33tcode/construct-the-lexicographically-largest-valid-sequence.go)
 [Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | [Python](/l33tcode/construct-smallest-number-from-di-string.py)
 [Destroy Sequential Targets](https://leetcode.com/problems/destroy-sequential-targets/) | [Python](/l33tcode/destroy-sequential-targets.py)
+[The k-th Lexicographical String of All Happy Strings of Length n](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [Python](/l33tcode/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.py)
