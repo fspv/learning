@@ -1031,3 +1031,4 @@ Task | Solution
 [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | [Python](/l33tcode/find-unique-binary-string.py)
 [Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | [Python](/l33tcode/recover-a-tree-from-preorder-traversal.py)
 [The Maze II](https://leetcode.com/problems/the-maze-ii/) | [Python](/l33tcode/the-maze-ii.py)
+[Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | [Python](/l33tcode/number-of-provinces.py)
