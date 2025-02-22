@@ -1,9 +1,58 @@
-from typing import List, Dict, DefaultDict, Set
-from collections import defaultdict
+from typing import Deque, List, DefaultDict, Set
+from collections import defaultdict, deque
 
 
 class Solution:
     def sequenceReconstruction(self, org: List[int], seqs: List[List[int]]) -> bool:
+        def build_adj_list() -> List[List[int]]:
+            adj_list = [[] for _ in org]
+
+            for seq in seqs:
+                prev_num = 0
+
+                for num in seq:
+                    if prev_num:
+                        adj_list[prev_num - 1].append(num - 1)
+                    prev_num = num
+
+            return adj_list
+
+        def compute_indegrees(adj_list: List[List[int]]) -> List[int]:
+            indegrees = [0] * len(org)
+
+            for src in range(len(adj_list)):
+                for dst in adj_list[src]:
+                    indegrees[dst] += 1
+
+            return indegrees
+
+        adj_list = build_adj_list()
+        indegrees = compute_indegrees(adj_list)
+
+        queue: Deque[int] = deque()
+
+        for num in org:
+            if indegrees[num - 1] == 0:
+                queue.append(num - 1)
+
+        result: List[int] = []
+
+        while len(queue) == 1:
+            num = queue.popleft()
+            result.append(num)
+
+            for next_num in adj_list[num]:
+                indegrees[next_num] -= 1
+                if indegrees[next_num] == 0:
+                    queue.append(next_num)
+
+        if queue:
+            # Multiple ordering possible or there are loops
+            return False
+
+        return len(result) == len(org)
+
+    def sequenceReconstructionDFS(self, org: List[int], seqs: List[List[int]]) -> bool:
         def build_adj_list(seqs: List[List[int]]) -> DefaultDict[int, Set[int]]:
             adj_list: DefaultDict[int, Set[int]] = defaultdict(set)
 
