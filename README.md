@@ -1032,3 +1032,4 @@ Task | Solution
 [Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | [Python](/l33tcode/recover-a-tree-from-preorder-traversal.py)
 [The Maze II](https://leetcode.com/problems/the-maze-ii/) | [Python](/l33tcode/the-maze-ii.py)
 [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | [Python](/l33tcode/number-of-provinces.py)
+[Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [Golang](/l33tcode/construct-binary-tree-from-preorder-and-postorder-traversal.go)
