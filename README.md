@@ -1034,3 +1034,4 @@ Task | Solution
 [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | [Python](/l33tcode/number-of-provinces.py)
 [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [Golang](/l33tcode/construct-binary-tree-from-preorder-and-postorder-traversal.go)
 [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) | [Golang](/l33tcode/max-consecutive-ones-ii.go)
+[Most Profitable Path in a Tree](https://leetcode.com/problems/most-profitable-path-in-a-tree/) | [Python](/l33tcode/most-profitable-path-in-a-tree.py)
