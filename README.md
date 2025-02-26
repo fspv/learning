@@ -1036,3 +1036,4 @@ Task | Solution
 [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) | [Golang](/l33tcode/max-consecutive-ones-ii.go)
 [Most Profitable Path in a Tree](https://leetcode.com/problems/most-profitable-path-in-a-tree/) | [Python](/l33tcode/most-profitable-path-in-a-tree.py)
 [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [Python](/l33tcode/maximum-absolute-sum-of-any-subarray.py)
+[Distinct Numbers in Each Subarray](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [Python](/l33tcode/distinct-numbers-in-each-subarray.py)
