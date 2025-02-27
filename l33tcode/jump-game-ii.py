@@ -2,7 +2,7 @@ from functools import lru_cache
 
 
 class Solution:
-    def jump(self, nums: List[int]) -> int:
+    def jump(self, nums: list[int]) -> int:
         nums_pos = 0
         scan_pos = 0
         count = 0
@@ -26,13 +26,15 @@ class Solution:
 
         return count
 
-    def jumpN2(self, nums: List[int]) -> int:
+    def jumpN2(self, nums: list[int]) -> int:
         @lru_cache(None)
         def dp(pos: int) -> int:
             if pos == len(nums) - 1:
                 return 0
             min_jumps = len(nums) + 1
-            for next_pos in reversed(range(pos + 1, min(len(nums), pos + nums[pos] + 1))):
+            for next_pos in reversed(
+                range(pos + 1, min(len(nums), pos + nums[pos] + 1))
+            ):
                 min_jumps = min(min_jumps, dp(next_pos) + 1)
 
             return min_jumps

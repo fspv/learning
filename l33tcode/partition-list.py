@@ -3,10 +3,12 @@ from dataclasses import dataclass
 from typing import TYPE_CHECKING, Optional
 
 if TYPE_CHECKING:
+
     @dataclass
     class ListNode:
         val: int = 0
         next: Optional[ListNode] = None
+
 
 class Solution:
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:

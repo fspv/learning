@@ -80,7 +80,7 @@ class Solution:
             # Fit all elements into at most MAX_BUCKETS_SIZE buckets
             buckets_count = min((end - begin), MAX_BUCKETS_SIZE) + 1
             bucket_size = (end - begin) // (buckets_count - 1)
-            buckets = [0] * buckets_count
+            buckets = [0] * buckets_count  # type: ignore
 
             # Update counts of elements in each bucket
             for num in nums:
@@ -98,7 +98,7 @@ class Solution:
                     # This is an element we're looking for, since we have 0
                     # elements in the bucket of size 1
                     if bucket_size == 1:
-                        return begin
+                        return begin  # type: ignore
 
                     break
 
@@ -107,4 +107,4 @@ class Solution:
                 break
 
         # No gaps found, return the element next to the last element
-        return end + 1
+        return end + 1  # type: ignore

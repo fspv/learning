@@ -1,3 +1,4 @@
+from functools import lru_cache
 from typing import List, Iterator, Tuple
 
 
@@ -41,7 +42,7 @@ def longest_increasing_path(matrix: List[List[int]]) -> int:
 
     dp = [[1] * cols for _ in range(rows)]
 
-    for (row, col) in sorted(
+    for row, col in sorted(
         ((row, col) for row in range(rows) for col in range(cols)),
         key=lambda coord: -matrix[coord[0]][coord[1]],
     ):

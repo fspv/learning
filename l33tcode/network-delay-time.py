@@ -2,7 +2,7 @@ import heapq
 
 
 class Solution:
-    def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
+    def networkDelayTime(self, times: list[list[int]], N: int, K: int) -> int:
         class Node:
             def __init__(self, val):
                 self.val = val
@@ -10,7 +10,7 @@ class Solution:
                 self.edge_weights = []
 
 
-        def construct_graph(nodes, times, N):
+        def construct_graph(nodes, times):
             for src, dst, weight in times:
                 nodes[src - 1].children.append(nodes[dst - 1])
                 nodes[src - 1].edge_weights.append(weight)
@@ -19,7 +19,7 @@ class Solution:
         nodes = [Node(pos) for pos in range(N)]
         nodes_distances = [float("+inf") for _ in range(N)]
 
-        construct_graph(nodes, times, N)
+        construct_graph(nodes, times)
 
         heap = [(0, K - 1)]
         nodes_distances[K - 1] = 0
@@ -39,4 +39,4 @@ class Solution:
         if max_distance == float("+inf"):
             return -1
 
-        return max_distance
+        return max_distance # type: ignore

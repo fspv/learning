@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n: int) -> list[list[str]]:
         diag_pos_set = set()
         diag_neg_set = set()
         cols_set = set()
@@ -10,32 +7,32 @@ class Solution:
         board = [[False] * n for _ in range(n)]
         result = []
 
-        def place_queen(row):
+        def place_queen(row: int) -> None:
             if row == n:
-                result.append([
-                    "".join("Q" if c else "." for c in row)
-                    for row in board
-                ])
-            else:
-                for col in range(n):
-                    if not (
-                        row + col in diag_pos_set or \
-                        row - col in diag_neg_set or \
-                        col in cols_set
-                    ):
-                        diag_pos_set.add(row + col)
-                        diag_neg_set.add(row - col)
-                        cols_set.add(col)
+                result.append(
+                    ["".join("Q" if c else "." for c in row) for row in board]
+                )
+                return
 
-                        board[row][col] = True
+            for col in range(n):
+                if not (
+                    row + col in diag_pos_set
+                    or row - col in diag_neg_set
+                    or col in cols_set
+                ):
+                    diag_pos_set.add(row + col)
+                    diag_neg_set.add(row - col)
+                    cols_set.add(col)
 
-                        place_queen(row + 1)
+                    board[row][col] = True
 
-                        diag_pos_set.discard(row + col)
-                        diag_neg_set.discard(row - col)
-                        cols_set.discard(col)
+                    place_queen(row + 1)
 
-                        board[row][col] = False
+                    diag_pos_set.discard(row + col)
+                    diag_neg_set.discard(row - col)
+                    cols_set.discard(col)
+
+                    board[row][col] = False
 
         place_queen(0)
 
@@ -48,16 +45,6 @@ class TestSolution:
 
     def test_case1(self):
         assert self.sol.solveNQueens(4) == [
-            [
-                ".Q..",
-                 "...Q",
-                 "Q...",
-                 "..Q."
-            ],
-            [
-                "..Q.",
-                 "Q...",
-                 "...Q",
-                 ".Q.."
-            ]
+            [".Q..", "...Q", "Q...", "..Q."],
+            ["..Q.", "Q...", "...Q", ".Q.."],
         ]

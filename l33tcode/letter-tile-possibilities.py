@@ -6,7 +6,9 @@ class Solution:
     def numTilePossibilities(self, tiles: str) -> int:
         combinations = set()
 
-        def calculate_combinations(arr, start, prev, length):
+        def calculate_combinations(
+            arr: list[str], start: int, prev: list[str], length: int
+        ) -> None:
             if len(prev) == length:
                 combinations.add("".join(prev))
                 return

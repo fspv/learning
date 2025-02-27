@@ -24,7 +24,7 @@ class Solution:
         @lru_cache(None)
         def dfs(pos: int, open_brackets: int, subarrays: int) -> int:
             if pos == len(s):
-                return float("-inf") if open_brackets > 0 else 0
+                return float("-inf") if open_brackets > 0 else 0  # type: ignore
 
             max_len = 0 if open_brackets == 0 and subarrays > 0 else float("-inf")
             if s[pos] == ")":
@@ -36,6 +36,6 @@ class Solution:
             if subarrays == 0:
                 max_len = max(max_len, dfs(pos + 1, open_brackets, 0))
 
-            return max_len
+            return max_len  # type: ignore
 
         return dfs(0, 0, 0)

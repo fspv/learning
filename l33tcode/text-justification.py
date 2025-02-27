@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Text:
-    def __init__(self, words: List[str]) -> None:
+    def __init__(self, words: list[str]) -> None:
         self._words = words
 
     def _get_sum_words_length(self, start: int, end: int) -> int:
@@ -18,14 +15,14 @@ class Text:
 
         return pos
 
-    def justify(self, width: int) -> List[str]:
-        result: List[str] = []
+    def justify(self, width: int) -> list[str]:
+        result: list[str] = []
         start = 0
         while start < len(self._words):
             end = self._get_fits_width(start, width)
             words_length = self._get_sum_words_length(start, end)
             spaces_needed = width - words_length
-            sub_result: List[str] = []
+            sub_result: list[str] = []
 
             if end == len(self._words):
                 sub_result.append(" ".join(self._words[start:end]))
@@ -56,12 +53,12 @@ class Text:
 
 
 class Solution:
-    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+    def fullJustify(self, words: list[str], maxWidth: int) -> list[str]:
         text = Text(words)
 
         return text.justify(maxWidth)
 
-    def fullJustify2(self, words: List[str], max_width: int) -> List[str]:
+    def fullJustify2(self, words: list[str], max_width: int) -> list[str]:
         word = 0
 
         def fits_line(word: int, max_width: int) -> int:
@@ -93,7 +90,7 @@ class Solution:
             spaces = (max_width - words_len) // (count - 1)
             extra = (max_width - words_len) % (count - 1)
 
-            tmp: List[str] = []
+            tmp: list[str] = []
 
             for word in words[start : start + count - 1]:
                 tmp.append(word)
@@ -106,7 +103,7 @@ class Solution:
 
             return "".join(tmp)
 
-        result: List[str] = []
+        result: list[str] = []
 
         while word < len(words):
             count = fits_line(word, max_width)

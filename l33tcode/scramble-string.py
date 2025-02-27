@@ -1,5 +1,4 @@
-from typing import List
-from functools import lru_cache
+from typing import Counter
 
 
 class Solution:
@@ -12,9 +11,7 @@ class Solution:
                 left += 1
                 right -= 1
 
-        def swap_subarrays(
-            left: int, middle: int, right: int
-        ) -> None:
+        def swap_subarrays(left: int, middle: int, right: int) -> None:
             # reverse all
             reverse(left, right)
             # reverse left
@@ -32,14 +29,27 @@ class Solution:
             result = False
             for middle in range(left + 1, right):
                 result = result or (
-                    dfs(left, middle,) and dfs(middle, right,)
+                    dfs(
+                        left,
+                        middle,
+                    )
+                    and dfs(
+                        middle,
+                        right,
+                    )
                 )
 
                 swap_subarrays(left, middle, right)
 
                 result = result or (
-                    dfs(left, left + right - middle,)
-                    and dfs(left + right - middle, right,)
+                    dfs(
+                        left,
+                        left + right - middle,
+                    )
+                    and dfs(
+                        left + right - middle,
+                        right,
+                    )
                 )
 
                 swap_subarrays(left, left + right - middle, right)

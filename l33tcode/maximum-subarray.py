@@ -1,17 +1,16 @@
 from itertools import accumulate
-from typing import List, Tuple
 
 class Solution:
-    def maxSubArray(self, nums):
+    def maxSubArray(self, nums: list[int]) -> int:
         for pos in range(1, len(nums)):
             nums[pos] += max(nums[pos - 1], 0)
 
         return max(nums) if nums else 0
 
-    def maxSubArrayDivideAndConquer(self, nums: List[int]) -> int:
-        def dfs(left: int, right: int, sums: List[int]) -> Tuple[int, int, int]:
+    def maxSubArrayDivideAndConquer(self, nums: list[int]) -> int:
+        def dfs(left: int, right: int, sums: list[int]) -> tuple[int, int, int]:
             if left == right:
-                return float("+inf"), float("-inf"), float("-inf")
+                return float("+inf"), float("-inf"), float("-inf") # type: ignore
             if right - left == 1:
                 return sums[left], sums[left], sums[left]
 
@@ -28,7 +27,7 @@ class Solution:
 
         return dfs(0, len(nums), list(accumulate(nums)))[2]
 
-    def maxSubArray_O_n(self, nums: List[int]) -> int:
+    def maxSubArray_O_n(self, nums: list[int]) -> int:
         result = float("-inf")
         min_sum_so_far = 0
 
@@ -36,7 +35,7 @@ class Solution:
             result = max(result, sum_so_far - min_sum_so_far)
             min_sum_so_far = min(min_sum_so_far, sum_so_far)
 
-        return result
+        return result # type: ignore
 
 
 class TestSolution:

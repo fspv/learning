@@ -1,9 +1,8 @@
-from typing import List
 import heapq
 
 
 class Solution:
-    def solveSudoku(self, board: List[List[str]]) -> None:
+    def solveSudoku(self, board: list[list[str]]) -> None:
         """
         Do not return anything, modify board in-place instead.
         """
@@ -17,14 +16,14 @@ class Solution:
         boxes = [(l, b) for b, l in enumerate(box_left)]
         heapq.heapify(boxes)
 
-        def init_constraints():
+        def init_constraints() -> None:
             for row in range(rows):
                 for col in range(cols):
                     if board[row][col] != ".":
                         box = 3 * (row // 3) + col // 3
                         set_number(box, row, col, board[row][col])
 
-        def set_number(box, row, col, num):
+        def set_number(box: int, row: int, col: int, num: str) -> bool:
             if num in row_constraints[row]:
                 return False
             if num in col_constraints[col]:
@@ -40,14 +39,14 @@ class Solution:
             board[row][col] = num
             return True
 
-        def unset_number(box, row, col, num):
+        def unset_number(box: int, row: int, col: int, num: str) -> None:
             row_constraints[row].remove(num)
             col_constraints[col].remove(num)
             box_constraints[box].remove(num)
             box_left[box] += 1
             board[row][col] = "."
 
-        def next_cell(box, row, col):
+        def next_cell(box: int, row: int, col: int) -> tuple[int, int]:
             row_offset, col_offset = box_first(box)
             row_shift, col_shift = row - row_offset, col - col_offset
 
@@ -57,13 +56,13 @@ class Solution:
 
             return row_offset + row_tmp, col_offset + col_tmp
 
-        def box_first(box):
+        def box_first(box: int) -> tuple[int, int]:
             col = (box % 3) * 3
             row = (box // 3) * 3
 
             return row, col
 
-        def fill(box):
+        def fill(box: int) -> bool:
             if sum(box_left) == 0:
                 return True
 
@@ -71,7 +70,7 @@ class Solution:
 
             return fill_box(box, row, col)
 
-        def fill_box(box, row, col):
+        def fill_box(box: int, row: int, col: int) -> bool:
             if box_left[box] == 0:
                 if not boxes:
                     return True

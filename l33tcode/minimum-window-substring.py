@@ -38,7 +38,7 @@ class Solution:
 
         return string[min_range[0] : min_range[1]]
 
-    def minWindow(self, s: str, t: str) -> str:
+    def minWindowOld(self, s: str, t: str) -> str:
         result = None
         t_dict = {}
 
