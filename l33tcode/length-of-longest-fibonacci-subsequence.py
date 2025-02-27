@@ -1,6 +1,6 @@
 class Solution:
     def lenLongestFibSubseq(self, arr: list[int]) -> int:
-        num_to_prev_length: dict[int, dict[int, int]] = { n: {} for n in arr}
+        num_to_prev_length: dict[int, dict[int, int]] = {n: {} for n in arr}
 
         arr.sort()
 
