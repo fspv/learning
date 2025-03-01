@@ -1038,3 +1038,4 @@ Task | Solution
 [Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [Python](/l33tcode/maximum-absolute-sum-of-any-subarray.py)
 [Distinct Numbers in Each Subarray](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [Python](/l33tcode/distinct-numbers-in-each-subarray.py)
 [Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) | [Python](/l33tcode/length-of-longest-fibonacci-subsequence.py)
+[Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [Python](/l33tcode/apply-operations-to-an-array.py)
