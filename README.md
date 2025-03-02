@@ -1039,3 +1039,4 @@ Task | Solution
 [Distinct Numbers in Each Subarray](https://leetcode.com/problems/distinct-numbers-in-each-subarray/) | [Python](/l33tcode/distinct-numbers-in-each-subarray.py)
 [Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) | [Python](/l33tcode/length-of-longest-fibonacci-subsequence.py)
 [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [Python](/l33tcode/apply-operations-to-an-array.py)
+[Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [Python](/l33tcode/merge-two-2d-arrays-by-summing-values.py)
