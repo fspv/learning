@@ -1040,3 +1040,4 @@ Task | Solution
 [Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) | [Python](/l33tcode/length-of-longest-fibonacci-subsequence.py)
 [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [Python](/l33tcode/apply-operations-to-an-array.py)
 [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [Python](/l33tcode/merge-two-2d-arrays-by-summing-values.py)
+[Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [Rust](/l33tcode/partition-array-according-to-given-pivot.rs)
