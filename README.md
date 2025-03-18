@@ -1031,3 +1031,4 @@ Task | Solution
 [Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) | [Python](/l33tcode/apply-operations-to-an-array.py)
 [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [Python](/l33tcode/merge-two-2d-arrays-by-summing-values.py)
 [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [Rust](/l33tcode_rs/src/partition_array_according_to_given_pivot.rs)
+[Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | [Rust](/l33tcode_rs/src/longest_nice_subarray.rs)
