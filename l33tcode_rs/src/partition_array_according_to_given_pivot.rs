@@ -1,3 +1,5 @@
+struct Solution;
+
 impl Solution {
     pub fn pivot_array(nums: Vec<i32>, pivot: i32) -> Vec<i32> {
         let mut nums_copy = nums.clone();
@@ -15,10 +17,10 @@ impl Solution {
             right -= 1;
         }
 
-        for i in left..(right + 1) {
+        (left..(right + 1)).for_each(|i| {
             nums_copy[i] = pivot;
-        }
+        });
 
-        return nums_copy;
+        nums_copy
     }
 }
