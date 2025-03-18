@@ -6,3 +6,6 @@
 __pycache__
 a.out
 .pyre
+l33tcode_rs/target/
+src/**
+target/**
