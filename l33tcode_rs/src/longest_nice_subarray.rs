@@ -1,8 +1,11 @@
+#[allow(dead_code)]
 struct Solution;
 
 use std::cmp::max;
 
 impl Solution {
+    #[allow(dead_code)]
+    #[allow(clippy::needless_pass_by_value)]
     pub fn longest_nice_subarray(nums: Vec<i32>) -> i32 {
         let mut left: usize = 0;
         let mut ans: i32 = 0;

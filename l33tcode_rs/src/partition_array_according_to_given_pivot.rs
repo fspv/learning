@@ -1,6 +1,9 @@
+#[allow(dead_code)]
 struct Solution;
 
 impl Solution {
+    #[allow(dead_code)]
+    #[allow(clippy::needless_pass_by_value)]
     pub fn pivot_array(nums: Vec<i32>, pivot: i32) -> Vec<i32> {
         let mut nums_copy = nums.clone();
 
@@ -17,7 +20,7 @@ impl Solution {
             right -= 1;
         }
 
-        (left..(right + 1)).for_each(|i| {
+        (left..=right).for_each(|i| {
             nums_copy[i] = pivot;
         });
 

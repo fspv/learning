@@ -1032,3 +1032,4 @@ Task | Solution
 [Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | [Python](/l33tcode/merge-two-2d-arrays-by-summing-values.py)
 [Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | [Rust](/l33tcode_rs/src/partition_array_according_to_given_pivot.rs)
 [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | [Rust](/l33tcode_rs/src/longest_nice_subarray.rs)
+[Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | [Rust](/l33tcode_rs/src/minimum_number_of_operations_to_make_elements_in_array_distinct.rs)

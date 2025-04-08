@@ -1,8 +1,10 @@
+#[allow(dead_code)]
 struct Solution;
 
 use std::collections::HashMap;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn divide_array(nums: Vec<i32>) -> bool {
         let mut hash_map = HashMap::new();
         for num in nums {
