@@ -305,7 +305,7 @@ Task | Solution
 [Broken Calculator](https://leetcode.com/problems/broken-calculator/) | [Python](/l33tcode/broken-calculator.py) 
 [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | [Python](/l33tcode/koko-eating-bananas.py) 
 [Word Subsets](https://leetcode.com/problems/word-subsets/) | [Python](/l33tcode/word-subsets.py) 
-[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [Python](/l33tcode/critical-connections-in-a-network.py) 
+[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) | [Python](/l33tcode/critical-connections-in-a-network.py) [Rust](/l33tcode_rs/src/critical_connections_in_a_network.rs)
 [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) | [Python](/l33tcode/add-two-numbers-ii.py) 
 [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Python](/l33tcode/lowest-common-ancestor-of-a-binary-tree.py) 
 [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [Python](/l33tcode/pascals-triangle-ii.py) 

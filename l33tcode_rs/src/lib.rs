@@ -2,3 +2,4 @@ mod divide_array_into_equal_pairs;
 mod partition_array_according_to_given_pivot;
 mod longest_nice_subarray;
 mod minimum_number_of_operations_to_make_elements_in_array_distinct;
+mod critical_connections_in_a_network;
