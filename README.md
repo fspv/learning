@@ -1034,3 +1034,4 @@ Task | Solution
 [Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | [Rust](/l33tcode_rs/src/longest_nice_subarray.rs)
 [Minimum Number of Operations to Make Elements in Array Distinct](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | [Rust](/l33tcode_rs/src/minimum_number_of_operations_to_make_elements_in_array_distinct.rs)
 [Design Linked List](https://leetcode.com/problems/design-linked-list/) | [Python](/l33tcode/design-linked-list.py)
+[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/) | [Python](/l33tcode/design-circular-deque.py)
