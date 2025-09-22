@@ -1036,3 +1036,4 @@ Task | Solution
 [Design Linked List](https://leetcode.com/problems/design-linked-list/) | [Python](/l33tcode/design-linked-list.py)
 [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/) | [Python](/l33tcode/design-circular-deque.py)
 [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [Rust](/l33tcode_rs/src/number_of_zero_filled_subarrays.rs)
+[Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [Rust](/l33tcode_rs/src/count_elements_with_maximum_frequency.rs)
