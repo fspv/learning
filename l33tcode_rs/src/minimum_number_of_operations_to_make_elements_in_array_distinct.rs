@@ -17,6 +17,8 @@ impl Solution {
             unique_len = i;
         }
 
-        (unique_len / 3 + usize::from(unique_len % 3 > 0)).try_into().unwrap()
+        (unique_len / 3 + usize::from(unique_len % 3 > 0))
+            .try_into()
+            .unwrap()
     }
 }

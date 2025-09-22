@@ -14,6 +14,8 @@ impl Solution {
 
         let max_freq = freq.values().max().unwrap();
 
-        (freq.values().filter(|f| *f == max_freq).count() * max_freq).try_into().unwrap()
+        (freq.values().filter(|f| *f == max_freq).count() * max_freq)
+            .try_into()
+            .unwrap()
     }
 }
