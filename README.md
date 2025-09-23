@@ -270,7 +270,7 @@ Task | Solution
 [Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | [Python](/l33tcode/longest-arithmetic-subsequence-of-given-difference.py) 
 [Squirrel Simulation](https://leetcode.com/problems/squirrel-simulation/) | [Python](/l33tcode/squirrel-simulation.py) 
 [Random Point in Non-overlapping Rectangles](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/) | [Python](/l33tcode/random-point-in-non-overlapping-rectangles.py) 
-[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Python](/l33tcode/compare-version-numbers.py) 
+[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Python](/l33tcode/compare-version-numbers.py) [Rust](/l33tcode_rs/src/compare_version_numbers.rs) 
 [Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | [Python](/l33tcode/longest-harmonious-subsequence.py) 
 [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | [Golang](/l33tcode/n-queens-ii.go) 
 [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Python](/l33tcode/search-a-2d-matrix.py) 
