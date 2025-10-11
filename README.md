@@ -625,7 +625,7 @@ Task | Solution
 [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | [Golang](/l33tcode/check-if-it-is-a-straight-line.go) 
 [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [Python](/l33tcode/lfu-cache.py) 
 [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | [Python](/l33tcode/max-consecutive-ones-iii.py) 
-[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Python](/l33tcode/lru-cache.py) 
+[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Python](/l33tcode/lru-cache.py) [Rust](/l33tcode_rs/src/lru_cache.rs) 
 [Image Overlap](https://leetcode.com/problems/image-overlap/) | [Python](/l33tcode/image-overlap.py) 
 [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | [Golang](/l33tcode/group-the-people-given-the-group-size-they-belong-to.go) 
 [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/) | [Python](/l33tcode/design-in-memory-file-system.py) 
