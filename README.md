@@ -830,7 +830,7 @@ Task | Solution
 [Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | [Python](/l33tcode/maximum-profit-in-job-scheduling.py) 
 [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [Python](/l33tcode/longest-subarray-of-1s-after-deleting-one-element.py) 
 [Partition List](https://leetcode.com/problems/partition-list/) | [Python](/l33tcode/partition-list.py) 
-[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Python](/l33tcode/regular-expression-matching.py) 
+[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Python](/l33tcode/regular-expression-matching.py) [Rust](/l33tcode_rs/src/regular_expression_matching.rs) 
 [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) | [Python](/l33tcode/range-sum-query-2d-immutable.py) 
 [Path Sum III](https://leetcode.com/problems/path-sum-iii/) | [Python](/l33tcode/path-sum-iii.py) 
 [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Python](/l33tcode/remove-duplicates-from-sorted-list-ii.py) 
