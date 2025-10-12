@@ -446,7 +446,7 @@ Task | Solution
 [All Paths from Source Lead to Destination](https://leetcode.com/problems/all-paths-from-source-lead-to-destination/) | [Python](/l33tcode/all-paths-from-source-lead-to-destination.py) 
 [Find Root of N-Ary Tree](https://leetcode.com/problems/find-root-of-n-ary-tree/) | [Python](/l33tcode/find-root-of-n-ary-tree.py) 
 [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) | [Python](/l33tcode/similar-string-groups.py) 
-[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Python](/l33tcode/merge-k-sorted-lists.py) 
+[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Python](/l33tcode/merge-k-sorted-lists.py) [Rust](/l33tcode_rs/src/merge_k_sorted_lists.rs) 
 [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) | [Python](/l33tcode/longest-mountain-in-array.py) 
 [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](/l33tcode/palindrome-number.py) 
 [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | [Python](/l33tcode/score-of-parentheses.py) 
