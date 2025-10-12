@@ -2,6 +2,7 @@ mod compare_version_numbers;
 mod count_elements_with_maximum_frequency;
 mod critical_connections_in_a_network;
 mod divide_array_into_equal_pairs;
+mod find_all_possible_recipes_from_given_supplies;
 mod longest_nice_subarray;
 mod lru_cache;
 mod minimum_number_of_operations_to_make_elements_in_array_distinct;
