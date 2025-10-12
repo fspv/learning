@@ -232,7 +232,7 @@ Task | Solution
 [Distribute Candies](https://leetcode.com/problems/distribute-candies/) | [Python](/l33tcode/distribute-candies.py) 
 [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Python](/l33tcode/word-pattern.py) 
 [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Python](/l33tcode/design-search-autocomplete-system.py) 
-[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Python](/l33tcode/median-of-two-sorted-arrays.py) 
+[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Python](/l33tcode/median-of-two-sorted-arrays.py) [Rust](/l33tcode_rs/src/median_of_two_sorted_arrays.rs) 
 [Paint House II](https://leetcode.com/problems/paint-house-ii/) | [Python](/l33tcode/paint-house-ii.py) 
 [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/) | [Python](/l33tcode/find-and-replace-in-string.py) 
 [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [Python](/l33tcode/summary-ranges.py) 

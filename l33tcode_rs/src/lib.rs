@@ -6,6 +6,7 @@ mod divide_array_into_equal_pairs;
 mod find_all_possible_recipes_from_given_supplies;
 mod longest_nice_subarray;
 mod lru_cache;
+mod median_of_two_sorted_arrays;
 mod merge_k_sorted_lists;
 mod minimum_number_of_operations_to_make_elements_in_array_distinct;
 mod number_of_zero_filled_subarrays;
