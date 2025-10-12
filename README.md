@@ -1038,3 +1038,4 @@ Task | Solution
 [Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | [Rust](/l33tcode_rs/src/number_of_zero_filled_subarrays.rs)
 [Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | [Rust](/l33tcode_rs/src/count_elements_with_maximum_frequency.rs)
 [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | [Rust](/l33tcode_rs/src/find_all_possible_recipes_from_given_supplies.rs)
+[Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) | [Rust](/l33tcode_rs/src/valid_word_abbreviation.rs)
