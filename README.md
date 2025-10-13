@@ -380,7 +380,7 @@ Task | Solution
 [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Python](/l33tcode/rotting-oranges.py) 
 [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Python](/l33tcode/simplify-path.py) 
 [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | [Python](/l33tcode/search-in-a-binary-search-tree.py) 
-[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Python](/l33tcode/reverse-nodes-in-k-group.py) 
+[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Python](/l33tcode/reverse-nodes-in-k-group.py) [Rust](/l33tcode_rs/src/reverse_nodes_in_k_group.rs) 
 [Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) | [Python](/l33tcode/longest-turbulent-subarray.py) 
 [Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [Python](/l33tcode/thousand-separator.py) 
 [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [Python](/l33tcode/maximum-binary-tree.py) 
