@@ -389,7 +389,7 @@ Task | Solution
 [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Python](/l33tcode/remove-duplicates-from-sorted-list.py) 
 [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) | [Python](/l33tcode/repeated-substring-pattern.py) 
 [Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | [Python](/l33tcode/find-elements-in-a-contaminated-binary-tree.py) 
-[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [Python](/l33tcode/substring-with-concatenation-of-all-words.py) 
+[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [Python](/l33tcode/substring-with-concatenation-of-all-words.py) [Rust](/l33tcode_rs/src/substring_with_concatenation_of_all_words.rs) 
 [Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/) | [Python](/l33tcode/trim-a-binary-search-tree.py) 
 [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | [Python](/l33tcode/count-servers-that-communicate.py) 
 [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [Python](/l33tcode/running-sum-of-1d-array.py) 
