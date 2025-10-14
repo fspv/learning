@@ -875,7 +875,7 @@ Task | Solution
 [Hexspeak](https://leetcode.com/problems/hexspeak/) | [Python](/l33tcode/hexspeak.py) 
 [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Golang](/l33tcode/odd-even-linked-list.go) 
 [Smallest Subtree with all the Deepest Nodes](https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/) | [Python](/l33tcode/smallest-subtree-with-all-the-deepest-nodes.py) 
-[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Python](/l33tcode/shortest-path-in-binary-matrix.py) 
+[Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Python](/l33tcode/shortest-path-in-binary-matrix.py) [Rust](/l33tcode_rs/src/shortest_path_in_binary_matrix.rs) 
 [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Python](/l33tcode/rotate-array.py) 
 [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Python](/l33tcode/longest-consecutive-sequence.py) 
 [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [Python](/l33tcode/capacity-to-ship-packages-within-d-days.py) [Golang](/l33tcode/capacity-to-ship-packages-within-d-days.go) 
