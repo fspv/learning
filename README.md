@@ -448,7 +448,7 @@ Task | Solution
 [Similar String Groups](https://leetcode.com/problems/similar-string-groups/) | [Python](/l33tcode/similar-string-groups.py) 
 [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Python](/l33tcode/merge-k-sorted-lists.py) [Rust](/l33tcode_rs/src/merge_k_sorted_lists.rs) 
 [Longest Mountain in Array](https://leetcode.com/problems/longest-mountain-in-array/) | [Python](/l33tcode/longest-mountain-in-array.py) 
-[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](/l33tcode/palindrome-number.py) 
+[Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](/l33tcode/palindrome-number.py) [Rust](/l33tcode_rs/src/palindrome_number.rs) 
 [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | [Python](/l33tcode/score-of-parentheses.py) 
 [Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii/) | [Python](/l33tcode/student-attendance-record-ii.py) 
 [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | [Golang](/l33tcode/binary-tree-pruning.go) 
