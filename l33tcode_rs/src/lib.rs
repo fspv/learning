@@ -15,5 +15,5 @@ mod partition_array_according_to_given_pivot;
 mod regular_expression_matching;
 mod reverse_nodes_in_k_group;
 mod substring_with_concatenation_of_all_words;
+mod two_sum;
 mod valid_word_abbreviation;
-

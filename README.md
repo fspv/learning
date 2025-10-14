@@ -859,7 +859,7 @@ Task | Solution
 [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Python](/l33tcode/find-first-and-last-position-of-element-in-sorted-array.py) 
 [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Python](/l33tcode/group-anagrams.py) 
 [Word Break II](https://leetcode.com/problems/word-break-ii/) | [Python](/l33tcode/word-break-ii.py) 
-[Two Sum](https://leetcode.com/problems/two-sum/) | [Python](/l33tcode/two-sum.py) 
+[Two Sum](https://leetcode.com/problems/two-sum/) | [Python](/l33tcode/two-sum.py) [Rust](/l33tcode_rs/src/two_sum.rs) 
 [Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) | [Python](/l33tcode/number-of-students-doing-homework-at-a-given-time.py) 
 [Shortest Distance to a Character](https://leetcode.com/problems/shortest-distance-to-a-character/) | [Python](/l33tcode/shortest-distance-to-a-character.py) 
 [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [Python](/l33tcode/merge-intervals.py) 
