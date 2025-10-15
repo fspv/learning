@@ -1,3 +1,4 @@
+mod adjacent_increasing_subarrays_detection_i;
 mod compare_version_numbers;
 mod count_elements_with_maximum_frequency;
 mod critical_connections_in_a_network;

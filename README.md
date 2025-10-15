@@ -1042,3 +1042,4 @@ Task | Solution
 [Design Movie Rental System](https://leetcode.com/problems/design-movie-rental-system/) | [Rust](/l33tcode_rs/src/design_movie_rental_system.rs)
 [Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | [Rust](/l33tcode_rs/src/find_the_prefix_common_array_of_two_arrays.rs)
 [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [Rust](/l33tcode_rs/src/number_of_closed_islands.rs)
+[Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | [Rust](/l33tcode_rs/src/adjacent_increasing_subarrays_detection_i.rs)
