@@ -776,7 +776,7 @@ Task | Solution
 [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | [Python](/l33tcode/max-increase-to-keep-city-skyline.py) 
 [Number of Squareful Arrays](https://leetcode.com/problems/number-of-squareful-arrays/) | [Python](/l33tcode/number-of-squareful-arrays.py) 
 [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/) | [Python](/l33tcode/cherry-pickup-ii.py) 
-[Course Schedule](https://leetcode.com/problems/course-schedule/) | [Python](/l33tcode/course-schedule.py) 
+[Course Schedule](https://leetcode.com/problems/course-schedule/) | [Python](/l33tcode/course-schedule.py) [Rust](/l33tcode_rs/src/course_schedule.rs) 
 [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [Python](/l33tcode/find-the-smallest-divisor-given-a-threshold.py) 
 [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | [Golang](/l33tcode/deepest-leaves-sum.go) 
 [Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) | [Python](/l33tcode/second-minimum-node-in-a-binary-tree.py) 
