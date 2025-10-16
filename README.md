@@ -1044,3 +1044,4 @@ Task | Solution
 [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) | [Rust](/l33tcode_rs/src/number_of_closed_islands.rs)
 [Adjacent Increasing Subarrays Detection I](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | [Rust](/l33tcode_rs/src/adjacent_increasing_subarrays_detection_i.rs)
 [Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/) | [Rust](/l33tcode_rs/src/water_and_jug_problem.rs)
+[Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [Rust](/l33tcode_rs/src/find_eventual_safe_states.rs)

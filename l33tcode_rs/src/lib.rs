@@ -7,6 +7,7 @@ mod critical_connections_in_a_network;
 mod design_movie_rental_system;
 mod divide_array_into_equal_pairs;
 mod find_all_possible_recipes_from_given_supplies;
+mod find_eventual_safe_states;
 mod find_the_prefix_common_array_of_two_arrays;
 mod longest_nice_subarray;
 mod lru_cache;
