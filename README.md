@@ -489,7 +489,7 @@ Task | Solution
 [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [Python](/l33tcode/jewels-and-stones.py) 
 [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | [Golang](/l33tcode/find-and-replace-pattern.go) 
 [Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) | [Python](/l33tcode/sliding-window-median.py) 
-[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Python](/l33tcode/course-schedule-ii.py) 
+[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Python](/l33tcode/course-schedule-ii.py) [Rust](/l33tcode_rs/src/course_schedule_ii.rs) 
 [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) | [Python](/l33tcode/maximum-product-of-three-numbers.py) 
 [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | [Python](/l33tcode/permutation-in-string.py) 
 [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Python](/l33tcode/find-k-pairs-with-smallest-sums.py) 

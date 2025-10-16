@@ -1,6 +1,7 @@
 mod adjacent_increasing_subarrays_detection_i;
 mod compare_version_numbers;
 mod count_elements_with_maximum_frequency;
+mod course_schedule_ii;
 mod critical_connections_in_a_network;
 mod design_movie_rental_system;
 mod divide_array_into_equal_pairs;
