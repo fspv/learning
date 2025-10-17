@@ -1046,3 +1046,4 @@ Task | Solution
 [Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/) | [Rust](/l33tcode_rs/src/water_and_jug_problem.rs)
 [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [Rust](/l33tcode_rs/src/find_eventual_safe_states.rs)
 [Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/) | [Rust](/l33tcode_rs/src/implement_magic_dictionary.rs)
+[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [Rust](/l33tcode_rs/src/time_based_key_value_store.rs)
