@@ -9,6 +9,7 @@ mod divide_array_into_equal_pairs;
 mod find_all_possible_recipes_from_given_supplies;
 mod find_eventual_safe_states;
 mod find_the_prefix_common_array_of_two_arrays;
+mod implement_magic_dictionary;
 mod longest_nice_subarray;
 mod lru_cache;
 mod median_of_two_sorted_arrays;
