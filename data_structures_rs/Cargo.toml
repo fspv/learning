@@ -1,0 +1,13 @@
+[package]
+name = "data_structures_rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+correctness = "warn"
+complexity = "warn"
+perf = "warn"

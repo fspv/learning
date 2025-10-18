@@ -8,4 +8,4 @@ a.out
 .pyre
 l33tcode_rs/target/
 src/**
-target/**
+target
