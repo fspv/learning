@@ -10,6 +10,7 @@ mod find_all_possible_recipes_from_given_supplies;
 mod find_eventual_safe_states;
 mod find_the_prefix_common_array_of_two_arrays;
 mod implement_magic_dictionary;
+mod lexicographically_smallest_string_after_applying_operations;
 mod longest_nice_subarray;
 mod lru_cache;
 mod median_of_two_sorted_arrays;
