@@ -4,6 +4,7 @@ mod count_elements_with_maximum_frequency;
 mod course_schedule;
 mod course_schedule_ii;
 mod critical_connections_in_a_network;
+mod design_memory_allocator;
 mod design_movie_rental_system;
 mod divide_array_into_equal_pairs;
 mod find_all_possible_recipes_from_given_supplies;
@@ -29,4 +30,3 @@ mod two_sum;
 mod valid_word_abbreviation;
 mod water_and_jug_problem;
 mod water_bottles_ii;
-

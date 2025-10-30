@@ -1049,3 +1049,4 @@ Task | Solution
 [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [Rust](/l33tcode_rs/src/time_based_key_value_store.rs)
 [Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | [Rust](/l33tcode_rs/src/lexicographically_smallest_string_after_applying_operations.rs)
 [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [Rust](/l33tcode_rs/src/water_bottles_ii.rs)
+[Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [Rust](/l33tcode_rs/src/design_memory_allocator.rs)
