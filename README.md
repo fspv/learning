@@ -1050,3 +1050,4 @@ Task | Solution
 [Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | [Rust](/l33tcode_rs/src/lexicographically_smallest_string_after_applying_operations.rs)
 [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [Rust](/l33tcode_rs/src/water_bottles_ii.rs)
 [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [Rust](/l33tcode_rs/src/design_memory_allocator.rs)
+[Range Module](https://leetcode.com/problems/range-module/) | [Rust](/l33tcode_rs/src/range_module.rs)

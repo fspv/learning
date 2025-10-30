@@ -21,6 +21,7 @@ mod number_of_closed_islands;
 mod number_of_zero_filled_subarrays;
 mod palindrome_number;
 mod partition_array_according_to_given_pivot;
+mod range_module;
 mod regular_expression_matching;
 mod reverse_nodes_in_k_group;
 mod shortest_path_in_binary_matrix;
