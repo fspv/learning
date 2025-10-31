@@ -1051,3 +1051,4 @@ Task | Solution
 [Water Bottles II](https://leetcode.com/problems/water-bottles-ii/) | [Rust](/l33tcode_rs/src/water_bottles_ii.rs)
 [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [Rust](/l33tcode_rs/src/design_memory_allocator.rs)
 [Range Module](https://leetcode.com/problems/range-module/) | [Rust](/l33tcode_rs/src/range_module.rs)
+[My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [Rust](/l33tcode_rs/src/my_calendar_iii.rs)
