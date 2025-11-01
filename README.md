@@ -1052,3 +1052,4 @@ Task | Solution
 [Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator/) | [Rust](/l33tcode_rs/src/design_memory_allocator.rs)
 [Range Module](https://leetcode.com/problems/range-module/) | [Rust](/l33tcode_rs/src/range_module.rs)
 [My Calendar III](https://leetcode.com/problems/my-calendar-iii/) | [Rust](/l33tcode_rs/src/my_calendar_iii.rs)
+[Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency/) | [Rust](/l33tcode_rs/src/tweet_counts_per_frequency.rs)

@@ -28,6 +28,7 @@ mod reverse_nodes_in_k_group;
 mod shortest_path_in_binary_matrix;
 mod substring_with_concatenation_of_all_words;
 mod time_based_key_value_store;
+mod tweet_counts_per_frequency;
 mod two_sum;
 mod valid_word_abbreviation;
 mod water_and_jug_problem;
