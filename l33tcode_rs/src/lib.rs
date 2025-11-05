@@ -26,6 +26,7 @@ mod range_module;
 mod regular_expression_matching;
 mod reverse_nodes_in_k_group;
 mod shortest_path_in_binary_matrix;
+mod snapshot_array;
 mod substring_with_concatenation_of_all_words;
 mod time_based_key_value_store;
 mod tweet_counts_per_frequency;
