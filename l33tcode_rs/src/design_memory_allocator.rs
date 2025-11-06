@@ -1,109 +1,58 @@
-use std::{cell::RefCell, collections::HashMap, rc::Rc};
+use std::collections::BTreeMap;
+use std::collections::HashMap;
 
-struct Block {
-    offset: i32,
-    size: i32,
-    prev: Option<Rc<RefCell<Block>>>,
-    next: Option<Rc<RefCell<Block>>>,
-}
+#[derive(Debug)]
 struct Allocator {
-    size: i32,
-    head: Rc<RefCell<Block>>,
-    allocations: HashMap<i32, Vec<Rc<RefCell<Block>>>>,
-}
-
-fn find_gap(node: &Rc<RefCell<Block>>, size: i32) -> Option<Rc<RefCell<Block>>> {
-    let mut cur: Option<Rc<RefCell<Block>>> = Some(node.clone());
-
-    while let Some(prev) = cur {
-        if let Some(next) = prev.borrow().next.clone() {
-            let gap = next.borrow().offset - (prev.borrow().offset + prev.borrow().size);
-
-            if gap >= size {
-                return Some(prev.clone());
-            }
-        }
-
-        cur = prev.borrow().next.clone();
-    }
-
-    None
-}
-
-fn delete_block(node: &Rc<RefCell<Block>>) {
-    let prev = node.borrow().prev.clone().unwrap();
-    let next = node.borrow().next.clone().unwrap();
-
-    prev.borrow_mut().next = Some(next);
-
-    let next = node.borrow().next.clone().unwrap();
-    next.borrow_mut().prev = Some(prev);
+    allocated: HashMap<i32, i32>,        // offset: size
+    free: BTreeMap<i32, i32>,            // offset: size
+    allocations: HashMap<i32, Vec<i32>>, // mid: [ptr]
 }
 
 #[allow(dead_code)]
 impl Allocator {
     fn new(n: i32) -> Self {
-        let tail = Rc::new(RefCell::new(Block {
-            size: 0,
-            offset: n,
-            prev: None,
-            next: None,
-        }));
-        let head = Rc::new(RefCell::new(Block {
-            size: 0,
-            offset: 0,
-            prev: None,
-            next: None,
-        }));
-
-        head.borrow_mut().next = Some(tail.clone());
-        tail.borrow_mut().prev = Some(head.clone());
-
-        Allocator {
-            size: n,
-            head,
+        Self {
+            allocated: HashMap::new(),
+            free: BTreeMap::from([(0, n)]),
             allocations: HashMap::new(),
         }
     }
 
     fn allocate(&mut self, size: i32, m_id: i32) -> i32 {
-        println!("allocate {size} {m_id}");
-        if let Some(prev_block) = find_gap(&self.head, size) {
-            let offset = prev_block.borrow().offset + prev_block.borrow().size;
-            let next_block = prev_block.borrow().next.clone().unwrap();
-            let new_block = Rc::new(RefCell::new(Block {
-                offset,
-                size,
-                prev: Some(prev_block.clone()),
-                next: Some(next_block.clone()),
-            }));
-            let next_block = prev_block.borrow().next.clone().unwrap();
-            prev_block.borrow_mut().next = Some(new_block.clone());
-            next_block.borrow_mut().prev = Some(new_block.clone());
+        if let Some((&free_offset, &free_size)) = self.free.iter().find(|(_, s)| **s >= size) {
+            self.free.remove(&free_offset);
+            self.allocated.insert(free_offset, size);
+            self.allocations.entry(m_id).or_default().push(free_offset);
 
-            self.allocations
-                .entry(m_id)
-                .or_default()
-                .push(new_block.clone());
+            if free_size == size {
+                return free_offset;
+            }
 
-            return offset;
+            self.free.insert(free_offset + size, free_size - size);
+            return free_offset;
         }
 
         -1
     }
 
     fn free_memory(&mut self, m_id: i32) -> i32 {
-        println!("free_memory {m_id}");
         let mut freed = 0;
-        if let Some(blocks) = self.allocations.remove(&m_id) {
-            for block in blocks {
-                println!(
-                    "found block at offset {} with size {}",
-                    block.borrow().offset,
-                    block.borrow().size
-                );
-                freed += block.borrow().size;
-                delete_block(&block);
+        for ptr in self.allocations.remove(&m_id).unwrap_or_default() {
+            if let Some(size) = self.allocated.remove(&ptr) {
+                freed += size;
+                self.free.insert(ptr, size);
+
+                if let Some(&next_size) = self.free.get(&(ptr + size)) {
+                    self.free.remove(&(ptr + size));
+                    self.free.entry(ptr).and_modify(|v| *v += next_size);
+                }
+
+                if let Some((&prev_offset, &prev_size)) = self.free.range(..ptr).next_back()
+                    && prev_offset + prev_size == ptr
+                {
+                    let size = self.free.remove(&ptr).unwrap();
+                    self.free.entry(prev_offset).and_modify(|v| *v += size);
+                }
             }
         }
 
